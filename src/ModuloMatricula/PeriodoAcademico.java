@@ -32,7 +32,7 @@ public class PeriodoAcademico {
     /**
      * Las vacantes disponibles para el período académico.
      */
-    private VacantesPorGrado vacantes;
+    private List<VacantesPorGrado> vacantes = new ArrayList<>();
     /**
      * La lista de alumnos matriculados en este período académico.
      */

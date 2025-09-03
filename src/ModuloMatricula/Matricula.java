@@ -10,6 +10,11 @@ import java.util.List;
  * Contiene información sobre el alumno, el período, el grado, los bimestres y la pensión.
  */
 public class Matricula {
+    /*
+     * El codigo de la matricula
+     */
+    private int cod_matr;
+
     /**
      * El alumno que está matriculado.
      */
@@ -26,10 +31,6 @@ public class Matricula {
      * La lista de bimestres del período académico.
      */
     private List<Bimestre> bimestre;
-    /**
-     * El monto de la pensión de la matrícula.
-     */
-    private int pension;
 
     /**
      * Devuelve una representación en cadena de la matrícula, mostrando la pensión.
@@ -37,14 +38,6 @@ public class Matricula {
      */
     @Override
     public String toString() {
-        return "La pension es: " + pension;
-    }
-
-    /**
-     * Establece el monto de la pensión de la matrícula.
-     * @param pension el monto de la pensión.
-     */
-    public void setPension(int pension) {
-        this.pension = pension;
+        return "Matricula: " + this.cod_matr;
     }
 }

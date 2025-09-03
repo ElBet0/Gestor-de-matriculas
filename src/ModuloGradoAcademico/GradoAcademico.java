@@ -17,14 +17,6 @@ public class GradoAcademico {
      */
     private String nombre;
     /**
-     * El número de vacantes disponibles para este grado.
-     */
-    private int vacantes_disponibles;
-    /**
-     * El número de vacantes ocupadas en este grado.
-     */
-    private int vacantes_ocupados;
-    /**
      * El nivel educativo al que pertenece el grado (por ejemplo, 1 para primer grado).
      */
     private int nivel;

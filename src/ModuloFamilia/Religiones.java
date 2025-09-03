@@ -4,5 +4,6 @@ public enum Religiones {
     CATOLICA,
     CRISTIANO,
     JUDIO,
-    MORMON
+    MORMON,
+    OTROS
 }
