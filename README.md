@@ -1,2 +1,3 @@
 # Gestor-de-matriculas
-Con fe y aprobamos programación3
+
+Codigo base con las clases del futuro gestor de matriculo (todo puede cambiar, nada probablemente este correcto)
