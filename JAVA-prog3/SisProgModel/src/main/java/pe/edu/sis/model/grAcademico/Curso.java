@@ -19,4 +19,102 @@ public class Curso {
     private int activo;
     private String abreviatura;
     private List<Competencia> competencias=new ArrayList<>();
+
+    /**
+     * @return the curso_id
+     */
+    public int getCurso_id() {
+        return curso_id;
+    }
+
+    /**
+     * @param curso_id the curso_id to set
+     */
+    public void setCurso_id(int curso_id) {
+        this.curso_id = curso_id;
+    }
+
+    /**
+     * @return the nombre
+     */
+    public String getNombre() {
+        return nombre;
+    }
+
+    /**
+     * @param nombre the nombre to set
+     */
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    /**
+     * @return the descripcion
+     */
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    /**
+     * @param descripcion the descripcion to set
+     */
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    /**
+     * @return the horas_semanales
+     */
+    public int getHoras_semanales() {
+        return horas_semanales;
+    }
+
+    /**
+     * @param horas_semanales the horas_semanales to set
+     */
+    public void setHoras_semanales(int horas_semanales) {
+        this.horas_semanales = horas_semanales;
+    }
+
+    /**
+     * @return the activo
+     */
+    public int getActivo() {
+        return activo;
+    }
+
+    /**
+     * @param activo the activo to set
+     */
+    public void setActivo(int activo) {
+        this.activo = activo;
+    }
+
+    /**
+     * @return the abreviatura
+     */
+    public String getAbreviatura() {
+        return abreviatura;
+    }
+
+    /**
+     * @param abreviatura the abreviatura to set
+     */
+    public void setAbreviatura(String abreviatura) {
+        this.abreviatura = abreviatura;
+    }
+
+    /**
+     * @return the competencias
+     */
+    public List<Competencia> getCompetencias() {
+        return new ArrayList<>(competencias);
+    }
+
+    /**
+     * @param competencias the competencias to set
+     */
+    public void setCompetencias(List<Competencia> competencias) {
+        this.competencias = competencias;
+    }
 }

@@ -17,4 +17,61 @@ public class CursoNotas {
     private Curso curso;
     private double calificacion_final;
     private List<CompetenciaNotas> compe_notas=new ArrayList<>();
+
+    /**
+     * @return the curso_notas_id
+     */
+    public int getCurso_notas_id() {
+        return curso_notas_id;
+    }
+
+    /**
+     * @param curso_notas_id the curso_notas_id to set
+     */
+    public void setCurso_notas_id(int curso_notas_id) {
+        this.curso_notas_id = curso_notas_id;
+    }
+
+    /**
+     * @return the curso
+     */
+    public Curso getCurso() {
+        return curso;
+    }
+
+    /**
+     * @param curso the curso to set
+     */
+    public void setCurso(Curso curso) {
+        this.curso = curso;
+    }
+
+    /**
+     * @return the calificacion_final
+     */
+    public double getCalificacion_final() {
+        return calificacion_final;
+    }
+
+    /**
+     * @param calificacion_final the calificacion_final to set
+     */
+    public void setCalificacion_final(double calificacion_final) {
+        this.calificacion_final = calificacion_final;
+    }
+
+    /**
+     * @return the compe_notas
+     */
+    public List<CompetenciaNotas> getCompe_notas() {
+        return new ArrayList<>(compe_notas);
+    }
+
+    /**
+     * @param compe_notas the compe_notas to set
+     */
+    public void setCompe_notas(List<CompetenciaNotas> compe_notas) {
+        this.compe_notas = compe_notas;
+    }
+    
 }
