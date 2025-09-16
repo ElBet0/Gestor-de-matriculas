@@ -18,4 +18,75 @@ public class Bimestre {
     private LocalDate fecha_inicio;
     private LocalDate fecha_fin;
     private List<CursoNotas> nota = new ArrayList<>();
+
+    /**
+     * @return the bimestre_id
+     */
+    public int getBimestre_id() {
+        return bimestre_id;
+    }
+
+    /**
+     * @param bimestre_id the bimestre_id to set
+     */
+    public void setBimestre_id(int bimestre_id) {
+        this.bimestre_id = bimestre_id;
+    }
+
+    /**
+     * @return the descripcion
+     */
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    /**
+     * @param descripcion the descripcion to set
+     */
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    /**
+     * @return the fecha_inicio
+     */
+    public LocalDate getFecha_inicio() {
+        return fecha_inicio;
+    }
+
+    /**
+     * @param fecha_inicio the fecha_inicio to set
+     */
+    public void setFecha_inicio(LocalDate fecha_inicio) {
+        this.fecha_inicio = fecha_inicio;
+    }
+
+    /**
+     * @return the fecha_fin
+     */
+    public LocalDate getFecha_fin() {
+        return fecha_fin;
+    }
+
+    /**
+     * @param fecha_fin the fecha_fin to set
+     */
+    public void setFecha_fin(LocalDate fecha_fin) {
+        this.fecha_fin = fecha_fin;
+    }
+
+    /**
+     * @return the nota
+     */
+    public List<CursoNotas> getNota() {
+        return new ArrayList<>(nota);
+    }
+
+    /**
+     * @param nota the nota to set
+     */
+    public void setNota(List<CursoNotas> nota) {
+        this.nota = nota;
+    }
+    
 }

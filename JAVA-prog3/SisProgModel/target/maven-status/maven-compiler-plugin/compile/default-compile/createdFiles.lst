@@ -8,6 +8,7 @@ SisProgModel.class
 pe\edu\sis\model\grAcademico\GradoAcademico.class
 pe\edu\sis\model\deuda\Deuda.class
 pe\edu\sis\model\deuda\TipoDeuda.class
+pe\edu\sis\model\matricula\VacantesAula.class
 pe\edu\sis\model\notas\CursoNotas.class
 pe\edu\sis\model\notas\NotaAcademica.class
 pe\edu\sis\model\alumno\Alumno.class

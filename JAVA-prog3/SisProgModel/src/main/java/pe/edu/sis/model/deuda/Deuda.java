@@ -4,13 +4,144 @@
  */
 package pe.edu.sis.model.deuda;
 
-import java.time.LocalDate;
+import java.util.Date;
+import pe.edu.sis.model.alumno.Alumno;
 
 /**
  *
  * @author seinc
  */
 public class Deuda {
+
+    public Deuda() {
+    }
+
+    /**
+     * @return the alumno
+     */
+    public Alumno getAlumno() {
+        return alumno;
+    }
+
+    /**
+     * @param alumno the alumno to set
+     */
+    public void setAlumno(Alumno alumno) {
+        this.alumno = alumno;
+    }
+
+    /**
+     * @return the deuda_id
+     */
+    public int getDeuda_id() {
+        return deuda_id;
+    }
+
+    /**
+     * @param deuda_id the deuda_id to set
+     */
+    public void setDeuda_id(int deuda_id) {
+        this.deuda_id = deuda_id;
+    }
+
+    /**
+     * @return the monto
+     */
+    public double getMonto() {
+        return monto;
+    }
+
+    /**
+     * @param monto the monto to set
+     */
+    public void setMonto(double monto) {
+        this.monto = monto;
+    }
+
+    /**
+     * @return the estado
+     */
+    public int getEstado() {
+        return estado;
+    }
+
+    /**
+     * @param estado the estado to set
+     */
+    public void setEstado(int estado) {
+        this.estado = estado;
+    }
+
+    /**
+     * @return the fecha_emision
+     */
+    public Date getFecha_emision() {
+        return fecha_emision;
+    }
+
+    /**
+     * @param fecha_emision the fecha_emision to set
+     */
+    public void setFecha_emision(Date fecha_emision) {
+        this.fecha_emision = fecha_emision;
+    }
+
+    /**
+     * @return the fecha_vencimiento
+     */
+    public Date getFecha_vencimiento() {
+        return fecha_vencimiento;
+    }
+
+    /**
+     * @param fecha_vencimiento the fecha_vencimiento to set
+     */
+    public void setFecha_vencimiento(Date fecha_vencimiento) {
+        this.fecha_vencimiento = fecha_vencimiento;
+    }
+
+    /**
+     * @return the descripcion
+     */
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    /**
+     * @param descripcion the descripcion to set
+     */
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    /**
+     * @return the descuento
+     */
+    public double getDescuento() {
+        return descuento;
+    }
+
+    /**
+     * @param descuento the descuento to set
+     */
+    public void setDescuento(double descuento) {
+        this.descuento = descuento;
+    }
+
+    /**
+     * @return the concepto_deuda
+     */
+    public TipoDeuda getConcepto_deuda() {
+        return concepto_deuda;
+    }
+
+    /**
+     * @param concepto_deuda the concepto_deuda to set
+     */
+    public void setConcepto_deuda(TipoDeuda concepto_deuda) {
+        this.concepto_deuda = concepto_deuda;
+    }
+
 
     /**
      * El código único que identifica la deuda.
@@ -27,11 +158,11 @@ public class Deuda {
     /**
      * La fecha en que se emitió la deuda.
      */
-    private LocalDate fecha_emision;
+    private Date fecha_emision;
     /**
      * La fecha de vencimiento de la deuda.
      */
-    private LocalDate fecha_vencimiento;
+    private Date fecha_vencimiento;
     /**
      * Una descripción detallada de la deuda.
      */
@@ -47,5 +178,17 @@ public class Deuda {
     /**
      * Acceso en caso se haya cancelado la deuda
      */
-    private Pago cancelado;
+    private Alumno alumno;
+
+    public Deuda(int deuda_id, double monto, Date fecha_emision, Date fecha_vencimiento, String descripcion, double descuento, TipoDeuda concepto_deuda, Alumno alumno) {
+        this.deuda_id = deuda_id;
+        this.monto = monto;
+        this.fecha_emision = fecha_emision;
+        this.fecha_vencimiento = fecha_vencimiento;
+        this.descripcion = descripcion;
+        this.descuento = descuento;
+        this.concepto_deuda = concepto_deuda;
+        this.alumno = alumno;
+    }
+    
 }

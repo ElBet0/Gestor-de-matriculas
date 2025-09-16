@@ -17,4 +17,74 @@ public class Competencia {
     private double peso_competencia;
     private int activo;
     private List<Calificaciones> calificaciones= new ArrayList<>();
+
+    /**
+     * @return the competencia_id
+     */
+    public int getCompetencia_id() {
+        return competencia_id;
+    }
+
+    /**
+     * @param competencia_id the competencia_id to set
+     */
+    public void setCompetencia_id(int competencia_id) {
+        this.competencia_id = competencia_id;
+    }
+
+    /**
+     * @return the nombre
+     */
+    public String getNombre() {
+        return nombre;
+    }
+
+    /**
+     * @param nombre the nombre to set
+     */
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    /**
+     * @return the peso_competencia
+     */
+    public double getPeso_competencia() {
+        return peso_competencia;
+    }
+
+    /**
+     * @param peso_competencia the peso_competencia to set
+     */
+    public void setPeso_competencia(double peso_competencia) {
+        this.peso_competencia = peso_competencia;
+    }
+
+    /**
+     * @return the activo
+     */
+    public int getActivo() {
+        return activo;
+    }
+
+    /**
+     * @param activo the activo to set
+     */
+    public void setActivo(int activo) {
+        this.activo = activo;
+    }
+
+    /**
+     * @return the calificaciones
+     */
+    public List<Calificaciones> getCalificaciones() {
+        return new ArrayList<>(calificaciones);
+    }
+
+    /**
+     * @param calificaciones the calificaciones to set
+     */
+    public void setCalificaciones(List<Calificaciones> calificaciones) {
+        this.calificaciones = calificaciones;
+    }
 }
