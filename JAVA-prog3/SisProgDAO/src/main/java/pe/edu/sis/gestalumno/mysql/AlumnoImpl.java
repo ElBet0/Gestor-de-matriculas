@@ -23,7 +23,7 @@ import pe.edu.sis.gestfamilia.mysql.FamiliaImpl;
  * @author seinc
  */
 public class AlumnoImpl implements AlumnoDAO {
-    ResultSet rs;
+    private ResultSet rs;
     @Override
     public int insertar(Alumno al) {
         Map<Integer, Object> in= new HashMap<>();

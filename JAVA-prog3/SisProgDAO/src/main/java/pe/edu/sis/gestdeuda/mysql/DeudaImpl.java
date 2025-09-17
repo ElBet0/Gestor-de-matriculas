@@ -23,7 +23,7 @@ import pe.edu.sis.model.deuda.TipoDeuda;
  * @author seinc
  */
 public class DeudaImpl implements DeudaDAO{
-    ResultSet rs;
+    private ResultSet rs;
     @Override
     public int insertar(Deuda deu) {
         Map<Integer, Object> in= new HashMap<>();

@@ -24,7 +24,7 @@ import pe.edu.sis.model.deuda.TipoDeuda;
  * @author seinc
  */
 public class PagoImpl implements PagoDAO{
-    ResultSet rs;
+    private ResultSet rs;
     @Override
     public int insertar(Pago pago) {
         Map<Integer, Object> in= new HashMap<>();

@@ -12,14 +12,37 @@ import java.util.List;
  * @author seinc
  */
 public class Curso {
+
+    /**
+     * @return the grado
+     */
+    public GradoAcademico getGrado() {
+        return grado;
+    }
+
+    /**
+     * @param grado the grado to set
+     */
+    public void setGrado(GradoAcademico grado) {
+        this.grado = grado;
+    }
     private int curso_id;
     private String nombre;
     private String descripcion;
     private int horas_semanales;
     private int activo;
     private String abreviatura;
+    private GradoAcademico grado;
     private List<Competencia> competencias=new ArrayList<>();
 
+    public Curso(String nombre, String descripcion, int horas_semanales, String abreviatura, GradoAcademico grado) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.horas_semanales = horas_semanales;
+        this.abreviatura = abreviatura;
+        this.grado = grado;
+    }
+    public Curso(){}
     /**
      * @return the curso_id
      */

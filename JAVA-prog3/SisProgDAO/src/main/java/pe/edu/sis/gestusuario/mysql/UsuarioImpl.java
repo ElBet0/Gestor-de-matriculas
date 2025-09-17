@@ -20,7 +20,7 @@ import pe.edu.sis.model.usuario.Usuario;
  * @author seinc
  */
 public class UsuarioImpl implements UsuarioDAO{
-    ResultSet rs;
+    private ResultSet rs;
     @Override
     public int insertar(Usuario user) {
         Map<Integer, Object> in= new HashMap<>();
