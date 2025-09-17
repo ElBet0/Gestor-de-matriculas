@@ -49,8 +49,7 @@ public class Deuda {
      */
     private Alumno alumno;
 
-    public Deuda(int deuda_id, double monto, Date fecha_emision, Date fecha_vencimiento, String descripcion, double descuento, TipoDeuda concepto_deuda, Alumno alumno) {
-        this.deuda_id = deuda_id;
+    public Deuda(double monto, Date fecha_emision, Date fecha_vencimiento, String descripcion, double descuento, TipoDeuda concepto_deuda, Alumno alumno) {
         this.monto = monto;
         this.fecha_emision = fecha_emision;
         this.fecha_vencimiento = fecha_vencimiento;
@@ -189,7 +188,10 @@ public class Deuda {
         this.concepto_deuda = concepto_deuda;
     }
 
-
+    @Override
+    public String toString() {
+        return "Deuda{" + "deuda_id=" + deuda_id + ", monto=" + monto + ", estado=" + estado + ", fecha_emision=" + fecha_emision + ", fecha_vencimiento=" + fecha_vencimiento + ", descripcion=" + descripcion + ", descuento=" + descuento + ", concepto_deuda=" + concepto_deuda + '}';
+    }    
     
     
 }

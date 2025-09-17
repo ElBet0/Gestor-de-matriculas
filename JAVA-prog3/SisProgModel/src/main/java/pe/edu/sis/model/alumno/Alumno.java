@@ -76,7 +76,13 @@ public class Alumno {
 
     @Override
     public String toString() {
-        return "Alumno{" + "alumno_id=" + alumno_id + ", nombre=" + nombre +", apellido paterno="+this.padres.getApellido_paterno() +", apellido materno="+this.padres.getApellido_materno() +  ", dni=" + dni + ", fecha_nacimiento=" + fecha_nacimiento + ", fecha_ingreso=" + fecha_ingreso + ", sexo=" + sexo + ", religion=" + religion + ", observaciones=" + observaciones + ", pension_base=" + pension_base + '}' ;
+        return "Alumno{" + "alumno_id=" + alumno_id + ", nombre=" + nombre +
+                ", apellido paterno="+this.padres.getApellido_paterno() +
+                ", apellido materno="+this.padres.getApellido_materno() +  
+                ", dni=" + dni + ", fecha_nacimiento=" + fecha_nacimiento + 
+                ", fecha_ingreso=" + fecha_ingreso + ", sexo=" + sexo + 
+                ", religion=" + religion + ", observaciones=" + observaciones + 
+                ", pension_base=" + pension_base + '}' ;
                 
     }
     
