@@ -39,7 +39,6 @@ public class SisProg {
         if (res != 0) {
             System.out.println("SE MODIFICO");
         }
-
         
         //----------------Obtener por id
         Familia _familia2 = familiaDAO.obtener_por_id(_familia.getFamilia_id());
@@ -57,12 +56,12 @@ public class SisProg {
 
         /*--------------------CRUD ALUMNO----------------------*/
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-        Alumno _alumno = new Alumno("Manuel", 1231238, sdf.parse("08-09-1478"), sdf.parse("02-03-1978"), 'M', "Judio", _familia2, "Problematico", 1000);
+        Alumno _alumno = new Alumno("Manuel", 12, sdf.parse("08-09-1478"), sdf.parse("02-03-1978"), 'M', "Judio", _familia2, "Problematico", 1000);
         AlumnoDAO alumnoDAO = new AlumnoImpl();
         
         //---------------INSERTAR 
         alumnoDAO.insertar(_alumno);
-        _alumno = new Alumno("Pedrito", 74158426, sdf.parse("08-09-1478"), sdf.parse("02-03-1978"), 'M', "Judio", _familia, "Problematico", 1000);
+        _alumno = new Alumno("Pedrito", 24, sdf.parse("08-09-1478"), sdf.parse("02-03-1978"), 'M', "Judio", _familia, "Problematico", 1000);
         alumnoDAO.insertar(_alumno);
         
         //-------------------MODIFICAR
@@ -106,8 +105,7 @@ public class SisProg {
         for (var d : arrDeudas) {
             System.out.println(d);
         }
-                
-                
+  
         System.out.println();
         System.out.println();
         
