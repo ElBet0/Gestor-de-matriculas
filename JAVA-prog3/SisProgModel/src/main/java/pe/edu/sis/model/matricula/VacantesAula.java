@@ -89,6 +89,12 @@ public class VacantesAula {
     public void setEstado(int estado) {
         this.estado = estado;
     }
+
+    @Override
+    public String toString() {
+        return "VacantesAula{" + "aula_id=" + aula_id + ", nombre=" + nombre + ", vacantes_disponibles=" + vacantes_disponibles + ", vacantes_ocupadas=" + vacantes_ocupadas + ", estado=" + estado + '}';
+    }
+    
     
     
 }

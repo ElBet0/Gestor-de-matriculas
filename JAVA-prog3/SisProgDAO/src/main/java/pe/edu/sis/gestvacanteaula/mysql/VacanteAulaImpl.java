@@ -50,8 +50,8 @@ public class VacanteAulaImpl implements VacanteAulaDAO {
     public int eliminar(int pos) {
         Map<Integer, Object> in= new HashMap<>();
         in.put(1,pos);
-        int resultado=DbManager.getInstance().ejecutarProcedimiento("MODIFICAR_VACANTES_AULA",in,null);
-        System.out.println("Se ha realizado la modificacion de las Vacantes en el Aula ");
+        int resultado=DbManager.getInstance().ejecutarProcedimiento("ELIMINAR_VACANTES_AULA",in,null);
+        System.out.println("Se ha realizado la eliminación de las Vacantes en el Aula ");
         return resultado;
     }
 
