@@ -4,7 +4,7 @@
  */
 package pe.edu.sis.model.matricula;
 
-import java.time.LocalDate;
+import java.util.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,11 +16,19 @@ public class PeriodoAcademico {
     private int periodo_academico_id;
     private String nombre;
     private String descripcion;
-    private LocalDate fecha_inicio;
-    private LocalDate fecha_fin;
+    private Date fecha_inicio;
+    private Date fecha_fin;
     private int vigencia;
     private VacantesGrado vacantes;
-    private List<Matricula> matriculados=new ArrayList<>();     
+    private List<Matricula> matriculados=new ArrayList<>();  
+
+    public PeriodoAcademico(String nombre, String descripcion, Date fecha_inicio, Date fecha_fin) {
+        this.nombre = nombre;
+        this.descripcion = descripcion;
+        this.fecha_inicio = fecha_inicio;
+        this.fecha_fin = fecha_fin;
+    }
+    public PeriodoAcademico(){}
     /**
      * @return the periodo_academico_id
      */
@@ -66,28 +74,28 @@ public class PeriodoAcademico {
     /**
      * @return the fecha_inicio
      */
-    public LocalDate getFecha_inicio() {
+    public Date getFecha_inicio() {
         return fecha_inicio;
     }
 
     /**
      * @param fecha_inicio the fecha_inicio to set
      */
-    public void setFecha_inicio(LocalDate fecha_inicio) {
+    public void setFecha_inicio(Date fecha_inicio) {
         this.fecha_inicio = fecha_inicio;
     }
 
     /**
      * @return the fecha_fin
      */
-    public LocalDate getFecha_fin() {
+    public Date getFecha_fin() {
         return fecha_fin;
     }
 
     /**
      * @param fecha_fin the fecha_fin to set
      */
-    public void setFecha_fin(LocalDate fecha_fin) {
+    public void setFecha_fin(Date fecha_fin) {
         this.fecha_fin = fecha_fin;
     }
 

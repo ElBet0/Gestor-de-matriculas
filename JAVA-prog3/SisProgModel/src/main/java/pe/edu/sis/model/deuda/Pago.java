@@ -11,6 +11,22 @@ import java.util.Date;
  * @author seinc
  */
 public class Pago {
+    private int pago_id;
+    private double monto;
+    private Date fecha;
+    private Medio medioPago;
+    private String observaciones;
+    private Deuda deuda;
+    private int estado;
+
+    public Pago(double monto, Date fecha, Medio medioPago, String observaciones, Deuda deuda) {
+        this.monto = monto;
+        this.fecha = fecha;
+        this.medioPago = medioPago;
+        this.observaciones = observaciones;
+        this.deuda = deuda;
+    }
+    public Pago(){}
 
     /**
      * @return the deuda
@@ -25,12 +41,6 @@ public class Pago {
     public void setDeuda(Deuda deuda) {
         this.deuda = deuda;
     }
-    private int pago_id;
-    private double monto;
-    private Date fecha;
-    private Medio medioPago;
-    private String observaciones;
-    private Deuda deuda;
     /**
      * @return the pago_id
      */

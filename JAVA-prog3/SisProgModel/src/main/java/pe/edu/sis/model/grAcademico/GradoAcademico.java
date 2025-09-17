@@ -12,10 +12,31 @@ import java.util.List;
  * @author seinc
  */
 public class GradoAcademico {
+
     private int grado_academico_id;
     private String nombre;
     private String abreviatura;
+    private int estado;
     private List<Curso> cursos=new ArrayList<>();
+
+    public GradoAcademico(String nombre, String abreviatura) {
+        this.nombre = nombre;
+        this.abreviatura = abreviatura;
+    }
+    public GradoAcademico(){}
+    /**
+     * @return the estado
+     */
+    public int getEstado() {
+        return estado;
+    }
+
+    /**
+     * @param estado the estado to set
+     */
+    public void setEstado(int estado) {
+        this.estado = estado;
+    }
     /**
      * @return the grado_academico_id
      */
