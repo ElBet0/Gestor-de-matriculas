@@ -21,6 +21,17 @@ public class Usuario {
     private Date ultimo_acceso;
     private Rol rol;
 
+    public Usuario(String hashClave, String nombre, String apellido_paterno, String apellido_materno, String email, Date ultimo_acceso, Rol rol) {
+        this.hashClave = hashClave;
+        this.nombre = nombre;
+        this.apellido_paterno = apellido_paterno;
+        this.apellido_materno = apellido_materno;
+        this.email = email;
+        this.ultimo_acceso = ultimo_acceso;
+        this.rol = rol;
+    }
+    public Usuario(){}
+
     /**
      * @return the usuario_id
      */
