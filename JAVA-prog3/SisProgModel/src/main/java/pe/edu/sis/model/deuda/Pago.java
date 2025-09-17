@@ -110,4 +110,9 @@ public class Pago {
     public void setObservaciones(String observaciones) {
         this.observaciones = observaciones;
     }
+
+    @Override
+    public String toString() {
+        return "Pago{" + "pago_id=" + pago_id + ", monto=" + monto + ", fecha=" + fecha + ", medioPago=" + medioPago + ", observaciones=" + observaciones + ", deuda=" + deuda + ", estado=" + estado + '}';
+    }
 }

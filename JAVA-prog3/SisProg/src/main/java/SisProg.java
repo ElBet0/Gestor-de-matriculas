@@ -3,15 +3,22 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import pe.edu.sis.gestalumno.dao.AlumnoDAO;
 import pe.edu.sis.gestalumno.mysql.AlumnoImpl;
+import pe.edu.sis.gestdeuda.dao.DeudaDAO;
+import pe.edu.sis.gestdeuda.mysql.DeudaImpl;
 import pe.edu.sis.gestfamilia.dao.FamiliaDAO;
 import pe.edu.sis.gestfamilia.mysql.FamiliaImpl;
+import pe.edu.sis.gestpago.dao.PagoDAO;
+import pe.edu.sis.gestpago.mysql.PagoImpl;
 import pe.edu.sis.model.alumno.Alumno;
 import pe.edu.sis.model.alumno.Familia;
+import pe.edu.sis.model.deuda.Deuda;
+import pe.edu.sis.model.deuda.Medio;
+import pe.edu.sis.model.deuda.Pago;
+import pe.edu.sis.model.deuda.TipoDeuda;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
 /**
  *
  * @author seinc
@@ -20,43 +27,112 @@ public class SisProg {
 
     public static void main(String[] args) throws Exception {
         /*--------------------CRUD FAMILIA----------------------*/
-        Familia familia =new Familia("Laos","Del Rio","99999999","asd@gmail.com","por la pucp");
-        FamiliaDAO fam=new FamiliaImpl();
+        System.out.println("FAMILIA: \n");
+
+        Familia _familia = new Familia("Laos", "Del Rio", "99999999", "asd@gmail.com", "por la pucp");
+        FamiliaDAO familiaDAO = new FamiliaImpl();
         //---------------INSERTAR 
-        //fam.insertar(familia);
-        //familia.setApellido_materno("Laos(modificado)");
+        familiaDAO.insertar(_familia);
         //-------------------MODIFICAR
-        //int res=fam.modificar(familia);
-        //if(res!=0)System.out.println("SE MODIFICO");
-        //-----------------------ELIMINAR
-        //fam.eliminar(2);
+        _familia.setApellido_materno("Laos(modificado)");
+        int res = familiaDAO.modificar(_familia);
+        if (res != 0) {
+            System.out.println("SE MODIFICO");
+        }
+
+        
         //----------------Obtener por id
-        familia=fam.obtener_por_id(1);
-        //System.out.println(familia);
-        //----------------------Listar todo
-        //ArrayList<Familia> lista=fam.listarTodos();
-        //for(Familia f : lista)System.out.println(f);
+        Familia _familia2 = familiaDAO.obtener_por_id(_familia.getFamilia_id());
+        System.out.println(_familia2);
+        
+        //----------------------Imprimir todo
+        for (Familia f : familiaDAO.listarTodos()) {
+            System.out.println(f);
+        }
+        
+        System.out.println();
+        System.out.println();
+        
+        System.out.println("ALUMNO: \n");
+
         /*--------------------CRUD ALUMNO----------------------*/
-//        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-//        Alumno alumno=new Alumno("Manuel", 1231234, sdf.parse("08-09-1478"), sdf.parse("02-03-1978"), 'M', "Judio", familia, "Problematico", 1000);
-//        AlumnoDAO al=new AlumnoImpl();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+        Alumno _alumno = new Alumno("Manuel", 1231238, sdf.parse("08-09-1478"), sdf.parse("02-03-1978"), 'M', "Judio", _familia2, "Problematico", 1000);
+        AlumnoDAO alumnoDAO = new AlumnoImpl();
+        
         //---------------INSERTAR 
-//        familia=fam.obtener_por_id(4);
-//        al.insertar(alumno);
-//        alumno= new Alumno("Pedrito", 74158423, sdf.parse("08-09-1478"), sdf.parse("02-03-1978"), 'M', "Judio", familia, "Problematico", 1000);
-//        al.insertar(alumno);
-////        //-------------------MODIFICAR
-//        alumno.setNombre("Roberto(Modificado)");
-//        int res=al.modificar(alumno);
-//        if(res!=0)System.out.println("SE MODIFICO");
-////        //-----------------------ELIMINAR
-//        al.eliminar(2);
+        alumnoDAO.insertar(_alumno);
+        _alumno = new Alumno("Pedrito", 74158426, sdf.parse("08-09-1478"), sdf.parse("02-03-1978"), 'M', "Judio", _familia, "Problematico", 1000);
+        alumnoDAO.insertar(_alumno);
+        
+        //-------------------MODIFICAR
+        _alumno.setNombre("Roberto(Modificado)");
+        res = alumnoDAO.modificar(_alumno);
+        if (res != 0) {
+            System.out.println("SE MODIFICO");
+        }
+
         //----------------Obtener por id
-//       alumno=al.obtener_por_id(1);
-//       System.out.println(alumno);
-//        //----------------------Listar todo
-//        ArrayList<Alumno> lista=al.listarTodos();
-//       for(Alumno a : lista)System.out.println(a);
+        Alumno _alumno2 = alumnoDAO.obtener_por_id(_alumno.getAlumno_id());
+        System.out.println(_alumno2);
+    
+        //----------------------Listar todo
+        for (Alumno a : alumnoDAO.listarTodos()) {
+            System.out.println(a);
+        }
+        
+        System.out.println();
+        System.out.println();
+        
+        System.out.println("DEUDAS: \n");
+        
         /*--------------------CRUD DEUDAS----------------------*/
+        Deuda _deuda = new Deuda(100, sdf.parse("23-12-2023"),
+                sdf.parse("23-12-2025"), "descripcion buena", 0,
+                TipoDeuda.MATRICULA, _alumno);
+        DeudaDAO deudaDAO = new DeudaImpl();
+        //INSERTAR
+        deudaDAO.insertar(_deuda);
+
+        //MODIFICAR
+        _deuda.setMonto(200);
+        int resultado = deudaDAO.modificar(_deuda);
+        if (resultado != 0) {
+            System.out.println("Se modifico con resultado: " + resultado);
+        }
+
+        //obtenemos lista de todos las deudas registradas
+        ArrayList<Deuda> arrDeudas = deudaDAO.listarTodos();
+        for (var d : arrDeudas) {
+            System.out.println(d);
+        }
+                
+                
+        System.out.println();
+        System.out.println();
+        
+        System.out.println("PAGOS: \n");
+
+        /*--------------------CRUD PAGOS----------------------*/
+        Pago _pago = new Pago(100, sdf.parse("22-11-2025"), Medio.EFECTIVO, "Pago deuda completa", _deuda);
+        PagoDAO pagoDAO = new PagoImpl();
+
+        //Insert
+        pagoDAO.insertar(_pago);
+
+        //modificar
+        _pago.setMonto(_pago.getMonto() * 0.8);
+        pagoDAO.modificar(_pago);
+
+        //Listar todos los pagos
+        for (var p : pagoDAO.listarTodos()) {
+            System.out.print(p);
+        }
+
+        //-----------------------ELIMINAR
+        pagoDAO.eliminar(_pago.getPago_id());
+        deudaDAO.eliminar(_deuda.getDeuda_id());
+        familiaDAO.eliminar(_familia.getFamilia_id());
+        alumnoDAO.eliminar(_alumno.getAlumno_id());
     }
 }
