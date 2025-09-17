@@ -72,7 +72,7 @@ public class AlumnoImpl implements AlumnoDAO {
 
     @Override
     public Alumno obtener_por_id(int pos) {
-        Alumno al=null;
+        Alumno al = null;
         Map<Integer, Object> in= new HashMap<>();
         in.put(1,pos);
         rs=DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_ALUMNO_POR_ID", in);
@@ -97,6 +97,7 @@ public class AlumnoImpl implements AlumnoDAO {
         }finally{
             DbManager.getInstance().cerrarConexion();
         }
+        if(al == null) al = new Alumno();
         al.setPadres(fam.obtener_por_id(fam_id));
         return al;
     }
