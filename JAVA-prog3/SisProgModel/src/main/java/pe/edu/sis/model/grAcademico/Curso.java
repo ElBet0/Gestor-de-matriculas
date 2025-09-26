@@ -13,19 +13,6 @@ import java.util.List;
  */
 public class Curso {
 
-    /**
-     * @return the grado
-     */
-    public GradoAcademico getGrado() {
-        return grado;
-    }
-
-    /**
-     * @param grado the grado to set
-     */
-    public void setGrado(GradoAcademico grado) {
-        this.grado = grado;
-    }
     private int curso_id;
     private String nombre;
     private String descripcion;
@@ -43,6 +30,19 @@ public class Curso {
         this.grado = grado;
     }
     public Curso(){}
+    /**
+     * @return the grado
+     */
+    public GradoAcademico getGrado() {
+        return grado;
+    }
+
+    /**
+     * @param grado the grado to set
+     */
+    public void setGrado(GradoAcademico grado) {
+        this.grado = grado;
+    }
     /**
      * @return the curso_id
      */
