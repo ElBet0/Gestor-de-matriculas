@@ -16,6 +16,7 @@ import pe.edu.sis.gestalumno.dao.AlumnoDAO;
 import pe.edu.sis.model.alumno.Alumno;
 import pe.edu.sis.gestfamilia.dao.FamiliaDAO;
 import pe.edu.sis.gestfamilia.mysql.FamiliaImpl;
+import pe.edu.sis.model.alumno.Familia;
 
 
 /**
@@ -72,7 +73,7 @@ public class AlumnoImpl implements AlumnoDAO {
 
     @Override
     public Alumno obtener_por_id(int pos) {
-        Alumno al=null;
+        Alumno al = null;
         Map<Integer, Object> in= new HashMap<>();
         in.put(1,pos);
         rs=DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_ALUMNO_POR_ID", in);
@@ -97,6 +98,7 @@ public class AlumnoImpl implements AlumnoDAO {
         }finally{
             DbManager.getInstance().cerrarConexion();
         }
+        if(al == null) al = new Alumno();
         al.setPadres(fam.obtener_por_id(fam_id));
         return al;
     }
@@ -129,8 +131,11 @@ public class AlumnoImpl implements AlumnoDAO {
         }finally{
             DbManager.getInstance().cerrarConexion();
         }
+        Familia fami;
         for(int i=0;i<ids.size();i++){
-            alumno.get(i).setPadres(fam.obtener_por_id((int)ids.get(i)));
+            fami = fam.obtener_por_id((int)ids.get(i));
+            /*ASIGNAR FAMILIA FANTASMA 👻(GRACIAS IRIGOYEN)*/
+            alumno.get(i).setPadres(fami);
         }
         return alumno;
     }

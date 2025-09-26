@@ -18,6 +18,11 @@ public class Competencia {
     private int activo;
     private List<Calificaciones> calificaciones= new ArrayList<>();
 
+    public Competencia(String nombre, double peso_competencia) {
+        this.nombre = nombre;
+        this.peso_competencia = peso_competencia;
+    }
+    
     /**
      * @return the competencia_id
      */
