@@ -72,13 +72,21 @@ public class Alumno {
         this.observaciones = observaciones;
         this.pension_base = pension_base;
     }
-    public Alumno(){}
+    public Alumno(){
+        this.nombre = "Error al leer alumno";
+    }
 
     @Override
     public String toString() {
+        String apellidos;
+        if(this.padres == null){
+            apellidos = "No hay apellidos";
+        }else{
+            apellidos = ", apellido paterno="+this.padres.getApellido_paterno();
+        }
+        
         return "Alumno{" + "alumno_id=" + alumno_id + ", nombre=" + nombre +
-                ", apellido paterno="+this.padres.getApellido_paterno() +
-                ", apellido materno="+this.padres.getApellido_materno() +  
+                apellidos +
                 ", dni=" + dni + ", fecha_nacimiento=" + fecha_nacimiento + 
                 ", fecha_ingreso=" + fecha_ingreso + ", sexo=" + sexo + 
                 ", religion=" + religion + ", observaciones=" + observaciones + 

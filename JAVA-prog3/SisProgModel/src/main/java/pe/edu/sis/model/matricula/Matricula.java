@@ -14,12 +14,33 @@ import pe.edu.sis.model.notas.Bimestre;
  * @author seinc
  */
 public class Matricula {
+
     private int matricula_id;
     private Alumno alumno;
     private PeriodoAcademico periodo;
     private List<Bimestre> bimestres=new ArrayList<>();
     private GradoAcademico grado;
+    private int estado;
+    
+    public Matricula(Alumno alumno, PeriodoAcademico periodo, GradoAcademico grado) {
+        this.alumno = alumno;
+        this.periodo = periodo;
+        this.grado = grado;
+    }
+    public Matricula(){}
+    /**
+     * @return the estado
+     */
+    public int getEstado() {
+        return estado;
+    }
 
+    /**
+     * @param estado the estado to set
+     */
+    public void setEstado(int estado) {
+        this.estado = estado;
+    }
     /**
      * @return the matricula_id
      */

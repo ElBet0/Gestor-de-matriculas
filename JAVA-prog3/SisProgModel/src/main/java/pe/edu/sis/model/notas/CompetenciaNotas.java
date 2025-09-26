@@ -16,8 +16,14 @@ public class CompetenciaNotas {
     private int competencia_notas_id;
     private double calificacion_final;
     private Competencia competencia;
-    private List<NotaAcademica> nota_academica= new ArrayList<>();
+    private int activo;
+    private List<CalificacionNota> nota_academica= new ArrayList<>();
 
+    public CompetenciaNotas(double calificacion_final, Competencia competencia) {
+        this.calificacion_final = calificacion_final;
+        this.competencia = competencia;
+    }
+    
     /**
      * @return the competencia_notas_id
      */
@@ -63,15 +69,23 @@ public class CompetenciaNotas {
     /**
      * @return the nota_academica
      */
-    public List<NotaAcademica> getNota_academica() {
+    public List<CalificacionNota> getNota_academica() {
         return new ArrayList<>(nota_academica);
     }
 
     /**
      * @param nota_academica the nota_academica to set
      */
-    public void setNota_academica(List<NotaAcademica> nota_academica) {
+    public void setNota_academica(List<CalificacionNota> nota_academica) {
         this.nota_academica = nota_academica;
+    }
+
+    public int getActivo() {
+        return activo;
+    }
+
+    public void setActivo(int activo) {
+        this.activo = activo;
     }
     
 }

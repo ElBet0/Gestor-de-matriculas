@@ -16,7 +16,15 @@ public class VacantesGrado {
     private int vacantes_iniciales;
     private int vacantes_disponibles;
     private int vacantes_ocupadas;
+    private int estado;
     private List<VacantesAula> vacantes_aula=new ArrayList<>();
+
+    public VacantesGrado(int vacantes_iniciales, int vacantes_disponibles, int vacantes_ocupadas) {
+        this.vacantes_iniciales = vacantes_iniciales;
+        this.vacantes_disponibles = vacantes_disponibles;
+        this.vacantes_ocupadas = vacantes_ocupadas;
+    }
+    
     /**
      * @return the vacantes_grado_id
      */
@@ -72,4 +80,13 @@ public class VacantesGrado {
     public void setVacantes_ocupadas(int vacantes_ocupadas) {
         this.vacantes_ocupadas = vacantes_ocupadas;
     }
+
+    public int getEstado() {
+        return estado;
+    }
+
+    public void setEstado(int estado) {
+        this.estado = estado;
+    }
+    
 }

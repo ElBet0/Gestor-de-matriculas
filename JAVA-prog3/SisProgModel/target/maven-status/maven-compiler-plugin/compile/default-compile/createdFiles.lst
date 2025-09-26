@@ -10,7 +10,6 @@ pe\edu\sis\model\deuda\Deuda.class
 pe\edu\sis\model\deuda\TipoDeuda.class
 pe\edu\sis\model\matricula\VacantesAula.class
 pe\edu\sis\model\notas\CursoNotas.class
-pe\edu\sis\model\notas\NotaAcademica.class
 pe\edu\sis\model\alumno\Alumno.class
 pe\edu\sis\model\deuda\Pago.class
 pe\edu\sis\model\matricula\Matricula.class
@@ -19,3 +18,4 @@ pe\edu\sis\model\matricula\PeriodoAcademico.class
 pe\edu\sis\model\grAcademico\Calificaciones.class
 pe\edu\sis\model\usuario\Usuario.class
 pe\edu\sis\model\alumno\Familia.class
+pe\edu\sis\model\notas\CalificacionNota.class

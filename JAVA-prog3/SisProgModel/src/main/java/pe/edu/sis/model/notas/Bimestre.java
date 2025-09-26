@@ -18,7 +18,21 @@ public class Bimestre {
     private LocalDate fecha_inicio;
     private LocalDate fecha_fin;
     private List<CursoNotas> nota = new ArrayList<>();
+    private int activo;
+    public Bimestre(String descripcion, LocalDate fecha_inicio, LocalDate fecha_fin) {
+        this.descripcion = descripcion;
+        this.fecha_inicio = fecha_inicio;
+        this.fecha_fin = fecha_fin;
+    }
 
+    public int getActivo() {
+        return activo;
+    }
+
+    public void setActivo(int activo) {
+        this.activo = activo;
+    }
+    
     /**
      * @return the bimestre_id
      */
