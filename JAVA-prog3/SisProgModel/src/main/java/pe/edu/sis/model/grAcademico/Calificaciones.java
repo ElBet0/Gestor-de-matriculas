@@ -15,6 +15,11 @@ public class Calificaciones {
     private double peso_calificacion;
     private int activo;
 
+    public Calificaciones(String descripcion, double peso_calificacion) {
+        this.descripcion = descripcion;
+        this.peso_calificacion = peso_calificacion;
+    }
+    
     /**
      * @return the calificaciones_id
      */

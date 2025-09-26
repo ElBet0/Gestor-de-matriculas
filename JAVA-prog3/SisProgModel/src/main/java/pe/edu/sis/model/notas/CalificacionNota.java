@@ -11,12 +11,21 @@ import pe.edu.sis.model.grAcademico.Calificaciones;
  *
  * @author seinc
  */
-public class NotaAcademica {
+public class CalificacionNota {
     private int nota_academica_id;
     private String descripcion;
     private double nota_academica;
     private LocalDate fecha_registro;
     private Calificaciones calificacionDato;
+    private int activo;
+
+    public CalificacionNota(String descripcion, double nota_academica, LocalDate fecha_registro, Calificaciones calificacionDato) {
+        this.descripcion = descripcion;
+        this.nota_academica = nota_academica;
+        this.fecha_registro = fecha_registro;
+        this.calificacionDato = calificacionDato;
+    }
+    
 
     /**
      * @return the nota_academica_id
@@ -86,6 +95,14 @@ public class NotaAcademica {
      */
     public void setCalificacionDato(Calificaciones calificacionDato) {
         this.calificacionDato = calificacionDato;
+    }
+
+    public int getActivo() {
+        return activo;
+    }
+
+    public void setActivo(int activo) {
+        this.activo = activo;
     }
     
 }

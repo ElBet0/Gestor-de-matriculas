@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.util.Properties;
 import java.io.InputStream;
+import static java.lang.Math.abs;
 import java.sql.CallableStatement;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -86,6 +87,7 @@ public class DbManager {
                 obtenerValoresSalida(cst, parametrosSalida);
         }catch(SQLException ex){
             System.out.println("Error ejecutando procedimiento almacenado: " + ex.getMessage());
+            resultado = -abs(ex.getErrorCode());
         }finally{
             cerrarConexion();
         }
