@@ -1,16 +1,16 @@
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import pe.edu.sis.gestalumno.dao.AlumnoDAO;
-import pe.edu.sis.gestalumno.mysql.AlumnoImpl;
-import pe.edu.sis.gestdeuda.dao.DeudaDAO;
-import pe.edu.sis.gestdeuda.mysql.DeudaImpl;
-import pe.edu.sis.gestfamilia.dao.FamiliaDAO;
-import pe.edu.sis.gestfamilia.mysql.FamiliaImpl;
-import pe.edu.sis.gestpago.dao.PagoDAO;
-import pe.edu.sis.gestpago.mysql.PagoImpl;
-import pe.edu.sis.gestvacanteaula.dao.VacanteAulaDAO;
-import pe.edu.sis.gestvacanteaula.mysql.VacanteAulaImpl;
+import pe.edu.sis.alumno.dao.AlumnoDAO;
+import pe.edu.sis.alumno.mysql.AlumnoImpl;
+import pe.edu.sis.deuda.dao.DeudaDAO;
+import pe.edu.sis.deuda.mysql.DeudaImpl;
+import pe.edu.sis.alumno.dao.FamiliaDAO;
+import pe.edu.sis.alumno.mysql.FamiliaImpl;
+import pe.edu.sis.deuda.dao.PagoDAO;
+import pe.edu.sis.deuda.mysql.PagoImpl;
+import pe.edu.sis.matricula.dao.VacanteAulaDAO;
+import pe.edu.sis.matricula.mysql.VacanteAulaImpl;
 import pe.edu.sis.model.alumno.Alumno;
 import pe.edu.sis.model.alumno.Familia;
 import pe.edu.sis.model.deuda.Deuda;
