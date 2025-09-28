@@ -17,14 +17,25 @@ public class VacantesGrado {
     private int vacantes_disponibles;
     private int vacantes_ocupadas;
     private int estado;
-    private List<VacantesAula> vacantes_aula=new ArrayList<>();
+    private PeriodoAcademico periodoAcademico;
 
-    public VacantesGrado(int vacantes_iniciales, int vacantes_disponibles, int vacantes_ocupadas) {
+    public VacantesGrado(PeriodoAcademico periodoAcademico, int vacantes_iniciales, int vacantes_disponibles, int vacantes_ocupadas) {
+        this.periodoAcademico = new PeriodoAcademico(periodoAcademico);
         this.vacantes_iniciales = vacantes_iniciales;
         this.vacantes_disponibles = vacantes_disponibles;
         this.vacantes_ocupadas = vacantes_ocupadas;
     }
-    
+
+    @SuppressWarnings("IncompleteCopyConstructor")
+    public VacantesGrado(VacantesGrado other) {
+        this.periodoAcademico = new PeriodoAcademico(other.periodoAcademico);
+        this.vacantes_grado_id = other.vacantes_grado_id;
+        this.vacantes_iniciales = other.vacantes_iniciales;
+        this.vacantes_disponibles = other.vacantes_disponibles;
+        this.vacantes_ocupadas = other.vacantes_ocupadas;
+        this.estado = other.estado;
+    }
+
     /**
      * @return the vacantes_grado_id
      */

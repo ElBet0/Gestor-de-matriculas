@@ -16,65 +16,61 @@ public class Competencia {
     private String nombre;
     private double peso_competencia;
     private int activo;
+    private Curso curso;
 
-    public Competencia(String nombre, double peso_competencia) {
+    public Competencia(String nombre, double peso_competencia, Curso curso) {
         this.nombre = nombre;
         this.peso_competencia = peso_competencia;
+        this.curso = new Curso(curso);
     }
-    
-    /**
-     * @return the competencia_id
-     */
+
+    @SuppressWarnings("IncompleteCopyConstructor")
+    public Competencia(Competencia other) {
+        this.competencia_id = other.competencia_id;
+        this.nombre = other.nombre;
+        this.peso_competencia = other.peso_competencia;
+        this.activo = other.activo;
+        this.curso = new Curso(other.curso);
+    }
+
     public int getCompetencia_id() {
         return competencia_id;
     }
 
-    /**
-     * @param competencia_id the competencia_id to set
-     */
     public void setCompetencia_id(int competencia_id) {
         this.competencia_id = competencia_id;
     }
 
-    /**
-     * @return the nombre
-     */
     public String getNombre() {
         return nombre;
     }
 
-    /**
-     * @param nombre the nombre to set
-     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    /**
-     * @return the peso_competencia
-     */
     public double getPeso_competencia() {
         return peso_competencia;
     }
 
-    /**
-     * @param peso_competencia the peso_competencia to set
-     */
     public void setPeso_competencia(double peso_competencia) {
         this.peso_competencia = peso_competencia;
     }
 
-    /**
-     * @return the activo
-     */
     public int getActivo() {
         return activo;
     }
 
-    /**
-     * @param activo the activo to set
-     */
     public void setActivo(int activo) {
         this.activo = activo;
     }
+
+    public Curso getCurso() {
+        return new Curso(curso);
+    }
+
+    public void setCurso(Curso curso) {
+        this.curso = new Curso(curso);
+    }
+
 }

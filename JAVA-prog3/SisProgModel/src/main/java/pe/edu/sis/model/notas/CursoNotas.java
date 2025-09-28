@@ -15,52 +15,45 @@ import pe.edu.sis.model.grAcademico.Curso;
 public class CursoNotas {
     private int curso_notas_id;
     private Curso curso;
+    private Bimestre bimestre;
     private double calificacion_final;
     private int activo;
 
-    public CursoNotas(Curso curso, double calificacion_final) {
-        this.curso = curso;
+    public CursoNotas(Curso curso, Bimestre bimestre, double calificacion_final) {
+        this.curso = new Curso(curso);
+        this.bimestre = new Bimestre(bimestre);
         this.calificacion_final = calificacion_final;
     }
-    
-    /**
-     * @return the curso_notas_id
-     */
+
+    @SuppressWarnings("IncompleteCopyConstructor")
+    public CursoNotas(CursoNotas other) {
+        this.curso_notas_id = other.curso_notas_id;
+        this.curso = new Curso(other.curso);
+        this.bimestre = new Bimestre(other.bimestre);
+        this.calificacion_final = other.calificacion_final;
+        this.activo = other.activo;
+    }
+
     public int getCurso_notas_id() {
         return curso_notas_id;
     }
 
-    /**
-     * @param curso_notas_id the curso_notas_id to set
-     */
     public void setCurso_notas_id(int curso_notas_id) {
         this.curso_notas_id = curso_notas_id;
     }
 
-    /**
-     * @return the curso
-     */
     public Curso getCurso() {
         return curso;
     }
 
-    /**
-     * @param curso the curso to set
-     */
     public void setCurso(Curso curso) {
         this.curso = curso;
     }
 
-    /**
-     * @return the calificacion_final
-     */
     public double getCalificacion_final() {
         return calificacion_final;
     }
 
-    /**
-     * @param calificacion_final the calificacion_final to set
-     */
     public void setCalificacion_final(double calificacion_final) {
         this.calificacion_final = calificacion_final;
     }

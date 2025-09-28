@@ -11,7 +11,7 @@ import pe.edu.sis.model.grAcademico.GradoAcademico;
 import pe.edu.sis.model.notas.Bimestre;
 /**
  *
- * @author seinc
+ * @author ElBet0
  */
 public class Matricula {
 
@@ -27,78 +27,60 @@ public class Matricula {
         this.grado = grado;
     }
 
+    @SuppressWarnings("IncompleteCopyConstructor")
+    public Matricula(Matricula other) {
+        this.matricula_id = other.matricula_id;
+        this.alumno = new Alumno(other.alumno);
+        this.periodo = new PeriodoAcademico(other.periodo);
+        this.grado = new GradoAcademico(other.grado);
+        this.estado = other.estado;
+    }
+
     public Matricula(int matricula_id){
         this.matricula_id = matricula_id;
         this.alumno = new Alumno(-1);
     }
 
     public Matricula(){}
-    /**
-     * @return the estado
-     */
+
     public int getEstado() {
         return estado;
     }
 
-    /**
-     * @param estado the estado to set
-     */
     public void setEstado(int estado) {
         this.estado = estado;
     }
-    /**
-     * @return the matricula_id
-     */
+
     public int getMatricula_id() {
         return matricula_id;
     }
 
-    /**
-     * @param matricula_id the matricula_id to set
-     */
     public void setMatricula_id(int matricula_id) {
         this.matricula_id = matricula_id;
     }
 
-    /**
-     * @return the alumno
-     */
+
     public Alumno getAlumno() {
-        return alumno;
+        return new Alumno(alumno);
     }
 
-    /**
-     * @param alumno the alumno to set
-     */
     public void setAlumno(Alumno alumno) {
-        this.alumno = alumno;
+        this.alumno = new Alumno(alumno);
     }
 
-    /**
-     * @return the periodo
-     */
     public PeriodoAcademico getPeriodo() {
-        return periodo;
+        return new PeriodoAcademico(periodo);
     }
 
-    /**
-     * @param periodo the periodo to set
-     */
     public void setPeriodo(PeriodoAcademico periodo) {
-        this.periodo = periodo;
+        this.periodo = new PeriodoAcademico(periodo);
     }
 
-    /**
-     * @return the grado
-     */
     public GradoAcademico getGrado() {
-        return grado;
+        return new GradoAcademico(grado);
     }
 
-    /**
-     * @param grado the grado to set
-     */
     public void setGrado(GradoAcademico grado) {
-        this.grado = grado;
+        this.grado = new GradoAcademico(grado);
     }
 }

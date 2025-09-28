@@ -29,134 +29,93 @@ public class Deuda {
         this.descripcion = descripcion;
         this.descuento = descuento;
         this.concepto_deuda = concepto_deuda;
-        this.alumno = alumno;
+        this.alumno = new Alumno(alumno);
+    }
+
+    @SuppressWarnings("IncompleteCopyConstructor")
+    public Deuda(Deuda other) {
+        this.deuda_id = other.deuda_id;
+        this.monto = other.monto;
+        this.estado = other.estado;
+        this.fecha_emision = other.fecha_emision;
+        this.fecha_vencimiento = other.fecha_vencimiento;
+        this.descripcion = other.descripcion;
+        this.descuento = other.descuento;
+        this.concepto_deuda = other.concepto_deuda;
+        this.alumno = new Alumno(other.alumno);
     }
 
     public Deuda() {
     }
 
-    /**
-     * @return the alumno
-     */
     public Alumno getAlumno() {
-        return alumno;
+        return new Alumno(alumno);
     }
 
-    /**
-     * @param alumno the alumno to set
-     */
     public void setAlumno(Alumno alumno) {
-        this.alumno = alumno;
+        this.alumno = new Alumno(alumno);
     }
 
-    /**
-     * @return the deuda_id
-     */
     public int getDeuda_id() {
         return deuda_id;
     }
 
-    /**
-     * @param deuda_id the deuda_id to set
-     */
     public void setDeuda_id(int deuda_id) {
         this.deuda_id = deuda_id;
     }
 
-    /**
-     * @return the monto
-     */
     public double getMonto() {
         return monto;
     }
 
-    /**
-     * @param monto the monto to set
-     */
     public void setMonto(double monto) {
         this.monto = monto;
     }
 
-    /**
-     * @return the estado
-     */
     public int getEstado() {
         return estado;
     }
 
-    /**
-     * @param estado the estado to set
-     */
     public void setEstado(int estado) {
         this.estado = estado;
     }
 
-    /**
-     * @return the fecha_emision
-     */
     public Date getFecha_emision() {
         return fecha_emision;
     }
 
-    /**
-     * @param fecha_emision the fecha_emision to set
-     */
     public void setFecha_emision(Date fecha_emision) {
         this.fecha_emision = fecha_emision;
     }
 
-    /**
-     * @return the fecha_vencimiento
-     */
     public Date getFecha_vencimiento() {
         return fecha_vencimiento;
     }
 
-    /**
-     * @param fecha_vencimiento the fecha_vencimiento to set
-     */
     public void setFecha_vencimiento(Date fecha_vencimiento) {
         this.fecha_vencimiento = fecha_vencimiento;
     }
 
-    /**
-     * @return the descripcion
-     */
     public String getDescripcion() {
         return descripcion;
     }
 
-    /**
-     * @param descripcion the descripcion to set
-     */
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 
-    /**
-     * @return the descuento
-     */
     public double getDescuento() {
         return descuento;
     }
 
-    /**
-     * @param descuento the descuento to set
-     */
     public void setDescuento(double descuento) {
         this.descuento = descuento;
     }
 
-    /**
-     * @return the concepto_deuda
-     */
     public TipoDeuda getConcepto_deuda() {
         return concepto_deuda;
     }
 
-    /**
-     * @param concepto_deuda the concepto_deuda to set
-     */
     public void setConcepto_deuda(TipoDeuda concepto_deuda) {
         this.concepto_deuda = concepto_deuda;
     }
@@ -164,7 +123,5 @@ public class Deuda {
     @Override
     public String toString() {
         return "Deuda{" + "deuda_id=" + deuda_id + ", monto=" + monto + ", estado=" + estado + ", fecha_emision=" + fecha_emision + ", fecha_vencimiento=" + fecha_vencimiento + ", descripcion=" + descripcion + ", descuento=" + descuento + ", concepto_deuda=" + concepto_deuda + '}';
-    }    
-    
-    
+    }
 }

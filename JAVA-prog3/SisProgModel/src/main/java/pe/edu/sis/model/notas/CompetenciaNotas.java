@@ -16,51 +16,45 @@ public class CompetenciaNotas {
     private int competencia_notas_id;
     private double calificacion_final;
     private Competencia competencia;
+    private CursoNotas cursoNotas;
     private int activo;
 
-    public CompetenciaNotas(double calificacion_final, Competencia competencia) {
+    public CompetenciaNotas(double calificacion_final, Competencia competencia, CursoNotas cursoNotas) {
         this.calificacion_final = calificacion_final;
         this.competencia = competencia;
+        this.cursoNotas = new CursoNotas(cursoNotas);
+        this.competencia = new Competencia(competencia);
     }
-    
-    /**
-     * @return the competencia_notas_id
-     */
+
+    @SuppressWarnings("IncompleteCopyConstructor")
+    public CompetenciaNotas(CompetenciaNotas other) {
+        this.competencia_notas_id = other.competencia_notas_id;
+        this.calificacion_final = other.calificacion_final;
+        this.cursoNotas = new CursoNotas(other.cursoNotas);
+        this.competencia = new Competencia(other.competencia);
+        this.activo = other.activo;
+    }
+
     public int getCompetencia_notas_id() {
         return competencia_notas_id;
     }
 
-    /**
-     * @param competencia_notas_id the competencia_notas_id to set
-     */
     public void setCompetencia_notas_id(int competencia_notas_id) {
         this.competencia_notas_id = competencia_notas_id;
     }
 
-    /**
-     * @return the calificacion_final
-     */
     public double getCalificacion_final() {
         return calificacion_final;
     }
 
-    /**
-     * @param calificacion_final the calificacion_final to set
-     */
     public void setCalificacion_final(double calificacion_final) {
         this.calificacion_final = calificacion_final;
     }
 
-    /**
-     * @return the competencia
-     */
     public Competencia getCompetencia() {
         return competencia;
     }
 
-    /**
-     * @param competencia the competencia to set
-     */
     public void setCompetencia(Competencia competencia) {
         this.competencia = competencia;
     }

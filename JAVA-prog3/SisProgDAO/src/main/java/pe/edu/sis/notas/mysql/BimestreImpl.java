@@ -67,21 +67,14 @@ public class BimestreImpl implements BimestreDAO {
         try {
             if (rs.next()) {
                 //TO DO: cambiar esta wbd, paz no deja
-                bimestre = new Bimestre(
-                        rs.getInt("bimestre_id"),
-                        rs.getString("descripcion"),
-                        rs.getDate("fecha_inicio"),
-                        rs.getDate("fecha_fin"),
-                        new MatriculaImpl().obtener_por_id(rs.getInt("matricula_id")),
-                        rs.getInt("activo")
-                );
+
             }
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         } finally {
             DbManager.getInstance().cerrarConexion();
         }
-        return bimestre == null ? new Bimestre(-1) : bimestre;
+        return bimestre;
     }
 
     @Override
@@ -90,14 +83,7 @@ public class BimestreImpl implements BimestreDAO {
         ArrayList<Bimestre> lista=new ArrayList<>();
         try {
             if (rs.next()) {
-                lista.add(new Bimestre(
-                        rs.getInt("bimestre_id"),
-                        rs.getString("descripcion"),
-                        rs.getDate("fecha_inicio"),
-                        rs.getDate("fecha_fin"),
-                        new MatriculaImpl().obtener_por_id(rs.getInt("matricula_id")),
-                        rs.getInt("activo")
-                ));
+
             }
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());

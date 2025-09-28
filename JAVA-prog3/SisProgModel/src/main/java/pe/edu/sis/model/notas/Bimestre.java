@@ -24,19 +24,21 @@ public class Bimestre {
     private Matricula matricula;
 
     private int activo;
-    public Bimestre(String descripcion, Date fecha_inicio, Date fecha_fin) {
+    public Bimestre(Matricula matricula, String descripcion, Date fecha_inicio, Date fecha_fin) {
+        this.matricula = new Matricula(matricula);
         this.descripcion = descripcion;
         this.fecha_inicio = fecha_inicio;
         this.fecha_fin = fecha_fin;
     }
 
-    public Bimestre(int bimestre_id, String descripcion, Date fecha_inicio, Date fecha_fin, Matricula matricula, int activo) {
-        this.bimestre_id = bimestre_id;
-        this.descripcion = descripcion;
-        this.fecha_inicio = fecha_inicio;
-        this.fecha_fin = fecha_fin;
-        this.matricula = matricula;
-        this.activo = activo;
+    @SuppressWarnings("IncompleteCopyConstructor")
+    public Bimestre(Bimestre bimestre){
+        this.bimestre_id = bimestre.bimestre_id;
+        this.descripcion = bimestre.descripcion;
+        this.fecha_inicio = bimestre.fecha_inicio;
+        this.fecha_fin = bimestre.fecha_fin;
+        this.matricula = new Matricula(bimestre.matricula);
+        this.activo = bimestre.activo;
     }
 
     public Bimestre(int bimestre_id) {
@@ -56,67 +58,43 @@ public class Bimestre {
         this.activo = activo;
     }
     
-    /**
-     * @return the bimestre_id
-     */
     public int getBimestre_id() {
         return bimestre_id;
     }
 
-    /**
-     * @param bimestre_id the bimestre_id to set
-     */
     public void setBimestre_id(int bimestre_id) {
         this.bimestre_id = bimestre_id;
     }
 
-    /**
-     * @return the descripcion
-     */
     public String getDescripcion() {
         return descripcion;
     }
 
-    /**
-     * @param descripcion the descripcion to set
-     */
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 
-    /**
-     * @return the fecha_inicio
-     */
     public Date getFecha_inicio() {
         return fecha_inicio;
     }
 
-    /**
-     * @param fecha_inicio the fecha_inicio to set
-     */
     public void setFecha_inicio(Date fecha_inicio) {
         this.fecha_inicio = fecha_inicio;
     }
 
-    /**
-     * @return the fecha_fin
-     */
     public Date getFecha_fin() {
         return fecha_fin;
     }
 
-    /**
-     * @param fecha_fin the fecha_fin to set
-     */
     public void setFecha_fin(Date fecha_fin) {
         this.fecha_fin = fecha_fin;
     }
 
     public Matricula getMatricula() {
-        return matricula;
+        return new Matricula(matricula);
     }
 
     public void setMatricula(Matricula matricula) {
-        this.matricula = matricula;
+        this.matricula = new Matricula(matricula);
     }
 }

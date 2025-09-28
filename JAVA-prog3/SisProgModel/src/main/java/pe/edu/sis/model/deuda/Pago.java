@@ -24,89 +24,54 @@ public class Pago {
         this.fecha = fecha;
         this.medioPago = medioPago;
         this.observaciones = observaciones;
-        this.deuda = deuda;
+        this.deuda = new Deuda(deuda);
     }
     public Pago(){}
 
-    /**
-     * @return the deuda
-     */
     public Deuda getDeuda() {
-        return deuda;
+        return new Deuda(deuda);
     }
 
-    /**
-     * @param deuda the deuda to set
-     */
     public void setDeuda(Deuda deuda) {
-        this.deuda = deuda;
+        this.deuda = new Deuda(deuda);
     }
-    /**
-     * @return the pago_id
-     */
+
     public int getPago_id() {
         return pago_id;
     }
 
-    /**
-     * @param pago_id the pago_id to set
-     */
     public void setPago_id(int pago_id) {
         this.pago_id = pago_id;
     }
 
-    /**
-     * @return the monto
-     */
     public double getMonto() {
         return monto;
     }
 
-    /**
-     * @param monto the monto to set
-     */
     public void setMonto(double monto) {
         this.monto = monto;
     }
 
-    /**
-     * @return the fecha
-     */
     public Date getFecha() {
         return fecha;
     }
 
-    /**
-     * @param fecha the fecha to set
-     */
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
 
-    /**
-     * @return the medioPago
-     */
     public Medio getMedioPago() {
         return medioPago;
     }
 
-    /**
-     * @param medioPago the medioPago to set
-     */
     public void setMedioPago(Medio medioPago) {
         this.medioPago = medioPago;
     }
 
-    /**
-     * @return the observaciones
-     */
     public String getObservaciones() {
         return observaciones;
     }
 
-    /**
-     * @param observaciones the observaciones to set
-     */
     public void setObservaciones(String observaciones) {
         this.observaciones = observaciones;
     }

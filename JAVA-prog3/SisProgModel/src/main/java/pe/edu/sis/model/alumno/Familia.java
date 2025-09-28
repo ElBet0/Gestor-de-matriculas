@@ -27,6 +27,16 @@ public class Familia {
         this.correo_electronico = correo_electronico;
         this.direccion = direccion;
     }
+
+    public Familia(Familia other) {
+        this.familia_id = other.familia_id;
+        this.apellido_paterno = other.apellido_paterno;
+        this.apellido_materno = other.apellido_materno;
+        this.numero_telefono = other.numero_telefono;
+        this.correo_electronico = other.correo_electronico;
+        this.direccion = other.direccion;
+    }
+
     public Familia(int familia_id, String apellido_paterno, String apellido_materno, String numero_telefono, String correo_electronico, String direccion) {
         this.familia_id = familia_id;
         this.apellido_paterno = apellido_paterno;
