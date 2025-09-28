@@ -4,6 +4,10 @@
  */
 package pe.edu.sis.usuario.mysql;
 
+import pe.edu.sis.db.bd.DbManager;
+import pe.edu.sis.model.usuario.Usuario;
+import pe.edu.sis.usuario.dao.UsuarioDAO;
+
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -11,9 +15,6 @@ import java.sql.Types;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import pe.edu.sis.db.bd.DbManager;
-import pe.edu.sis.usuario.dao.UsuarioDAO;
-import pe.edu.sis.model.usuario.Usuario;
 
 /**
  *

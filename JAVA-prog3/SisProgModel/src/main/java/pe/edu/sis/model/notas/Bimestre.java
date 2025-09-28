@@ -4,13 +4,9 @@
  */
 package pe.edu.sis.model.notas;
 
-import pe.edu.sis.model.grAcademico.GradoAcademico;
 import pe.edu.sis.model.matricula.Matricula;
-import pe.edu.sis.model.matricula.PeriodoAcademico;
 
 import java.util.Date;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  *

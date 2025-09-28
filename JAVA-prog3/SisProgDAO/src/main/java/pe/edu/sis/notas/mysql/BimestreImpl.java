@@ -1,9 +1,6 @@
 package pe.edu.sis.notas.mysql;
 
 import pe.edu.sis.db.bd.DbManager;
-import pe.edu.sis.gracademico.dao.GradoDAO;
-import pe.edu.sis.gracademico.mysql.GradoImpl;
-import pe.edu.sis.matricula.mysql.MatriculaImpl;
 import pe.edu.sis.model.notas.Bimestre;
 import pe.edu.sis.notas.dao.BimestreDAO;
 

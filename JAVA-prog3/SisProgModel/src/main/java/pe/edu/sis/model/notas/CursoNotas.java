@@ -4,8 +4,6 @@
  */
 package pe.edu.sis.model.notas;
 
-import java.util.ArrayList;
-import java.util.List;
 import pe.edu.sis.model.grAcademico.Curso;
 
 /**

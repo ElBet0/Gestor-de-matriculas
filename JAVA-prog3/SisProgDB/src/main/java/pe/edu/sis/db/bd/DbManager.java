@@ -2,16 +2,12 @@
 package pe.edu.sis.db.bd;
 
 import java.io.IOException;
-import java.sql.Connection;
-import java.util.Properties;
 import java.io.InputStream;
-import static java.lang.Math.abs;
-import java.sql.CallableStatement;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Types;
+import java.sql.*;
 import java.util.Map;
+import java.util.Properties;
+
+import static java.lang.Math.abs;
 
 /**
  *

@@ -5,10 +5,7 @@
 package pe.edu.sis.model.matricula;
 
 import pe.edu.sis.model.alumno.Alumno;
-import java.util.ArrayList;
-import java.util.List;
 import pe.edu.sis.model.grAcademico.GradoAcademico;
-import pe.edu.sis.model.notas.Bimestre;
 /**
  *
  * @author ElBet0

@@ -5,10 +5,11 @@ import org.junit.jupiter.api.Test;
 import pe.edu.sis.alumno.dao.AlumnoDAO;
 import pe.edu.sis.model.alumno.Alumno;
 import pe.edu.sis.model.alumno.Familia;
-import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Date;
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 class AlumnoImplTest {
 

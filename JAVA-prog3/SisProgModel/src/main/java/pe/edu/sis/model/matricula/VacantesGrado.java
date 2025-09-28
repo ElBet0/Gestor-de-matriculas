@@ -4,9 +4,6 @@
  */
 package pe.edu.sis.model.matricula;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  *
  * @author seinc

@@ -3,7 +3,6 @@ package pe.edu.sis.alumno.mysql;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import pe.edu.sis.alumno.dao.FamiliaDAO;
-import pe.edu.sis.model.alumno.Alumno;
 import pe.edu.sis.model.alumno.Familia;
 
 import java.util.List;

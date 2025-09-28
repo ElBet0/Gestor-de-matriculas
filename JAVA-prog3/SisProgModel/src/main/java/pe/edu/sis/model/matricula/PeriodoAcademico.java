@@ -5,8 +5,6 @@
 package pe.edu.sis.model.matricula;
 
 import java.util.Date;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  *

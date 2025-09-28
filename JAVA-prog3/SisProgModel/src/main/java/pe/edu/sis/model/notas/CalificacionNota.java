@@ -4,10 +4,9 @@
  */
 package pe.edu.sis.model.notas;
 
-import java.util.Date;
-
 import pe.edu.sis.model.grAcademico.Calificaciones;
-import pe.edu.sis.model.grAcademico.Competencia;
+
+import java.util.Date;
 
 /**
  *

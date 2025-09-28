@@ -4,15 +4,16 @@
  */
 package pe.edu.sis.matricula.mysql;
 
+import pe.edu.sis.db.bd.DbManager;
+import pe.edu.sis.matricula.dao.VacanteAulaDAO;
+import pe.edu.sis.model.matricula.VacantesAula;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import pe.edu.sis.db.bd.DbManager;
-import pe.edu.sis.matricula.dao.VacanteAulaDAO;
-import pe.edu.sis.model.matricula.VacantesAula;
 
 /**
  *

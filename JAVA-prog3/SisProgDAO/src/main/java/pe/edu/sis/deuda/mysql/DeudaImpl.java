@@ -4,19 +4,20 @@
  */
 package pe.edu.sis.deuda.mysql;
 
-import java.sql.ResultSet;
-import java.sql.Types;
-import java.sql.Date;
-import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import pe.edu.sis.db.bd.DbManager;
 import pe.edu.sis.alumno.dao.AlumnoDAO;
 import pe.edu.sis.alumno.mysql.AlumnoImpl;
+import pe.edu.sis.db.bd.DbManager;
 import pe.edu.sis.deuda.dao.DeudaDAO;
 import pe.edu.sis.model.deuda.Deuda;
 import pe.edu.sis.model.deuda.TipoDeuda;
+
+import java.sql.Date;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Types;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  *

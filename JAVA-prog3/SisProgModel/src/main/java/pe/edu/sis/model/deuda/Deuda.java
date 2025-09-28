@@ -4,8 +4,9 @@
  */
 package pe.edu.sis.model.deuda;
 
-import java.util.Date;
 import pe.edu.sis.model.alumno.Alumno;
+
+import java.util.Date;
 
 /**
  *

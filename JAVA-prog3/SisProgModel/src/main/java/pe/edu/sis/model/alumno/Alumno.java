@@ -4,14 +4,7 @@
  */
 package pe.edu.sis.model.alumno;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
-
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
-import pe.edu.sis.model.deuda.Deuda;
 /**
  *
  * @author seinc
