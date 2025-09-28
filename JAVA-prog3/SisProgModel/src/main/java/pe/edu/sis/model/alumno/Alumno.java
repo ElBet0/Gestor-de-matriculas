@@ -15,51 +15,16 @@ import pe.edu.sis.model.deuda.Deuda;
  */
 public class Alumno {
 
-    /**
-     * El código único que identifica al alumno.
-     */
     private int alumno_id;
-    /**
-     * El nombre del alumno.
-     */
     private String nombre;
-    /**
-     * El dni del alumno
-     */
     private int dni;
-    /**
-     * La fecha de nacimiento del alumno.
-     */
     private Date fecha_nacimiento;
-    /**
-     * La fecha de ingreso del alumno a la institución.
-     */
     private Date fecha_ingreso;
-    /**
-     * El sexo del alumno.
-     */
     private char sexo;
-    /**
-     * La religión del alumno.
-     */
     private String religion;
-    /**
-     * La familia a la que pertenece el alumno.
-     */
     private Familia padres;
-    /**
-     * Observaciones del alumno
-     */
     private String observaciones; //creo que deberia ser una lista
-    
-    /**
-     * Pension base del alumno
-     */
     private double pension_base;
-    /**
-     * La lista de deudas asociadas al alumno.
-     */
-    private List<Deuda> deudas = new ArrayList<>();
 
     public Alumno(String nombre, int dni, Date fecha_nacimiento, Date fecha_ingreso, char sexo, String religion, Familia padres, String observaciones, double pension_base) {
         this.nombre = nombre;
@@ -72,6 +37,32 @@ public class Alumno {
         this.observaciones = observaciones;
         this.pension_base = pension_base;
     }
+
+    public Alumno(String nombre, int dni, Date fecha_ingreso, char sexo, Familia padres, double pension_base) {
+        this.nombre = nombre;
+        this.dni = dni;
+        this.fecha_nacimiento = new Date(2000, 1, 1);
+        this.fecha_ingreso = fecha_ingreso;
+        this.sexo = sexo;
+        this.religion = "Sin asignar";
+        this.padres = padres;
+        this.observaciones = "Sin Observaciones";
+        this.pension_base = pension_base;
+    }
+
+    public Alumno(int alumno_id){
+        this.alumno_id = alumno_id;
+        this.nombre = "No asignado";
+        this.dni = 0;
+        this.fecha_nacimiento = new Date();
+        this.fecha_ingreso = new Date();
+        this.sexo = '.';
+        this.religion = "No asignado";
+        this.padres = new Familia(-1);
+        this.observaciones = "Sin observaciones";
+        this.pension_base = 0;
+    }
+
     public Alumno(){
         this.nombre = "Error al leer alumno";
     }
@@ -232,18 +223,5 @@ public class Alumno {
      */
     public void setPension_base(double pension_base) {
         this.pension_base = pension_base;
-    }
-    /**
-     * @return the deudas
-     */
-    public List<Deuda> getDeudas() {
-        return new ArrayList<>(deudas);
-    }
-
-    /**
-     * @param deudas the deudas to set
-     */
-    public void setDeudas(List<Deuda> deudas) {
-        this.deudas = deudas;
     }
 }

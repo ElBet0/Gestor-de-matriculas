@@ -17,7 +17,6 @@ public class GradoAcademico {
     private String nombre;
     private String abreviatura;
     private int estado;
-    private List<Curso> cursos=new ArrayList<>();
 
     public GradoAcademico(String nombre, String abreviatura) {
         this.nombre = nombre;
@@ -77,20 +76,6 @@ public class GradoAcademico {
      */
     public void setAbreviatura(String abreviatura) {
         this.abreviatura = abreviatura;
-    }
-
-    /**
-     * @return the cursos
-     */
-    public List<Curso> getCursos() {
-        return new ArrayList<>(cursos); //shadowcpy
-    }
-
-    /**
-     * @param cursos the cursos to set
-     */
-    public void setCursos(List<Curso> cursos) {
-        this.cursos = cursos;
     }
     
 }

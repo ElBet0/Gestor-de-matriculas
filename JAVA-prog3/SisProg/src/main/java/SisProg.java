@@ -1,16 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
+
 /**
  *
  * @author seinc
+ * @author ElBet0
  */
 public class SisProg {
 
 
+    /*
+     * En teoría ya funcionan PAGO/DEUDA/FAMILIA/ALUMNO/VACANTES-AULA
+     */
     public static void main(String[] args) {
-        /*
-         * En teoría ya funcionan PAGO/DEUDA/FAMILIA/ALUMNO/VACANTES-AULA
-         */
+        System.out.println("HELLOOOOOOO!!!!!!! :D");
     }
 }

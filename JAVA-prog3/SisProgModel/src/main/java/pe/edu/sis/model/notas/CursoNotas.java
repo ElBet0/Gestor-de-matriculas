@@ -17,7 +17,6 @@ public class CursoNotas {
     private Curso curso;
     private double calificacion_final;
     private int activo;
-    private List<CompetenciaNotas> compe_notas=new ArrayList<>();
 
     public CursoNotas(Curso curso, double calificacion_final) {
         this.curso = curso;
@@ -64,20 +63,6 @@ public class CursoNotas {
      */
     public void setCalificacion_final(double calificacion_final) {
         this.calificacion_final = calificacion_final;
-    }
-
-    /**
-     * @return the compe_notas
-     */
-    public List<CompetenciaNotas> getCompe_notas() {
-        return new ArrayList<>(compe_notas);
-    }
-
-    /**
-     * @param compe_notas the compe_notas to set
-     */
-    public void setCompe_notas(List<CompetenciaNotas> compe_notas) {
-        this.compe_notas = compe_notas;
     }
 
     public int getActivo() {

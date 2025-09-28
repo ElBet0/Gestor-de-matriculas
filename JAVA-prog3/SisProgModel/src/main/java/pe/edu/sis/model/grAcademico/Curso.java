@@ -20,7 +20,6 @@ public class Curso {
     private int activo;
     private String abreviatura;
     private GradoAcademico grado;
-    private List<Competencia> competencias=new ArrayList<>();
 
     public Curso(String nombre, String descripcion, int horas_semanales, String abreviatura, GradoAcademico grado) {
         this.nombre = nombre;
@@ -127,17 +126,4 @@ public class Curso {
         this.abreviatura = abreviatura;
     }
 
-    /**
-     * @return the competencias
-     */
-    public List<Competencia> getCompetencias() {
-        return new ArrayList<>(competencias);
-    }
-
-    /**
-     * @param competencias the competencias to set
-     */
-    public void setCompetencias(List<Competencia> competencias) {
-        this.competencias = competencias;
-    }
 }

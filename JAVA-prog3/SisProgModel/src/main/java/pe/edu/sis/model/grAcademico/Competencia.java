@@ -16,7 +16,6 @@ public class Competencia {
     private String nombre;
     private double peso_competencia;
     private int activo;
-    private List<Calificaciones> calificaciones= new ArrayList<>();
 
     public Competencia(String nombre, double peso_competencia) {
         this.nombre = nombre;
@@ -77,19 +76,5 @@ public class Competencia {
      */
     public void setActivo(int activo) {
         this.activo = activo;
-    }
-
-    /**
-     * @return the calificaciones
-     */
-    public List<Calificaciones> getCalificaciones() {
-        return new ArrayList<>(calificaciones);
-    }
-
-    /**
-     * @param calificaciones the calificaciones to set
-     */
-    public void setCalificaciones(List<Calificaciones> calificaciones) {
-        this.calificaciones = calificaciones;
     }
 }

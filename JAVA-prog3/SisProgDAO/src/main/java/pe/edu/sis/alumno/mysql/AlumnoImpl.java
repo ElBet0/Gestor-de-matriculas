@@ -24,6 +24,7 @@ import pe.edu.sis.model.alumno.Familia;
  */
 public class AlumnoImpl implements AlumnoDAO {
     private ResultSet rs;
+
     @Override
     public int insertar(Alumno al) {
         Map<Integer, Object> in= new HashMap<>();

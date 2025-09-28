@@ -18,7 +18,6 @@ public class Matricula {
     private int matricula_id;
     private Alumno alumno;
     private PeriodoAcademico periodo;
-    private List<Bimestre> bimestres=new ArrayList<>();
     private GradoAcademico grado;
     private int estado;
     
@@ -27,6 +26,12 @@ public class Matricula {
         this.periodo = periodo;
         this.grado = grado;
     }
+
+    public Matricula(int matricula_id){
+        this.matricula_id = matricula_id;
+        this.alumno = new Alumno(-1);
+    }
+
     public Matricula(){}
     /**
      * @return the estado
@@ -81,20 +86,6 @@ public class Matricula {
      */
     public void setPeriodo(PeriodoAcademico periodo) {
         this.periodo = periodo;
-    }
-
-    /**
-     * @return the bimestres
-     */
-    public List<Bimestre> getBimestres() {
-        return new ArrayList<>(bimestres);
-    }
-
-    /**
-     * @param bimestres the bimestres to set
-     */
-    public void setBimestres(List<Bimestre> bimestres) {
-        this.bimestres = bimestres;
     }
 
     /**

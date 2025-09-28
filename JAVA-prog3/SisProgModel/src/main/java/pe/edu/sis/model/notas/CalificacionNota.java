@@ -4,7 +4,8 @@
  */
 package pe.edu.sis.model.notas;
 
-import java.time.LocalDate;
+import java.util.Date;
+
 import pe.edu.sis.model.grAcademico.Calificaciones;
 
 /**
@@ -15,11 +16,11 @@ public class CalificacionNota {
     private int nota_academica_id;
     private String descripcion;
     private double nota_academica;
-    private LocalDate fecha_registro;
+    private Date fecha_registro;
     private Calificaciones calificacionDato;
     private int activo;
 
-    public CalificacionNota(String descripcion, double nota_academica, LocalDate fecha_registro, Calificaciones calificacionDato) {
+    public CalificacionNota(String descripcion, double nota_academica, Date fecha_registro, Calificaciones calificacionDato) {
         this.descripcion = descripcion;
         this.nota_academica = nota_academica;
         this.fecha_registro = fecha_registro;
@@ -72,14 +73,14 @@ public class CalificacionNota {
     /**
      * @return the fecha_registro
      */
-    public LocalDate getFecha_registro() {
+    public Date getFecha_registro() {
         return fecha_registro;
     }
 
     /**
      * @param fecha_registro the fecha_registro to set
      */
-    public void setFecha_registro(LocalDate fecha_registro) {
+    public void setFecha_registro(Date fecha_registro) {
         this.fecha_registro = fecha_registro;
     }
 

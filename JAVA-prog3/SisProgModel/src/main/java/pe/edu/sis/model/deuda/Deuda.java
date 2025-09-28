@@ -12,41 +12,14 @@ import pe.edu.sis.model.alumno.Alumno;
  * @author seinc
  */
 public class Deuda {
-    /**
-     * El código único que identifica la deuda.
-     */
     private int deuda_id;
-    /**
-     * El monto de la deuda.
-     */
     private double monto;
-    /**
-     * El estado de la deuda (pagada o no pagada).
-     */
     private int estado;
-    /**
-     * La fecha en que se emitió la deuda.
-     */
     private Date fecha_emision;
-    /**
-     * La fecha de vencimiento de la deuda.
-     */
     private Date fecha_vencimiento;
-    /**
-     * Una descripción detallada de la deuda.
-     */
     private String descripcion;
-    /**
-     * Descuento aplicado a la deuda
-     */
     private double descuento;
-    /**
-     * El tipo o concepto de la deuda.
-     */
     private TipoDeuda concepto_deuda;
-    /**
-     * Acceso en caso se haya cancelado la deuda
-     */
     private Alumno alumno;
 
     public Deuda(double monto, Date fecha_emision, Date fecha_vencimiento, String descripcion, double descuento, TipoDeuda concepto_deuda, Alumno alumno) {

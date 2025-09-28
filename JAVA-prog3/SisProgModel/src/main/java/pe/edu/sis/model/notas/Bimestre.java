@@ -4,7 +4,11 @@
  */
 package pe.edu.sis.model.notas;
 
-import java.time.LocalDate;
+import pe.edu.sis.model.grAcademico.GradoAcademico;
+import pe.edu.sis.model.matricula.Matricula;
+import pe.edu.sis.model.matricula.PeriodoAcademico;
+
+import java.util.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,14 +19,33 @@ import java.util.List;
 public class Bimestre {
     private int bimestre_id;
     private String descripcion;
-    private LocalDate fecha_inicio;
-    private LocalDate fecha_fin;
-    private List<CursoNotas> nota = new ArrayList<>();
+    private Date fecha_inicio;
+    private Date fecha_fin;
+    private Matricula matricula;
+
     private int activo;
-    public Bimestre(String descripcion, LocalDate fecha_inicio, LocalDate fecha_fin) {
+    public Bimestre(String descripcion, Date fecha_inicio, Date fecha_fin) {
         this.descripcion = descripcion;
         this.fecha_inicio = fecha_inicio;
         this.fecha_fin = fecha_fin;
+    }
+
+    public Bimestre(int bimestre_id, String descripcion, Date fecha_inicio, Date fecha_fin, Matricula matricula, int activo) {
+        this.bimestre_id = bimestre_id;
+        this.descripcion = descripcion;
+        this.fecha_inicio = fecha_inicio;
+        this.fecha_fin = fecha_fin;
+        this.matricula = matricula;
+        this.activo = activo;
+    }
+
+    public Bimestre(int bimestre_id) {
+        this.bimestre_id = bimestre_id;
+        this.descripcion = "No asignado";
+        this.fecha_inicio = new Date();
+        this.fecha_fin = new Date();
+        this.matricula = new Matricula(-1);
+        this.activo = 0;
     }
 
     public int getActivo() {
@@ -64,43 +87,36 @@ public class Bimestre {
     /**
      * @return the fecha_inicio
      */
-    public LocalDate getFecha_inicio() {
+    public Date getFecha_inicio() {
         return fecha_inicio;
     }
 
     /**
      * @param fecha_inicio the fecha_inicio to set
      */
-    public void setFecha_inicio(LocalDate fecha_inicio) {
+    public void setFecha_inicio(Date fecha_inicio) {
         this.fecha_inicio = fecha_inicio;
     }
 
     /**
      * @return the fecha_fin
      */
-    public LocalDate getFecha_fin() {
+    public Date getFecha_fin() {
         return fecha_fin;
     }
 
     /**
      * @param fecha_fin the fecha_fin to set
      */
-    public void setFecha_fin(LocalDate fecha_fin) {
+    public void setFecha_fin(Date fecha_fin) {
         this.fecha_fin = fecha_fin;
     }
 
-    /**
-     * @return the nota
-     */
-    public List<CursoNotas> getNota() {
-        return new ArrayList<>(nota);
+    public Matricula getMatricula() {
+        return matricula;
     }
 
-    /**
-     * @param nota the nota to set
-     */
-    public void setNota(List<CursoNotas> nota) {
-        this.nota = nota;
+    public void setMatricula(Matricula matricula) {
+        this.matricula = matricula;
     }
-    
 }
