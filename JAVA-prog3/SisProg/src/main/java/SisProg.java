@@ -8,7 +8,7 @@
 public class SisProg {
 
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         /*
          * En teoría ya funcionan PAGO/DEUDA/FAMILIA/ALUMNO/VACANTES-AULA
          */
