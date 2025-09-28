@@ -28,6 +28,7 @@ import pe.edu.sis.model.matricula.VacantesAula;
  */
 public class SisProg {
 
+
     public static void main(String[] args) throws Exception {
         /*--------------------CRUD FAMILIA----------------------*/
         System.out.println("FAMILIA: \n");
