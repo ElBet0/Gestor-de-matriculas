@@ -31,7 +31,7 @@ class PagoImplTest {
 
         papis.setFamilia_id(new FamiliaImpl().insertar(papis));
 
-        alumno = new Alumno("Marcelo", 1, new Date(2018, 2, 1), 'M',
+        alumno = new Alumno("Marcelo", 0, new Date(2018, 2, 1), 'M',
                 papis, 0);
 
         alumno.setAlumno_id(new AlumnoImpl().insertar(alumno));

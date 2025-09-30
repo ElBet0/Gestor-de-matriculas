@@ -99,8 +99,8 @@ public class PagoImpl implements PagoDAO{
         rs=DbManager.getInstance().ejecutarProcedimientoLectura("LISTAR_PAGOS", null);
         ArrayList<Integer>id=new ArrayList<>();
         try{
-            while(rs.next()){
-                if(pago_lista == null) pago_lista = new ArrayList<>();
+            while(rs != null && rs.next()){
+                pago_lista = new ArrayList<>();
                 Pago pago=new Pago();
                 pago.setPago_id(rs.getInt("pago_id"));
                 pago.setMonto(rs.getDouble("monto"));
