@@ -30,7 +30,7 @@ public class Alumno {
         this.fecha_ingreso = fecha_ingreso;
         this.sexo = sexo;
         this.religion = religion;
-        this.padres = new Familia(padres);
+        this.padres = Familia.Clone(padres);
         this.observaciones = observaciones;
         this.pension_base = pension_base;
     }
@@ -42,9 +42,13 @@ public class Alumno {
         this.fecha_ingreso = fecha_ingreso;
         this.sexo = sexo;
         this.religion = "Sin asignar";
-        this.padres = new Familia(padres);
+        this.padres = Familia.Clone(padres);
         this.observaciones = "Sin Observaciones";
         this.pension_base = pension_base;
+    }
+
+    public static Alumno Clone(Alumno alumno){
+        return alumno != null ? new Alumno(alumno) : null;
     }
 
     public Alumno(int alumno_id){
@@ -61,7 +65,7 @@ public class Alumno {
     }
 
     @SuppressWarnings("IncompleteCopyConstructor")
-    public Alumno(Alumno other) {
+    private Alumno(Alumno other) {
         this.alumno_id = other.alumno_id;
         this.nombre = other.nombre;
         this.dni = other.dni;
@@ -69,8 +73,7 @@ public class Alumno {
         this.fecha_ingreso = other.fecha_ingreso;
         this.sexo = other.sexo;
         this.religion = other.religion;
-        this.padres = other.padres;
-        this.padres = new Familia(this.padres);
+        this.padres = Familia.Clone(other.padres);
         this.observaciones = other.observaciones;
         this.pension_base = other.pension_base;
     }
@@ -155,11 +158,11 @@ public class Alumno {
     }
 
     public Familia getPadres() {
-        return new Familia(padres);
+        return Familia.Clone(padres);
     }
 
     public void setPadres(Familia padres) {
-        this.padres = new Familia(padres);
+        this.padres = Familia.Clone(padres);
     }
 
     public String getObservaciones() {

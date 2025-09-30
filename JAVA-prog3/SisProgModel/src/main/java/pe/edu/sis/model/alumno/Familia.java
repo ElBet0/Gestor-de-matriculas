@@ -25,7 +25,11 @@ public class Familia {
         this.direccion = direccion;
     }
 
-    public Familia(Familia other) {
+    public static Familia Clone(Familia familia){
+        return familia == null ? null : new Familia(familia);
+    }
+
+    private Familia(Familia other) {
         this.familia_id = other.familia_id;
         this.apellido_paterno = other.apellido_paterno;
         this.apellido_materno = other.apellido_materno;

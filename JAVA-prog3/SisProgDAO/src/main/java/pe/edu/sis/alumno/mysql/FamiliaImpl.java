@@ -72,7 +72,7 @@ public class FamiliaImpl implements FamiliaDAO {
         in.put(1, id);
         rs = DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_FAMILIA_POR_ID", in);
         try {
-            if (rs.next()) {
+            if (rs != null && rs.next()) {
                 fam = new Familia();
                 fam.setApellido_materno(rs.getString("apellido_materno"));
                 fam.setApellido_paterno(rs.getString("apellido_paterno"));
@@ -91,13 +91,10 @@ public class FamiliaImpl implements FamiliaDAO {
 
     @Override
     public ArrayList<Familia> listarTodos() {
-        ArrayList<Familia> familia = null;
+        ArrayList<Familia> familia = new ArrayList<>();
         rs = DbManager.getInstance().ejecutarProcedimientoLectura("LISTAR_FAMILIAS", null);
         try {
-            while (rs.next()) {
-                if (familia == null) {
-                    familia = new ArrayList<>();
-                }
+            while (rs != null && rs.next()) {
                 Familia fam = new Familia();
                 fam.setApellido_materno(rs.getString("apellido_materno"));
                 fam.setApellido_paterno(rs.getString("apellido_paterno"));

@@ -19,21 +19,37 @@ public class Pago {
     private Deuda deuda;
     private int estado;
 
-    public Pago(double monto, Date fecha, Medio medioPago, String observaciones, Deuda deuda) {
+    public Pago(double monto, Date fecha, Medio medioPago, Deuda deuda) {
         this.monto = monto;
         this.fecha = fecha;
         this.medioPago = medioPago;
-        this.observaciones = observaciones;
-        this.deuda = new Deuda(deuda);
+        this.observaciones = "Sin observaciones";
+        this.deuda = Deuda.Clone(deuda);
     }
+
+    public static Pago Clone(Pago pago){
+        return pago == null ? null : new Pago(pago);
+    }
+
+    @SuppressWarnings("IncompleteCopyConstructor")
+    private Pago(Pago other) {
+        this.pago_id = other.pago_id;
+        this.monto = other.monto;
+        this.fecha = other.fecha;
+        this.medioPago = other.medioPago;
+        this.observaciones = other.observaciones;
+        this.deuda = Deuda.Clone(other.deuda);
+        this.estado = other.estado;
+    }
+
     public Pago(){}
 
     public Deuda getDeuda() {
-        return new Deuda(deuda);
+        return Deuda.Clone(deuda);
     }
 
     public void setDeuda(Deuda deuda) {
-        this.deuda = new Deuda(deuda);
+        this.deuda = Deuda.Clone(deuda);
     }
 
     public int getPago_id() {

@@ -23,18 +23,22 @@ public class Deuda {
     private TipoDeuda concepto_deuda;
     private Alumno alumno;
 
-    public Deuda(double monto, Date fecha_emision, Date fecha_vencimiento, String descripcion, double descuento, TipoDeuda concepto_deuda, Alumno alumno) {
+    public Deuda(double monto, Date fecha_emision, Date fecha_vencimiento, TipoDeuda concepto_deuda, Alumno alumno) {
         this.monto = monto;
         this.fecha_emision = fecha_emision;
         this.fecha_vencimiento = fecha_vencimiento;
-        this.descripcion = descripcion;
-        this.descuento = descuento;
+        this.descripcion = "No definido";
+        this.descuento = 0;
         this.concepto_deuda = concepto_deuda;
-        this.alumno = new Alumno(alumno);
+        this.alumno = Alumno.Clone(alumno);
+    }
+
+    public static Deuda Clone(Deuda deuda){
+        return deuda == null ? null : new Deuda(deuda);
     }
 
     @SuppressWarnings("IncompleteCopyConstructor")
-    public Deuda(Deuda other) {
+    private Deuda(Deuda other) {
         this.deuda_id = other.deuda_id;
         this.monto = other.monto;
         this.estado = other.estado;
@@ -43,18 +47,18 @@ public class Deuda {
         this.descripcion = other.descripcion;
         this.descuento = other.descuento;
         this.concepto_deuda = other.concepto_deuda;
-        this.alumno = new Alumno(other.alumno);
+        this.alumno = Alumno.Clone(other.alumno);
     }
 
     public Deuda() {
     }
 
     public Alumno getAlumno() {
-        return new Alumno(alumno);
+        return Alumno.Clone(alumno);
     }
 
     public void setAlumno(Alumno alumno) {
-        this.alumno = new Alumno(alumno);
+        this.alumno = Alumno.Clone(alumno);
     }
 
     public int getDeuda_id() {

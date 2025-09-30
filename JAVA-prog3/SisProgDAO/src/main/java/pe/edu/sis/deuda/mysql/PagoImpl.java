@@ -34,7 +34,7 @@ public class PagoImpl implements PagoDAO{
         in.put(4,pago.getMedioPago().toString());
         in.put(5,pago.getObservaciones());
         in.put(6,pago.getDeuda().getDeuda_id());
-        DbManager.getInstance().ejecutarProcedimiento("INSERTAR_PAGO",in,out);
+        if(DbManager.getInstance().ejecutarProcedimiento("INSERTAR_PAGO",in,out) < 0) return -1;
         pago.setPago_id((int)out.get(1));
         System.out.println("Se ha realizado el registro del pago");
         return pago.getPago_id();
@@ -72,8 +72,8 @@ public class PagoImpl implements PagoDAO{
         rs=DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_PAGO_POR_ID", in);
         int id=0;
         try{
-            while(rs.next()){
-                if(pago == null) pago = new Pago();
+            if(rs != null && rs.next()){
+                pago = new Pago();
                 pago.setPago_id(rs.getInt("pago_id"));
                 pago.setMonto(rs.getDouble("monto"));
                 pago.setFecha(rs.getDate("fecha"));
@@ -86,13 +86,15 @@ public class PagoImpl implements PagoDAO{
         }finally{
             DbManager.getInstance().cerrarConexion();
         }
+        if(pago == null) return null;
+
         pago.setDeuda(deu.obtener_por_id(id));
         return pago;
     }
 
     @Override
     public ArrayList<Pago> listarTodos() {
-        ArrayList<Pago> pago_lista=null;
+        ArrayList<Pago> pago_lista = new ArrayList<>();
         DeudaDAO deu=new DeudaImpl();
         rs=DbManager.getInstance().ejecutarProcedimientoLectura("LISTAR_PAGOS", null);
         ArrayList<Integer>id=new ArrayList<>();

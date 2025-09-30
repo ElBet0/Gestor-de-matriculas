@@ -27,7 +27,7 @@ public class Matricula {
     @SuppressWarnings("IncompleteCopyConstructor")
     public Matricula(Matricula other) {
         this.matricula_id = other.matricula_id;
-        this.alumno = new Alumno(other.alumno);
+        this.alumno = Alumno.Clone(other.alumno);
         this.periodo = new PeriodoAcademico(other.periodo);
         this.grado = new GradoAcademico(other.grado);
         this.estado = other.estado;
@@ -58,11 +58,11 @@ public class Matricula {
 
 
     public Alumno getAlumno() {
-        return new Alumno(alumno);
+        return Alumno.Clone(alumno);
     }
 
     public void setAlumno(Alumno alumno) {
-        this.alumno = new Alumno(alumno);
+        this.alumno = Alumno.Clone(alumno);
     }
 
     public PeriodoAcademico getPeriodo() {

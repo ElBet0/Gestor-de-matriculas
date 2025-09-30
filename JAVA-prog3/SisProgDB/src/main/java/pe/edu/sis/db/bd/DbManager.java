@@ -83,7 +83,7 @@ public class DbManager {
                 obtenerValoresSalida(cst, parametrosSalida);
         }catch(SQLException ex){
             System.out.println("Error ejecutando procedimiento almacenado: " + ex.getMessage());
-            resultado = -abs(ex.getErrorCode());
+            resultado = -1;
         }finally{
             cerrarConexion();
         }

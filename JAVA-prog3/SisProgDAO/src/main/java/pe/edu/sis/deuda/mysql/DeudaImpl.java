@@ -37,7 +37,7 @@ public class DeudaImpl implements DeudaDAO{
         in.put(6,deu.getDescripcion());
         in.put(7,deu.getDescuento());
         in.put(8,deu.getAlumno().getAlumno_id());
-        DbManager.getInstance().ejecutarProcedimiento("INSERTAR_DEUDA",in,out);
+        if(DbManager.getInstance().ejecutarProcedimiento("INSERTAR_DEUDA",in,out) < 0) return -1;
         deu.setDeuda_id((int)out.get(1));
         System.out.println("Se ha realizado el registro de la deuda");
         return deu.getDeuda_id();
@@ -77,8 +77,8 @@ public class DeudaImpl implements DeudaDAO{
         rs=DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_DEUDA_POR_ID", in);
         int al_id=0;
         try{
-            while(rs.next()){
-                if(deu == null) deu = new Deuda();
+            if(rs != null && rs.next()){
+                deu = new Deuda();
                 deu.setDeuda_id(rs.getInt("deuda_id"));
                 deu.setMonto(rs.getDouble("monto"));
                 deu.setConcepto_deuda(TipoDeuda.valueOf(rs.getString("tipo_deuda")));
@@ -93,19 +93,21 @@ public class DeudaImpl implements DeudaDAO{
         }finally{
             DbManager.getInstance().cerrarConexion();
         }
+        if(deu == null) return null;
+
         deu.setAlumno(al.obtener_por_id(al_id));
+
         return deu;
     }
 
     @Override
     public ArrayList<Deuda> listarTodos() {
-        ArrayList<Deuda> deuda=null;
+        ArrayList<Deuda> deuda = new ArrayList<>();
         AlumnoDAO al=new AlumnoImpl();
         rs=DbManager.getInstance().ejecutarProcedimientoLectura("LISTAR_DEUDAS", null);
         ArrayList<Integer> al_id=new ArrayList<>();
         try{
-            while(rs.next()){
-                if(deuda == null) deuda = new ArrayList<>();
+            while(rs != null && rs.next()){
                 Deuda deu=new Deuda();
                 deu.setDeuda_id(rs.getInt("deuda_id"));
                 deu.setMonto(rs.getDouble("monto"));
@@ -122,9 +124,8 @@ public class DeudaImpl implements DeudaDAO{
         }finally{
             DbManager.getInstance().cerrarConexion();
         }
-        for(int i=0;i<al_id.size();i++){
-            deuda.get(i).setAlumno(al.obtener_por_id((int)al_id.get(i)));
-        }
+        for(int i=0;i<al_id.size();i++)
+            deuda.get(i).setAlumno(al.obtener_por_id((int) al_id.get(i)));
         return deuda;
     }
     

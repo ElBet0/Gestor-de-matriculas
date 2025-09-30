@@ -40,7 +40,7 @@ public class AlumnoImpl implements AlumnoDAO {
         in.put(8,al.getObservaciones());
         in.put(9,al.getPension_base());
         in.put(10,al.getPadres().getFamilia_id());
-        DbManager.getInstance().ejecutarProcedimiento("INSERTAR_ALUMNO",in,out);
+        if(DbManager.getInstance().ejecutarProcedimiento("INSERTAR_ALUMNO",in,out) < 0) return -1;
         al.setAlumno_id((int)out.get(1));
         System.out.println("Se ha realizado el registro del alumno");
         return al.getAlumno_id();
@@ -81,8 +81,8 @@ public class AlumnoImpl implements AlumnoDAO {
         FamiliaDAO fam = new FamiliaImpl();
         int fam_id=0;
         try{
-            while(rs.next()){
-                if(al == null) al = new Alumno();
+            if(rs != null && rs.next()){
+                al = new Alumno();
                 al.setAlumno_id(rs.getInt("alumno_id"));
                 al.setDni(rs.getInt("dni"));
                 al.setFecha_ingreso(rs.getDate("fecha_ingreso"));
@@ -99,21 +99,21 @@ public class AlumnoImpl implements AlumnoDAO {
         }finally{
             DbManager.getInstance().cerrarConexion();
         }
-        if(al == null) al = new Alumno();
+        if(al == null) return null;
+
         al.setPadres(fam.obtener_por_id(fam_id));
         return al;
     }
 
     @Override
     public ArrayList<Alumno> listarTodos() {
-        ArrayList<Alumno> alumno=null;
+        ArrayList<Alumno> alumno= new ArrayList<>();
         Map<Integer, Object> in= new HashMap<>();
         rs=DbManager.getInstance().ejecutarProcedimientoLectura("LISTAR_ALUMNOS", in);
         FamiliaDAO fam = new FamiliaImpl();
         ArrayList<Integer> ids=new ArrayList<>();
         try{
-            while(rs.next()){
-                if(alumno == null) alumno = new ArrayList<>();
+            while(rs != null && rs.next()){
                 Alumno al=new Alumno();
                 al.setAlumno_id(rs.getInt("alumno_id"));
                 al.setDni(rs.getInt("dni"));

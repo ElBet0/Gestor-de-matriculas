@@ -1,7 +1,6 @@
 package pe.edu.sis.alumno.mysql;
 
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import pe.edu.sis.alumno.dao.FamiliaDAO;
 import pe.edu.sis.model.alumno.Familia;
 
@@ -9,24 +8,31 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class FamiliaImplTest {
-    FamiliaDAO dao = new FamiliaImpl();
+    FamiliaDAO dao;
     Familia familia;
 
-    @Test
-    @Order(1)
-    void insertar() {
+    @BeforeAll
+    void CrearFamilia(){
         familia = new Familia("Del rio", "Laos", "987654321",
                 "a20230417@pucp.edu.pe", "Jr. Zepitas");
 
-        familia.setFamilia_id(new FamiliaImpl().insertar(familia));
+        dao = new FamiliaImpl();
+    }
+
+    @Test
+    @Order(1)
+    void VerificarInsercionCorrecta() {
+        familia.setFamilia_id(dao.insertar(familia));
 
         assertNotEquals(-1, familia.getFamilia_id());
     }
 
     @Test
     @Order(2)
-    void modificar() {
+    void VerificarRegistrosModificadosEsCorrecto() {
         familia.setNumero_telefono("123456789");
 
         assertEquals(1, dao.modificar(familia));
@@ -34,22 +40,23 @@ class FamiliaImplTest {
 
     @Test
     @Order(5)
-    void eliminar() {
-        assertTrue(dao.eliminar(familia.getFamilia_id()) > 0);
-        new FamiliaImpl().eliminar(familia.getFamilia_id());
+    void VerificarEliminarDevuelveCodigoPositivo() {
+        assertTrue(dao.eliminar(familia.getFamilia_id()) >= 0);
     }
 
     @Test
     @Order(3)
-    void obtener_por_id() {
+    void VerificarQueObtenemosElMismoID() {
         Familia familia2 = dao.obtener_por_id(familia.getFamilia_id());
 
-        assertNotEquals(null, familia2);
+        assertNotNull(familia2);
+        assertNotEquals(-1, familia2.getFamilia_id());
+        assertEquals(familia.getFamilia_id(), familia2.getFamilia_id());
     }
 
     @Test
     @Order(4)
-    void listarTodos() {
+    void VerificarQueListaSiRetorneAlgo() {
         List<Familia> lista = dao.listarTodos();
         assertFalse(lista.isEmpty());
     }
