@@ -26,8 +26,8 @@ public class CalificacionNota {
         this.descripcion = descripcion;
         this.nota_academica = nota_academica;
         this.fecha_registro = fecha_registro;
-        this.competenciaNotas = new CompetenciaNotas(competenciaNotas);
-        this.calificacionDato = new Calificaciones(calificacionDato);
+        this.competenciaNotas = competenciaNotas;
+        this.calificacionDato = calificacionDato;
     }
 
     public int getNota_academica_id() {
@@ -63,11 +63,11 @@ public class CalificacionNota {
     }
 
     public Calificaciones getCalificacionDato() {
-        return new Calificaciones(calificacionDato);
+        return calificacionDato;
     }
 
     public void setCalificacionDato(Calificaciones calificacionDato) {
-        this.calificacionDato = new Calificaciones(calificacionDato);
+        this.calificacionDato = calificacionDato;
     }
 
     public int getActivo() {

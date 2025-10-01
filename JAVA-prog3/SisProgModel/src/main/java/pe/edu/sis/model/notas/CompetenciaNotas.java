@@ -20,17 +20,8 @@ public class CompetenciaNotas {
     public CompetenciaNotas(double calificacion_final, Competencia competencia, CursoNotas cursoNotas) {
         this.calificacion_final = calificacion_final;
         this.competencia = competencia;
-        this.cursoNotas = new CursoNotas(cursoNotas);
-        this.competencia = new Competencia(competencia);
-    }
-
-    @SuppressWarnings("IncompleteCopyConstructor")
-    public CompetenciaNotas(CompetenciaNotas other) {
-        this.competencia_notas_id = other.competencia_notas_id;
-        this.calificacion_final = other.calificacion_final;
-        this.cursoNotas = new CursoNotas(other.cursoNotas);
-        this.competencia = new Competencia(other.competencia);
-        this.activo = other.activo;
+        this.cursoNotas = cursoNotas;
+        this.competencia = competencia;
     }
 
     public int getCompetencia_notas_id() {
@@ -64,5 +55,12 @@ public class CompetenciaNotas {
     public void setActivo(int activo) {
         this.activo = activo;
     }
-    
+
+    public CursoNotas getCursoNotas() {
+        return cursoNotas;
+    }
+
+    public void setCursoNotas(CursoNotas cursoNotas) {
+        this.cursoNotas = cursoNotas;
+    }
 }

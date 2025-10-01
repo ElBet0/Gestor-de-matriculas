@@ -13,24 +13,14 @@ public class VacantesAula {
     private String nombre;
     private int vacantes_disponibles;
     private int vacantes_ocupadas;
-    private int estado;
+    private int activo;
     private VacantesGrado vacantesGrado;
 
     public VacantesAula(VacantesGrado vacantesGrado, String nombre, int vacantes_disponibles, int vacantes_ocupadas) {
         this.nombre = nombre;
-        this.vacantesGrado = new VacantesGrado(vacantesGrado);
+        this.vacantesGrado = vacantesGrado;
         this.vacantes_disponibles = vacantes_disponibles;
         this.vacantes_ocupadas = vacantes_ocupadas;
-    }
-
-    @SuppressWarnings("IncompleteCopyConstructor")
-    public VacantesAula(VacantesAula other) {
-        this.aula_id = other.aula_id;
-        this.nombre = other.nombre;
-        this.vacantes_disponibles = other.vacantes_disponibles;
-        this.vacantes_ocupadas = other.vacantes_ocupadas;
-        this.estado = other.estado;
-        this.vacantesGrado = new VacantesGrado(other.vacantesGrado);
     }
 
     public VacantesAula(){};
@@ -67,25 +57,25 @@ public class VacantesAula {
         this.vacantes_ocupadas = vacantes_ocupadas;
     }
 
-    public int getEstado() {
-        return estado;
+    public int getActivo() {
+        return activo;
     }
 
-    public void setEstado(int estado) {
-        this.estado = estado;
+    public void setActivo(int activo) {
+        this.activo = activo;
     }
 
     public VacantesGrado getVacantesGrado() {
-        return new VacantesGrado(vacantesGrado);
+        return vacantesGrado;
     }
 
     public void setVacantesGrado(VacantesGrado vacantesGrado) {
-        this.vacantesGrado = new VacantesGrado(vacantesGrado);
+        this.vacantesGrado = vacantesGrado;
     }
 
     @Override
     public String toString() {
-        return "VacantesAula{" + "aula_id=" + aula_id + ", nombre=" + nombre + ", vacantes_disponibles=" + vacantes_disponibles + ", vacantes_ocupadas=" + vacantes_ocupadas + ", estado=" + estado + '}';
+        return "VacantesAula{" + "aula_id=" + aula_id + ", nombre=" + nombre + ", vacantes_disponibles=" + vacantes_disponibles + ", vacantes_ocupadas=" + vacantes_ocupadas + ", estado=" + activo + '}';
     }
 
 }

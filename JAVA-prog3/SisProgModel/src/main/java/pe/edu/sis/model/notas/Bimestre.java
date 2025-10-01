@@ -21,20 +21,10 @@ public class Bimestre {
 
     private int activo;
     public Bimestre(Matricula matricula, String descripcion, Date fecha_inicio, Date fecha_fin) {
-        this.matricula = new Matricula(matricula);
+        this.matricula = matricula;
         this.descripcion = descripcion;
         this.fecha_inicio = fecha_inicio;
         this.fecha_fin = fecha_fin;
-    }
-
-    @SuppressWarnings("IncompleteCopyConstructor")
-    public Bimestre(Bimestre bimestre){
-        this.bimestre_id = bimestre.bimestre_id;
-        this.descripcion = bimestre.descripcion;
-        this.fecha_inicio = bimestre.fecha_inicio;
-        this.fecha_fin = bimestre.fecha_fin;
-        this.matricula = new Matricula(bimestre.matricula);
-        this.activo = bimestre.activo;
     }
 
     public Bimestre(int bimestre_id) {
@@ -87,10 +77,10 @@ public class Bimestre {
     }
 
     public Matricula getMatricula() {
-        return new Matricula(matricula);
+        return matricula;
     }
 
     public void setMatricula(Matricula matricula) {
-        this.matricula = new Matricula(matricula);
+        this.matricula = matricula;
     }
 }

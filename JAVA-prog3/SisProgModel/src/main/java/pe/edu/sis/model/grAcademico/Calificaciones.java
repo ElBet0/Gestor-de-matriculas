@@ -19,16 +19,7 @@ public class Calificaciones {
     public Calificaciones(String descripcion, double peso_calificacion, Competencia competencia) {
         this.descripcion = descripcion;
         this.peso_calificacion = peso_calificacion;
-        this.competencia = new Competencia(competencia);
-    }
-
-    @SuppressWarnings("IncompleteCopyConstructor")
-    public Calificaciones(Calificaciones other) {
-        this.calificaciones_id = other.calificaciones_id;
-        this.descripcion = other.descripcion;
-        this.peso_calificacion = other.peso_calificacion;
-        this.competencia = new Competencia(other.competencia);
-        this.activo = other.activo;
+        this.competencia = competencia;
     }
 
     public int getCalificaciones_id() {
@@ -64,10 +55,10 @@ public class Calificaciones {
     }
 
     public Competencia getCompetencia() {
-        return new Competencia(competencia);
+        return competencia;
     }
 
     public void setCompetencia(Competencia competencia) {
-        this.competencia = new Competencia(competencia);
+        this.competencia = competencia;
     }
 }

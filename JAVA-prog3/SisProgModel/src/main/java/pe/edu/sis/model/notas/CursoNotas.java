@@ -18,18 +18,9 @@ public class CursoNotas {
     private int activo;
 
     public CursoNotas(Curso curso, Bimestre bimestre, double calificacion_final) {
-        this.curso = new Curso(curso);
-        this.bimestre = new Bimestre(bimestre);
+        this.curso = curso;
+        this.bimestre = bimestre;
         this.calificacion_final = calificacion_final;
-    }
-
-    @SuppressWarnings("IncompleteCopyConstructor")
-    public CursoNotas(CursoNotas other) {
-        this.curso_notas_id = other.curso_notas_id;
-        this.curso = new Curso(other.curso);
-        this.bimestre = new Bimestre(other.bimestre);
-        this.calificacion_final = other.calificacion_final;
-        this.activo = other.activo;
     }
 
     public int getCurso_notas_id() {

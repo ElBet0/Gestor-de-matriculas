@@ -15,13 +15,6 @@ public class GradoAcademico {
     private String abreviatura;
     private int estado;
 
-    public GradoAcademico(GradoAcademico other) {
-        this.grado_academico_id = other.grado_academico_id;
-        this.nombre = other.nombre;
-        this.abreviatura = other.abreviatura;
-        this.estado = other.estado;
-    }
-
     public GradoAcademico(String nombre, String abreviatura) {
         this.nombre = nombre;
         this.abreviatura = abreviatura;

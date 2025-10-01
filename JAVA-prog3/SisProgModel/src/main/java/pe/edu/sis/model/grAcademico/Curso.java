@@ -23,20 +23,11 @@ public class Curso {
         this.descripcion = descripcion;
         this.horas_semanales = horas_semanales;
         this.abreviatura = abreviatura;
-        this.grado = new GradoAcademico(grado);
+        this.grado = grado;
     }
     public Curso(){}
 
-    @SuppressWarnings("IncompleteCopyConstructor")
-    public Curso(Curso other) {
-        this.curso_id = other.curso_id;
-        this.nombre = other.nombre;
-        this.descripcion = other.descripcion;
-        this.horas_semanales = other.horas_semanales;
-        this.activo = other.activo;
-        this.abreviatura = other.abreviatura;
-        this.grado = new GradoAcademico(other.grado);
-    }
+
     public int getCurso_id() {
         return curso_id;
     }
@@ -86,10 +77,10 @@ public class Curso {
     }
 
     public GradoAcademico getGrado() {
-        return new GradoAcademico(grado);
+        return grado;
     }
 
     public void setGrado(GradoAcademico grado) {
-        this.grado = new GradoAcademico(grado);
+        this.grado = grado;
     }
 }

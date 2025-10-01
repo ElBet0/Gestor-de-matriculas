@@ -30,35 +30,18 @@ public class Deuda {
         this.descripcion = "No definido";
         this.descuento = 0;
         this.concepto_deuda = concepto_deuda;
-        this.alumno = Alumno.Clone(alumno);
-    }
-
-    public static Deuda Clone(Deuda deuda){
-        return deuda == null ? null : new Deuda(deuda);
-    }
-
-    @SuppressWarnings("IncompleteCopyConstructor")
-    private Deuda(Deuda other) {
-        this.deuda_id = other.deuda_id;
-        this.monto = other.monto;
-        this.estado = other.estado;
-        this.fecha_emision = other.fecha_emision;
-        this.fecha_vencimiento = other.fecha_vencimiento;
-        this.descripcion = other.descripcion;
-        this.descuento = other.descuento;
-        this.concepto_deuda = other.concepto_deuda;
-        this.alumno = Alumno.Clone(other.alumno);
+        this.alumno = alumno;
     }
 
     public Deuda() {
     }
 
     public Alumno getAlumno() {
-        return Alumno.Clone(alumno);
+        return alumno;
     }
 
     public void setAlumno(Alumno alumno) {
-        this.alumno = Alumno.Clone(alumno);
+        this.alumno = alumno;
     }
 
     public int getDeuda_id() {

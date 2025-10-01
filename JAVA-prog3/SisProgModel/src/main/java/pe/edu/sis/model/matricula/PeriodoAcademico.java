@@ -25,16 +25,6 @@ public class PeriodoAcademico {
         this.fecha_fin = fecha_fin;
     }
 
-    @SuppressWarnings("IncompleteCopyConstructor")
-    public PeriodoAcademico(PeriodoAcademico other) {
-        this.periodo_academico_id = other.periodo_academico_id;
-        this.nombre = other.nombre;
-        this.descripcion = other.descripcion;
-        this.fecha_inicio = other.fecha_inicio;
-        this.fecha_fin = other.fecha_fin;
-        this.vigencia = other.vigencia;
-    }
-
     public PeriodoAcademico(){}
 
     public int getPeriodo_academico_id() {

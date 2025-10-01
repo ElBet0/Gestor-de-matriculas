@@ -25,26 +25,13 @@ public class Familia {
         this.direccion = direccion;
     }
 
-    public static Familia Clone(Familia familia){
-        return familia == null ? null : new Familia(familia);
-    }
-
-    private Familia(Familia other) {
-        this.familia_id = other.familia_id;
-        this.apellido_paterno = other.apellido_paterno;
-        this.apellido_materno = other.apellido_materno;
-        this.numero_telefono = other.numero_telefono;
-        this.correo_electronico = other.correo_electronico;
-        this.direccion = other.direccion;
-    }
-
-    public Familia(int familia_id, String apellido_paterno, String apellido_materno, String numero_telefono, String correo_electronico, String direccion) {
+    public Familia(int familia_id, String apellido_paterno, String apellido_materno) {
         this.familia_id = familia_id;
         this.apellido_paterno = apellido_paterno;
         this.apellido_materno = apellido_materno;
-        this.numero_telefono = numero_telefono;
-        this.correo_electronico = correo_electronico;
-        this.direccion = direccion;
+        this.numero_telefono = "Sin asignar";
+        this.correo_electronico = "Sin asignar";
+        this.direccion = "Sin asignar";
     }
 
     public Familia (){}

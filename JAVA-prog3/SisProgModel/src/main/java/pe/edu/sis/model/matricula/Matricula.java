@@ -24,15 +24,6 @@ public class Matricula {
         this.grado = grado;
     }
 
-    @SuppressWarnings("IncompleteCopyConstructor")
-    public Matricula(Matricula other) {
-        this.matricula_id = other.matricula_id;
-        this.alumno = Alumno.Clone(other.alumno);
-        this.periodo = new PeriodoAcademico(other.periodo);
-        this.grado = new GradoAcademico(other.grado);
-        this.estado = other.estado;
-    }
-
     public Matricula(int matricula_id){
         this.matricula_id = matricula_id;
         this.alumno = new Alumno(-1);
@@ -58,26 +49,26 @@ public class Matricula {
 
 
     public Alumno getAlumno() {
-        return Alumno.Clone(alumno);
+        return alumno;
     }
 
     public void setAlumno(Alumno alumno) {
-        this.alumno = Alumno.Clone(alumno);
+        this.alumno = alumno;
     }
 
     public PeriodoAcademico getPeriodo() {
-        return new PeriodoAcademico(periodo);
+        return periodo;
     }
 
     public void setPeriodo(PeriodoAcademico periodo) {
-        this.periodo = new PeriodoAcademico(periodo);
+        this.periodo = periodo;
     }
 
     public GradoAcademico getGrado() {
-        return new GradoAcademico(grado);
+        return grado;
     }
 
     public void setGrado(GradoAcademico grado) {
-        this.grado = new GradoAcademico(grado);
+        this.grado = grado;
     }
 }

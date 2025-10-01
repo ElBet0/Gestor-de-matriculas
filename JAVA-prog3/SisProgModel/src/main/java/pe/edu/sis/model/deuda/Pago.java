@@ -24,32 +24,17 @@ public class Pago {
         this.fecha = fecha;
         this.medioPago = medioPago;
         this.observaciones = "Sin observaciones";
-        this.deuda = Deuda.Clone(deuda);
-    }
-
-    public static Pago Clone(Pago pago){
-        return pago == null ? null : new Pago(pago);
-    }
-
-    @SuppressWarnings("IncompleteCopyConstructor")
-    private Pago(Pago other) {
-        this.pago_id = other.pago_id;
-        this.monto = other.monto;
-        this.fecha = other.fecha;
-        this.medioPago = other.medioPago;
-        this.observaciones = other.observaciones;
-        this.deuda = Deuda.Clone(other.deuda);
-        this.estado = other.estado;
+        this.deuda = deuda;
     }
 
     public Pago(){}
 
     public Deuda getDeuda() {
-        return Deuda.Clone(deuda);
+        return deuda;
     }
 
     public void setDeuda(Deuda deuda) {
-        this.deuda = Deuda.Clone(deuda);
+        this.deuda = deuda;
     }
 
     public int getPago_id() {

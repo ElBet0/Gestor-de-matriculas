@@ -68,7 +68,7 @@ public class VacanteAulaImpl implements VacanteAulaDAO {
                 vac.setNombre(rs.getString("nombre"));
                 vac.setVacantes_disponibles(rs.getInt("vacantes_disponibles"));
                 vac.setVacantes_ocupadas(rs.getInt("vacantes_ocupadas"));
-                vac.setEstado(rs.getInt("estado"));
+                vac.setActivo(rs.getInt("estado"));
             }
         }catch(SQLException ex){
             System.out.println(ex.getMessage());
@@ -89,7 +89,7 @@ public class VacanteAulaImpl implements VacanteAulaDAO {
                 vac.setNombre(rs.getString("nombre"));
                 vac.setVacantes_disponibles(rs.getInt("vacantes_disponibles"));
                 vac.setVacantes_ocupadas(rs.getInt("vacantes_ocupadas"));
-                vac.setEstado(rs.getInt("estado"));
+                vac.setActivo(rs.getInt("estado"));
                 lista.add(vac);
             }
         }catch(SQLException ex){

@@ -18,16 +18,7 @@ public class Competencia {
     public Competencia(String nombre, double peso_competencia, Curso curso) {
         this.nombre = nombre;
         this.peso_competencia = peso_competencia;
-        this.curso = new Curso(curso);
-    }
-
-    @SuppressWarnings("IncompleteCopyConstructor")
-    public Competencia(Competencia other) {
-        this.competencia_id = other.competencia_id;
-        this.nombre = other.nombre;
-        this.peso_competencia = other.peso_competencia;
-        this.activo = other.activo;
-        this.curso = new Curso(other.curso);
+        this.curso = curso;
     }
 
     public int getCompetencia_id() {
@@ -63,11 +54,11 @@ public class Competencia {
     }
 
     public Curso getCurso() {
-        return new Curso(curso);
+        return curso;
     }
 
     public void setCurso(Curso curso) {
-        this.curso = new Curso(curso);
+        this.curso = curso;
     }
 
 }

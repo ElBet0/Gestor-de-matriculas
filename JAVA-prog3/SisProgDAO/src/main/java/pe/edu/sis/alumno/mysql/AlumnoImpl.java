@@ -135,7 +135,6 @@ public class AlumnoImpl implements AlumnoDAO {
         Familia fami;
         for(int i=0;i<ids.size();i++){
             fami = fam.obtener_por_id((int)ids.get(i));
-            /*ASIGNAR FAMILIA FANTASMA 👻(GRACIAS IRIGOYEN)*/
             alumno.get(i).setPadres(fami);
         }
         return alumno;
