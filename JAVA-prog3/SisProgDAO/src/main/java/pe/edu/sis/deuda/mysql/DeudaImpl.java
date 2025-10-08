@@ -77,11 +77,11 @@ public class DeudaImpl implements DeudaDAO{
         rs=DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_DEUDA_POR_ID", in);
         int al_id=0;
         try{
-            if(rs != null && rs.next()){
+            if(rs.next()){
                 deu = new Deuda();
                 deu.setDeuda_id(rs.getInt("deuda_id"));
-                deu.setMonto(rs.getDouble("monto"));
-                deu.setConcepto_deuda(TipoDeuda.valueOf(rs.getString("tipo_deuda")));
+//                deu.setMonto(rs.getDouble("monto"));
+//                deu.setConcepto_deuda(TipoDeuda.valueOf(rs.getString("tipo_deuda")));
                 deu.setFecha_emision(rs.getDate("fecha_emision"));
                 deu.setFecha_vencimiento(rs.getDate("fecha_vencimiento"));
                 deu.setDescripcion(rs.getString("descripcion"));
@@ -90,6 +90,8 @@ public class DeudaImpl implements DeudaDAO{
             }
         }catch(SQLException ex){
             System.out.println(ex.getMessage());
+        }catch( NullPointerException nul){
+            System.out.println("Error en ejecucion de Procedure ");
         }finally{
             DbManager.getInstance().cerrarConexion();
         }
@@ -107,11 +109,11 @@ public class DeudaImpl implements DeudaDAO{
         rs=DbManager.getInstance().ejecutarProcedimientoLectura("LISTAR_DEUDAS", null);
         ArrayList<Integer> al_id=new ArrayList<>();
         try{
-            while(rs != null && rs.next()){
+            while(rs.next()){
                 Deuda deu=new Deuda();
                 deu.setDeuda_id(rs.getInt("deuda_id"));
                 deu.setMonto(rs.getDouble("monto"));
-                deu.setConcepto_deuda(TipoDeuda.valueOf(rs.getString("tipo_deuda")));
+//                deu.setConcepto_deuda(TipoDeuda.valueOf(rs.getString("tipo_deuda")));
                 deu.setFecha_emision(rs.getDate("fecha_emision"));
                 deu.setFecha_vencimiento(rs.getDate("fecha_vencimiento"));
                 deu.setDescripcion(rs.getString("descripcion"));
@@ -121,6 +123,8 @@ public class DeudaImpl implements DeudaDAO{
             }
         }catch(SQLException ex){
             System.out.println(ex.getMessage());
+        }catch( NullPointerException nul){
+            System.out.println("Error en ejecucion de Procedure ");
         }finally{
             DbManager.getInstance().cerrarConexion();
         }

@@ -62,9 +62,9 @@ public class CursoImpl implements CursoDAO {
     }
 
     @Override
-    public Curso obtener_por_id(int pos) {
+    public Curso obtener_por_id(int _id) {
         Map<Integer, Object> in= new HashMap<>();
-        in.put(1,pos);
+        in.put(1,_id);
         rs=DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_CURSO_POR_ID", in);
         int id=0;
         Curso curso=new Curso();
@@ -72,7 +72,7 @@ public class CursoImpl implements CursoDAO {
         try{
             while(rs.next()){
                 curso.setAbreviatura(rs.getString("abreviatura"));
-                curso.setActivo(rs.getInt("activo"));
+//                curso.setActivo(rs.getInt("activo"));
                 curso.setNombre(rs.getString("nombre"));
                 curso.setDescripcion(rs.getString("descripcion"));
                 curso.setHoras_semanales(rs.getInt("horas_semanales"));
@@ -98,7 +98,7 @@ public class CursoImpl implements CursoDAO {
             while(rs.next()){
                 Curso curso=new Curso();
                 curso.setAbreviatura(rs.getString("abreviatura"));
-                curso.setActivo(rs.getInt("activo"));
+//                curso.setActivo(rs.getInt("activo"));
                 curso.setNombre(rs.getString("nombre"));
                 curso.setDescripcion(rs.getString("descripcion"));
                 curso.setHoras_semanales(rs.getInt("horas_semanales"));
@@ -107,6 +107,8 @@ public class CursoImpl implements CursoDAO {
             }
         }catch(SQLException ex){
             System.out.println(ex.getMessage());
+        }catch( NullPointerException nul){
+            System.out.println("Error en ejecucion de Procedure ");
         }finally{
             DbManager.getInstance().cerrarConexion();
         }

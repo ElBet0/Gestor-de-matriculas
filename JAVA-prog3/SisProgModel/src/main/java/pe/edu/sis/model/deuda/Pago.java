@@ -14,15 +14,13 @@ public class Pago {
     private int pago_id;
     private double monto;
     private Date fecha;
-    private Medio medioPago;
+    private MedioPago medio;
     private String observaciones;
     private Deuda deuda;
-    private int estado;
 
-    public Pago(double monto, Date fecha, Medio medioPago, Deuda deuda) {
+    public Pago(double monto, Date fecha, Deuda deuda) {
         this.monto = monto;
         this.fecha = fecha;
-        this.medioPago = medioPago;
         this.observaciones = "Sin observaciones";
         this.deuda = deuda;
     }
@@ -61,14 +59,6 @@ public class Pago {
         this.fecha = fecha;
     }
 
-    public Medio getMedioPago() {
-        return medioPago;
-    }
-
-    public void setMedioPago(Medio medioPago) {
-        this.medioPago = medioPago;
-    }
-
     public String getObservaciones() {
         return observaciones;
     }
@@ -79,6 +69,21 @@ public class Pago {
 
     @Override
     public String toString() {
-        return "Pago{" + "pago_id=" + pago_id + ", monto=" + monto + ", fecha=" + fecha + ", medioPago=" + medioPago + ", observaciones=" + observaciones + ", deuda=" + deuda + ", estado=" + estado + '}';
+        return "Pago{" + "pago_id=" + pago_id + ", monto=" + monto + ", fecha=" 
+                + fecha + ", observaciones=" + observaciones + ", deuda=" + deuda;
+    }
+
+    /**
+     * @return the medio
+     */
+    public MedioPago getMedio() {
+        return medio;
+    }
+
+    /**
+     * @param medio the medio to set
+     */
+    public void setMedio(MedioPago medio) {
+        this.medio = medio;
     }
 }

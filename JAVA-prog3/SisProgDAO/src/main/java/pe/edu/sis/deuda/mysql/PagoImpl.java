@@ -7,7 +7,6 @@ package pe.edu.sis.deuda.mysql;
 import pe.edu.sis.db.bd.DbManager;
 import pe.edu.sis.deuda.dao.DeudaDAO;
 import pe.edu.sis.deuda.dao.PagoDAO;
-import pe.edu.sis.model.deuda.Medio;
 import pe.edu.sis.model.deuda.Pago;
 
 import java.sql.Date;
@@ -31,7 +30,7 @@ public class PagoImpl implements PagoDAO{
         out.put(1,Types.INTEGER);
         in.put(2,pago.getMonto());
         in.put(3,new Date(pago.getFecha().getTime()));
-        in.put(4,pago.getMedioPago().toString());
+//        in.put(4,pago.getMedioPago().toString());
         in.put(5,pago.getObservaciones());
         in.put(6,pago.getDeuda().getDeuda_id());
         if(DbManager.getInstance().ejecutarProcedimiento("INSERTAR_PAGO",in,out) < 0) return -1;
@@ -46,7 +45,6 @@ public class PagoImpl implements PagoDAO{
         in.put(1,pago.getPago_id());
         in.put(2,pago.getMonto());
         in.put(3,new Date(pago.getFecha().getTime()));
-        in.put(4,pago.getMedioPago().toString());
         in.put(5,pago.getObservaciones());
         in.put(6,pago.getDeuda().getDeuda_id());
         int resultado=DbManager.getInstance().ejecutarProcedimiento("MODIFICAR_PAGO",in,null);
@@ -72,17 +70,18 @@ public class PagoImpl implements PagoDAO{
         rs=DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_PAGO_POR_ID", in);
         int id=0;
         try{
-            if(rs != null && rs.next()){
+            if(rs.next()){
                 pago = new Pago();
                 pago.setPago_id(rs.getInt("pago_id"));
                 pago.setMonto(rs.getDouble("monto"));
                 pago.setFecha(rs.getDate("fecha"));
-                pago.setMedioPago(Medio.valueOf(rs.getString("medio")));
                 pago.setObservaciones("observaciones");
                 id=rs.getInt("deuda_id");
             }
         }catch(SQLException ex){
             System.out.println(ex.getMessage());
+        }catch( NullPointerException nul){
+            System.out.println("Error en ejecucion de Procedure ");
         }finally{
             DbManager.getInstance().cerrarConexion();
         }
@@ -99,19 +98,20 @@ public class PagoImpl implements PagoDAO{
         rs=DbManager.getInstance().ejecutarProcedimientoLectura("LISTAR_PAGOS", null);
         ArrayList<Integer>id=new ArrayList<>();
         try{
-            while(rs != null && rs.next()){
+            while(rs.next()){
                 pago_lista = new ArrayList<>();
                 Pago pago=new Pago();
                 pago.setPago_id(rs.getInt("pago_id"));
                 pago.setMonto(rs.getDouble("monto"));
                 pago.setFecha(rs.getDate("fecha"));
-                pago.setMedioPago(Medio.valueOf(rs.getString("medio")));
                 pago.setObservaciones("observaciones");
                 id.add(rs.getInt("deuda_id"));
                 pago_lista.add(pago);
             }
         }catch(SQLException ex){
             System.out.println(ex.getMessage());
+        }catch( NullPointerException nul){
+            System.out.println("Error en ejecucion de Procedure ");
         }finally{
             DbManager.getInstance().cerrarConexion();
         }

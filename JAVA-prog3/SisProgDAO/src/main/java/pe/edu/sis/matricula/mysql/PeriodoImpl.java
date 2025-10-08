@@ -72,10 +72,12 @@ public class PeriodoImpl implements PeriodoDAO{
                 per.setDescripcion(rs.getString("descripcion"));
                 per.setFecha_inicio(rs.getDate("fecha_inicio"));
                 per.setFecha_fin(rs.getDate("fecha_fin"));
-                per.setVigencia(rs.getInt("vigencia"));
+//                per.setVigencia(rs.getInt("vigencia"));
             }
         }catch(SQLException ex){
             System.out.println(ex.getMessage());
+        }catch( NullPointerException nul){
+            System.out.println("Error en ejecucion de Procedure ");
         }finally{
             DbManager.getInstance().cerrarConexion();
         }
@@ -94,7 +96,7 @@ public class PeriodoImpl implements PeriodoDAO{
                 per.setDescripcion(rs.getString("descripcion"));
                 per.setFecha_inicio(rs.getDate("fecha_inicio"));
                 per.setFecha_fin(rs.getDate("fecha_fin"));
-                per.setVigencia(rs.getInt("vigencia"));
+//                per.setVigencia(rs.getInt("vigencia"));
                 lista.add(per);
             }
         }catch(SQLException ex){

@@ -15,7 +15,7 @@ public class Familia {
     private String numero_telefono;
     private String correo_electronico;
     private String direccion;
-
+    
     //Si estas usando este, cambialo por el que tiene familia_id, evitamos errores
     public Familia(String apellido_paterno, String apellido_materno, String numero_telefono, String correo_electronico, String direccion) {
         this.apellido_paterno = apellido_paterno;

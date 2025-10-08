@@ -12,15 +12,15 @@ import java.util.Date;
 public class Alumno {
 
     private int alumno_id;
-    private String nombre;
     private int dni;
+    private String nombre;
     private Date fecha_nacimiento;
     private Date fecha_ingreso;
     private char sexo;
     private String religion;
-    private Familia padres;
     private String observaciones; //creo que deberia ser una lista
     private double pension_base;
+    private Familia padres;
 
     public Alumno(String nombre, int dni, Date fecha_nacimiento, Date fecha_ingreso, char sexo, String religion,
                   Familia padres, String observaciones, double pension_base) {
@@ -162,4 +162,6 @@ public class Alumno {
     public void setPension_base(double pension_base) {
         this.pension_base = pension_base;
     }
+
+    
 }

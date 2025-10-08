@@ -72,7 +72,7 @@ public class FamiliaImpl implements FamiliaDAO {
         in.put(1, id);
         rs = DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_FAMILIA_POR_ID", in);
         try {
-            if (rs != null && rs.next()) {
+            if ( rs.next()) {
                 fam = new Familia();
                 fam.setApellido_materno(rs.getString("apellido_materno"));
                 fam.setApellido_paterno(rs.getString("apellido_paterno"));
@@ -81,9 +81,12 @@ public class FamiliaImpl implements FamiliaDAO {
                 fam.setFamilia_id(rs.getInt("familia_id"));
                 fam.setNumero_telefono(rs.getString("num_telf"));
             }
-        } catch (SQLException ex) {
+        } catch (SQLException ex ) {
             System.out.println(ex.getMessage());
-        } finally {
+        } catch( NullPointerException nul){
+            System.out.println("Error en ejecucion de Procedure ");
+        }
+        finally {
             DbManager.getInstance().cerrarConexion();
         }
         return fam;
@@ -94,7 +97,7 @@ public class FamiliaImpl implements FamiliaDAO {
         ArrayList<Familia> familia = new ArrayList<>();
         rs = DbManager.getInstance().ejecutarProcedimientoLectura("LISTAR_FAMILIAS", null);
         try {
-            while (rs != null && rs.next()) {
+            while (rs.next()) {
                 Familia fam = new Familia();
                 fam.setApellido_materno(rs.getString("apellido_materno"));
                 fam.setApellido_paterno(rs.getString("apellido_paterno"));
@@ -106,6 +109,8 @@ public class FamiliaImpl implements FamiliaDAO {
             }
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
+        }catch( NullPointerException nul){
+            System.out.println("Error en ejecucion de Procedure ");
         } finally {
             DbManager.getInstance().cerrarConexion();
         }

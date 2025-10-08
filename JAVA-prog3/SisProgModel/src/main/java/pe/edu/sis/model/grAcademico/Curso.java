@@ -14,7 +14,6 @@ public class Curso {
     private String nombre;
     private String descripcion;
     private int horas_semanales;
-    private int activo;
     private String abreviatura;
     private GradoAcademico grado;
 
@@ -58,14 +57,6 @@ public class Curso {
 
     public void setHoras_semanales(int horas_semanales) {
         this.horas_semanales = horas_semanales;
-    }
-
-    public int getActivo() {
-        return activo;
-    }
-
-    public void setActivo(int activo) {
-        this.activo = activo;
     }
 
     public String getAbreviatura() {
