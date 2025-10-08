@@ -16,7 +16,6 @@ public class PeriodoAcademico {
     private String descripcion;
     private Date fecha_inicio;
     private Date fecha_fin;
-    private int vigencia;
 
     public PeriodoAcademico(String nombre, String descripcion, Date fecha_inicio, Date fecha_fin) {
         this.nombre = nombre;
@@ -65,14 +64,6 @@ public class PeriodoAcademico {
 
     public void setFecha_fin(Date fecha_fin) {
         this.fecha_fin = fecha_fin;
-    }
-
-    public int getVigencia() {
-        return vigencia;
-    }
-
-    public void setVigencia(int vigencia) {
-        this.vigencia = vigencia;
     }
 
 }

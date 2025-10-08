@@ -81,7 +81,7 @@ public class AlumnoImpl implements AlumnoDAO {
         FamiliaDAO fam = new FamiliaImpl();
         int fam_id=0;
         try{
-            if(rs != null && rs.next()){
+            if( rs.next()){
                 al = new Alumno();
                 al.setAlumno_id(rs.getInt("alumno_id"));
                 al.setDni(rs.getInt("dni"));
@@ -96,6 +96,8 @@ public class AlumnoImpl implements AlumnoDAO {
             }
         }catch(SQLException ex){
             System.out.println(ex.getMessage());
+        }catch( NullPointerException nul){
+            System.out.println("Error en ejecucion de Procedure ");
         }finally{
             DbManager.getInstance().cerrarConexion();
         }
@@ -113,7 +115,7 @@ public class AlumnoImpl implements AlumnoDAO {
         FamiliaDAO fam = new FamiliaImpl();
         ArrayList<Integer> ids=new ArrayList<>();
         try{
-            while(rs != null && rs.next()){
+            while(rs.next()){
                 Alumno al=new Alumno();
                 al.setAlumno_id(rs.getInt("alumno_id"));
                 al.setDni(rs.getInt("dni"));
@@ -129,6 +131,8 @@ public class AlumnoImpl implements AlumnoDAO {
             }
         }catch(SQLException ex){
             System.out.println(ex.getMessage());
+        }catch( NullPointerException nul){
+            System.out.println("Error en ejecucion de Procedure ");
         }finally{
             DbManager.getInstance().cerrarConexion();
         }

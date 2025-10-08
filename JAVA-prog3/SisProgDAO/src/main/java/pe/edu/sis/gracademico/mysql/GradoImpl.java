@@ -28,7 +28,7 @@ public class GradoImpl implements GradoDAO {
         out.put(1,Types.INTEGER);
         in.put(2,grado.getNombre());
         in.put(3,grado.getAbreviatura());
-        DbManager.getInstance().ejecutarProcedimiento("INSERTAR_GRADO_ACADEMICO",in,out);
+        if (DbManager.getInstance().ejecutarProcedimiento("INSERTAR_GRADO_ACADEMICO",in,out)<0) return -1;
         grado.setGrado_academico_id((int)out.get(1));
         System.out.println("Se ha realizado el registro del Grado Academico");
         return grado.getGrado_academico_id();
@@ -65,10 +65,12 @@ public class GradoImpl implements GradoDAO {
                 grado.setAbreviatura(rs.getString("abreviatura"));
                 grado.setGrado_academico_id(rs.getInt("grado_academico_id"));
                 grado.setNombre(rs.getString("nombre"));
-                grado.setEstado(rs.getInt("estado"));
+                grado.setActivo(rs.getInt("estado"));
             }
         }catch(SQLException ex){
             System.out.println(ex.getMessage());
+        }catch( NullPointerException nul){
+            System.out.println("Error en ejecucion de Procedure ");
         }finally{
             DbManager.getInstance().cerrarConexion();
         }
@@ -85,7 +87,7 @@ public class GradoImpl implements GradoDAO {
                 grado.setAbreviatura(rs.getString("abreviatura"));
                 grado.setGrado_academico_id(rs.getInt("grado_academico_id"));
                 grado.setNombre(rs.getString("nombre"));
-                grado.setEstado(rs.getInt("estado"));
+                grado.setActivo(rs.getInt("estado"));
                 lista.add(grado);
             }
         }catch(SQLException ex){

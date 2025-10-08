@@ -5,7 +5,6 @@
 package pe.edu.sis.model.matricula;
 
 import pe.edu.sis.model.alumno.Alumno;
-import pe.edu.sis.model.grAcademico.GradoAcademico;
 /**
  *
  * @author ElBet0
@@ -14,14 +13,10 @@ public class Matricula {
 
     private int matricula_id;
     private Alumno alumno;
-    private PeriodoAcademico periodo;
-    private GradoAcademico grado;
-    private int estado;
+    private PeriodoXAula periodo;
     
-    public Matricula(Alumno alumno, PeriodoAcademico periodo, GradoAcademico grado) {
-        this.alumno = alumno;
+    public Matricula(Alumno alumno, PeriodoXAula periodo){
         this.periodo = periodo;
-        this.grado = grado;
     }
 
     public Matricula(int matricula_id){
@@ -30,14 +25,6 @@ public class Matricula {
     }
 
     public Matricula(){}
-
-    public int getEstado() {
-        return estado;
-    }
-
-    public void setEstado(int estado) {
-        this.estado = estado;
-    }
 
     public int getMatricula_id() {
         return matricula_id;
@@ -56,19 +43,11 @@ public class Matricula {
         this.alumno = alumno;
     }
 
-    public PeriodoAcademico getPeriodo() {
+    public PeriodoXAula getPeriodo_Aula() {
         return periodo;
     }
 
-    public void setPeriodo(PeriodoAcademico periodo) {
+    public void setPeriodo_Aula(PeriodoXAula periodo) {
         this.periodo = periodo;
-    }
-
-    public GradoAcademico getGrado() {
-        return grado;
-    }
-
-    public void setGrado(GradoAcademico grado) {
-        this.grado = grado;
     }
 }

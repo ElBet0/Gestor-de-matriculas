@@ -4,6 +4,7 @@
  */
 package pe.edu.sis.model.deuda;
 
+import java.util.ArrayList;
 import pe.edu.sis.model.alumno.Alumno;
 
 import java.util.Date;
@@ -15,13 +16,13 @@ import java.util.Date;
 public class Deuda {
     private int deuda_id;
     private double monto;
-    private int estado;
     private Date fecha_emision;
     private Date fecha_vencimiento;
     private String descripcion;
     private double descuento;
     private TipoDeuda concepto_deuda;
     private Alumno alumno;
+    private ArrayList<Pago> pagos;
 
     public Deuda(double monto, Date fecha_emision, Date fecha_vencimiento, TipoDeuda concepto_deuda, Alumno alumno) {
         this.monto = monto;
@@ -58,14 +59,6 @@ public class Deuda {
 
     public void setMonto(double monto) {
         this.monto = monto;
-    }
-
-    public int getEstado() {
-        return estado;
-    }
-
-    public void setEstado(int estado) {
-        this.estado = estado;
     }
 
     public Date getFecha_emision() {
@@ -110,6 +103,20 @@ public class Deuda {
 
     @Override
     public String toString() {
-        return "Deuda{" + "deuda_id=" + deuda_id + ", monto=" + monto + ", estado=" + estado + ", fecha_emision=" + fecha_emision + ", fecha_vencimiento=" + fecha_vencimiento + ", descripcion=" + descripcion + ", descuento=" + descuento + ", concepto_deuda=" + concepto_deuda + '}';
+        return "Deuda{" + "deuda_id=" + deuda_id + ", monto=" + monto + ", fecha_emision=" + fecha_emision + ", fecha_vencimiento=" + fecha_vencimiento + ", descripcion=" + descripcion + ", descuento=" + descuento + ", concepto_deuda=" + concepto_deuda + '}';
+    }
+
+    /**
+     * @return the pagos
+     */
+    public ArrayList<Pago> getPagos() {
+        return pagos;
+    }
+
+    /**
+     * @param pagos the pagos to set
+     */
+    public void setPagos(ArrayList<Pago> pagos) {
+        this.pagos = pagos;
     }
 }

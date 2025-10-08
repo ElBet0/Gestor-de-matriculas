@@ -5,12 +5,12 @@
 package pe.edu.sis.matricula.dao;
 
 import pe.edu.sis.dao.IDAO;
-import pe.edu.sis.model.matricula.VacantesAula;
+import pe.edu.sis.model.grAcademico.Aula;
 
 /**
  *
  * @author seinc
  */
-public interface VacanteAulaDAO extends IDAO<VacantesAula> {
+public interface VacanteAulaDAO extends IDAO<Aula> {
     
 }

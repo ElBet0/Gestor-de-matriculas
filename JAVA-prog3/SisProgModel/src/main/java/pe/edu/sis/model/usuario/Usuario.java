@@ -14,19 +14,14 @@ public class Usuario {
     private int usuario_id;
     private String hashClave;
     private String nombre;
-    private String apellido_paterno;
-    private String apellido_materno;
-    private int estado;
-    private String email;
+    private String Salt;
     private Date ultimo_acceso;
     private Rol rol;
+    private int Iteracion;
 
-    public Usuario(String hashClave, String nombre, String apellido_paterno, String apellido_materno, String email, Date ultimo_acceso, Rol rol) {
+    public Usuario(String hashClave, String nombre, Date ultimo_acceso, Rol rol) {
         this.hashClave = hashClave;
         this.nombre = nombre;
-        this.apellido_paterno = apellido_paterno;
-        this.apellido_materno = apellido_materno;
-        this.email = email;
         this.ultimo_acceso = ultimo_acceso;
         this.rol = rol;
     }
@@ -74,61 +69,6 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    /**
-     * @return the apellido_paterno
-     */
-    public String getApellido_paterno() {
-        return apellido_paterno;
-    }
-
-    /**
-     * @param apellido_paterno the apellido_paterno to set
-     */
-    public void setApellido_paterno(String apellido_paterno) {
-        this.apellido_paterno = apellido_paterno;
-    }
-
-    /**
-     * @return the apellido_materno
-     */
-    public String getApellido_materno() {
-        return apellido_materno;
-    }
-
-    /**
-     * @param apellido_materno the apellido_materno to set
-     */
-    public void setApellido_materno(String apellido_materno) {
-        this.apellido_materno = apellido_materno;
-    }
-
-    /**
-     * @return the estado
-     */
-    public int getEstado() {
-        return estado;
-    }
-
-    /**
-     * @param estado the estado to set
-     */
-    public void setEstado(int estado) {
-        this.estado = estado;
-    }
-
-    /**
-     * @return the email
-     */
-    public String getEmail() {
-        return email;
-    }
-
-    /**
-     * @param email the email to set
-     */
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
     /**
      * @return the ultimo_acceso
@@ -156,6 +96,34 @@ public class Usuario {
      */
     public void setRol(Rol rol) {
         this.rol = rol;
+    }
+
+    /**
+     * @return the Salt
+     */
+    public String getSalt() {
+        return Salt;
+    }
+
+    /**
+     * @param Salt the Salt to set
+     */
+    public void setSalt(String Salt) {
+        this.Salt = Salt;
+    }
+
+    /**
+     * @return the Iteracion
+     */
+    public int getIteracion() {
+        return Iteracion;
+    }
+
+    /**
+     * @param Iteracion the Iteracion to set
+     */
+    public void setIteracion(int Iteracion) {
+        this.Iteracion = Iteracion;
     }
     
 }

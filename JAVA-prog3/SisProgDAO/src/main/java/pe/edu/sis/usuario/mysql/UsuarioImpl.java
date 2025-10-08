@@ -29,11 +29,11 @@ public class UsuarioImpl implements UsuarioDAO{
         out.put(1,Types.INTEGER);
         in.put(2,user.getHashClave());
         in.put(3,user.getNombre());
-        in.put(4,user.getApellido_paterno());
-        in.put(5,user.getApellido_materno());
-        in.put(6,user.getEmail());
+//        in.put(4,user.getApellido_paterno());
+//        in.put(5,user.getApellido_materno());
+//        in.put(6,user.getEmail());
         in.put(7,new Date(user.getUltimo_acceso().getTime()));
-        in.put(8,user.getRol().getRol_id());
+//        in.put(8,user.getRol().getRol_id());
         DbManager.getInstance().ejecutarProcedimiento("INSERTAR_USUARIO",in,out);
         user.setUsuario_id((int)out.get(1));
         System.out.println("Se ha realizado el registro del usuario");
@@ -46,11 +46,11 @@ public class UsuarioImpl implements UsuarioDAO{
         in.put(1,user.getUsuario_id());
         in.put(2,user.getHashClave());
         in.put(3,user.getNombre());
-        in.put(4,user.getApellido_paterno());
-        in.put(5,user.getApellido_materno());
-        in.put(6,user.getEmail());
+//        in.put(4,user.getApellido_paterno());
+//        in.put(5,user.getApellido_materno());
+//        in.put(6,user.getEmail());
         in.put(7,new Date(user.getUltimo_acceso().getTime()));
-        in.put(8,user.getRol().getRol_id());
+//        in.put(8,user.getRol().getRol_id());
         int resultado=DbManager.getInstance().ejecutarProcedimiento("MODIFICAR_USUARIO",in,null);
         System.out.println("Se ha realizado la modificacion del usuario");
         return resultado;
@@ -77,9 +77,9 @@ public class UsuarioImpl implements UsuarioDAO{
                 if(user == null) user = new Usuario();
                 user.setUsuario_id(rs.getInt("usuario_id"));
                 user.setNombre(rs.getString("nombre"));
-                user.setApellido_paterno(rs.getString("apellido_paterno"));
-                user.setApellido_materno(rs.getString("apellido_materno"));
-                user.setEmail(rs.getString("email"));
+//                user.setApellido_paterno(rs.getString("apellido_paterno"));
+//                user.setApellido_materno(rs.getString("apellido_materno"));
+//                user.setEmail(rs.getString("email"));
                 user.setUltimo_acceso(rs.getDate("ultimoacceso"));
                 rol_id=rs.getInt("rol_id");
             }
@@ -102,9 +102,9 @@ public class UsuarioImpl implements UsuarioDAO{
                 Usuario user=new Usuario();
                 user.setUsuario_id(rs.getInt("usuario_id"));
                 user.setNombre(rs.getString("nombre"));
-                user.setApellido_paterno(rs.getString("apellido_paterno"));
-                user.setApellido_materno(rs.getString("apellido_materno"));
-                user.setEmail(rs.getString("email"));
+//                user.setApellido_paterno(rs.getString("apellido_paterno"));
+//                user.setApellido_materno(rs.getString("apellido_materno"));
+//                user.setEmail(rs.getString("email"));
                 user.setUltimo_acceso(rs.getDate("ultimoacceso"));
                 usuarios.add(user);
                 id.add(rs.getInt("rol_id"));

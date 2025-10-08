@@ -4,6 +4,8 @@
  */
 package pe.edu.sis.model.grAcademico;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author seinc
@@ -13,20 +15,25 @@ public class GradoAcademico {
     private int grado_academico_id;
     private String nombre;
     private String abreviatura;
-    private int estado;
+    private int activo;
+    private ArrayList<Aula> aulas;
+    private ArrayList<Curso> cursos;
 
     public GradoAcademico(String nombre, String abreviatura) {
         this.nombre = nombre;
         this.abreviatura = abreviatura;
     }
-    public GradoAcademico(){}
-
-    public int getEstado() {
-        return estado;
+    public GradoAcademico(){
+        aulas = new ArrayList<>();
+        cursos = new ArrayList<>();
     }
 
-    public void setEstado(int estado) {
-        this.estado = estado;
+    public int getActivo() {
+        return activo;
+    }
+
+    public void setActivo(int activo) {
+        this.activo = activo;
     }
 
     public int getGrado_academico_id() {
@@ -51,6 +58,38 @@ public class GradoAcademico {
 
     public void setAbreviatura(String abreviatura) {
         this.abreviatura = abreviatura;
+    }
+    
+    public void AgregarCursos(Curso curso){ 
+        cursos.add(curso);
+    }
+
+    /**
+     * @return the cursos
+     */
+    public ArrayList<Curso> getCursos() {
+        return cursos;
+    }
+
+    /**
+     * @param cursos the cursos to set
+     */
+    public void setCursos(ArrayList<Curso> cursos) {
+        this.cursos = cursos;
+    }
+
+    /**
+     * @return the aulas
+     */
+    public ArrayList<Aula> getAulas() {
+        return aulas;
+    }
+
+    /**
+     * @param aulas the aulas to set
+     */
+    public void setAulas(ArrayList<Aula> aulas) {
+        this.aulas = aulas;
     }
     
 }
