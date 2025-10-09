@@ -4,7 +4,13 @@
  */
 package pe.edu.sis.model.usuario;
 
+import java.security.SecureRandom;
+import java.security.spec.KeySpec;
+import java.util.Base64;
 import java.util.Date;
+
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.PBEKeySpec;
 
 /**
  *
@@ -14,18 +20,26 @@ public class Usuario {
     private int usuario_id;
     private String hashClave;
     private String nombre;
-    private String Salt;
+    private String salt;
     private Date ultimo_acceso;
     private Rol rol;
-    private int Iteracion;
+    private int iteracion;
 
-    public Usuario(String hashClave, String nombre, Date ultimo_acceso, Rol rol) {
-        this.hashClave = hashClave;
+    public Usuario(String nombre, String Password, Rol rol) throws Exception {
         this.nombre = nombre;
-        this.ultimo_acceso = ultimo_acceso;
+        CrearSaltYHashClave(Password);
+        this.ultimo_acceso = new Date();
         this.rol = rol;
     }
-    public Usuario(){}
+
+    public Usuario(String hashClave, int iteracion, String nombre, Rol rol, String salt, Date ultimo_acceso) {
+        this.hashClave = hashClave;
+        this.iteracion = iteracion;
+        this.nombre = nombre;
+        this.rol = rol;
+        this.salt = salt;
+        this.ultimo_acceso = ultimo_acceso;
+    }
 
     /**
      * @return the usuario_id
@@ -49,13 +63,6 @@ public class Usuario {
     }
 
     /**
-     * @param hashClave the hashClave to set
-     */
-    public void setHashClave(String hashClave) {
-        this.hashClave = hashClave;
-    }
-
-    /**
      * @return the nombre
      */
     public String getNombre() {
@@ -68,7 +75,6 @@ public class Usuario {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
 
     /**
      * @return the ultimo_acceso
@@ -102,28 +108,40 @@ public class Usuario {
      * @return the Salt
      */
     public String getSalt() {
-        return Salt;
-    }
-
-    /**
-     * @param Salt the Salt to set
-     */
-    public void setSalt(String Salt) {
-        this.Salt = Salt;
+        return salt;
     }
 
     /**
      * @return the Iteracion
      */
     public int getIteracion() {
-        return Iteracion;
+        return iteracion;
     }
 
-    /**
-     * @param Iteracion the Iteracion to set
-     */
-    public void setIteracion(int Iteracion) {
-        this.Iteracion = Iteracion;
+    private void CrearSaltYHashClave(String password) throws Exception {
+        final int ITERATIONS = 65536;
+        final int KEY_LENGTH = 256; // bits
+        final int SALT_LENGTH = 16; // bytes
+
+        // Generar sal aleatoria
+        byte[] _salt = new byte[SALT_LENGTH];
+        SecureRandom random = new SecureRandom();
+        random.nextBytes(_salt);
+
+        // Crear especificación de clave
+        KeySpec spec = new PBEKeySpec(
+                password.toCharArray(),
+                _salt,
+                ITERATIONS,
+                KEY_LENGTH);
+
+        // Generar hash
+        SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");
+        byte[] _hash = factory.generateSecret(spec).getEncoded();
+
+        // Convertir a Base64 para almacenamiento
+        hashClave = Base64.getEncoder().encodeToString(_hash);
+        salt = Base64.getEncoder().encodeToString(_salt);
+        iteracion = ITERATIONS;
     }
-    
 }

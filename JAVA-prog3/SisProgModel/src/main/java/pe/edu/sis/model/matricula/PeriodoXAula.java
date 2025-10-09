@@ -16,6 +16,17 @@ public class PeriodoXAula {
     private Aula aula;
     private int vacantes_disponibles;
     private int vacantes_ocupadas;
+
+    public PeriodoXAula() {
+    }
+
+    public PeriodoXAula(PeriodoAcademico periodo, Aula aula, int vacantes_disponibles, int vacantes_ocupadas) {
+        this.periodo = periodo;
+        this.aula = aula;
+        this.vacantes_disponibles = vacantes_disponibles;
+        this.vacantes_ocupadas = vacantes_ocupadas;
+    }
+
     /**
      * @return the Periodo_aula_id
      */
@@ -86,6 +97,4 @@ public class PeriodoXAula {
         this.vacantes_ocupadas = vacantes_ocupadas;
     }
 
-    
-    
 }

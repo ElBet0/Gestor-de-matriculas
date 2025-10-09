@@ -5,6 +5,7 @@
 package pe.edu.sis.model.matricula;
 
 import pe.edu.sis.model.alumno.Alumno;
+
 /**
  *
  * @author ElBet0
@@ -14,17 +15,14 @@ public class Matricula {
     private int matricula_id;
     private Alumno alumno;
     private PeriodoXAula periodo;
-    
-    public Matricula(Alumno alumno, PeriodoXAula periodo){
+
+    public Matricula(Alumno alumno, PeriodoXAula periodo) {
+        this.alumno = alumno;
         this.periodo = periodo;
     }
 
-    public Matricula(int matricula_id){
-        this.matricula_id = matricula_id;
-        this.alumno = new Alumno(-1);
+    public Matricula() {
     }
-
-    public Matricula(){}
 
     public int getMatricula_id() {
         return matricula_id;
@@ -33,7 +31,6 @@ public class Matricula {
     public void setMatricula_id(int matricula_id) {
         this.matricula_id = matricula_id;
     }
-
 
     public Alumno getAlumno() {
         return alumno;

@@ -11,7 +11,7 @@ import java.util.Date;
  * @author sdelr
  */
 public class Personal {
-    
+
     private int personal_id;
     private String nombre;
     private String Apellido_paterno;
@@ -23,6 +23,16 @@ public class Personal {
     private Date fin_fecha_Contratacion;
     private TipoContrato tipo_contrato;
     private Cargo cargo;
+    private int dni;
+
+    public int getDni() {
+        return dni;
+    }
+
+    public void setDni(int dni) {
+        this.dni = dni;
+    }
+
     /**
      * @return the personal_id
      */
@@ -176,6 +186,5 @@ public class Personal {
     public void setCargo(Cargo cargo) {
         this.cargo = cargo;
     }
-    
-    
+
 }

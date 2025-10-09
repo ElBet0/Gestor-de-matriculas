@@ -4,16 +4,16 @@
  */
 package pe.edu.sis.alumno.mysql;
 
-import pe.edu.sis.alumno.dao.FamiliaDAO;
-import pe.edu.sis.db.bd.DbManager;
-import pe.edu.sis.model.alumno.Familia;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+
+import pe.edu.sis.alumno.dao.FamiliaDAO;
+import pe.edu.sis.db.bd.DbManager;
+import pe.edu.sis.model.alumno.Familia;
 
 /**
  *
@@ -72,7 +72,7 @@ public class FamiliaImpl implements FamiliaDAO {
         in.put(1, id);
         rs = DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_FAMILIA_POR_ID", in);
         try {
-            if ( rs.next()) {
+            if (rs.next()) {
                 fam = new Familia();
                 fam.setApellido_materno(rs.getString("apellido_materno"));
                 fam.setApellido_paterno(rs.getString("apellido_paterno"));
@@ -81,12 +81,11 @@ public class FamiliaImpl implements FamiliaDAO {
                 fam.setFamilia_id(rs.getInt("familia_id"));
                 fam.setNumero_telefono(rs.getString("num_telf"));
             }
-        } catch (SQLException ex ) {
+        } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-        } catch( NullPointerException nul){
-            System.out.println("Error en ejecucion de Procedure ");
-        }
-        finally {
+        } catch (Exception e) {
+            System.out.println("Error en ejecucion de Procedure " + e.getMessage());
+        } finally {
             DbManager.getInstance().cerrarConexion();
         }
         return fam;
@@ -109,8 +108,8 @@ public class FamiliaImpl implements FamiliaDAO {
             }
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-        }catch( NullPointerException nul){
-            System.out.println("Error en ejecucion de Procedure ");
+        } catch (Exception e) {
+            System.out.println("Error en ejecucion de Procedure " + e.getMessage());
         } finally {
             DbManager.getInstance().cerrarConexion();
         }

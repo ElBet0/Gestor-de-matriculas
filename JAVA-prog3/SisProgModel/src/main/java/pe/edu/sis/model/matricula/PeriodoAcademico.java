@@ -16,6 +16,7 @@ public class PeriodoAcademico {
     private String descripcion;
     private Date fecha_inicio;
     private Date fecha_fin;
+    private int activo;
 
     public PeriodoAcademico(String nombre, String descripcion, Date fecha_inicio, Date fecha_fin) {
         this.nombre = nombre;
@@ -24,7 +25,8 @@ public class PeriodoAcademico {
         this.fecha_fin = fecha_fin;
     }
 
-    public PeriodoAcademico(){}
+    public PeriodoAcademico() {
+    }
 
     public int getPeriodo_academico_id() {
         return periodo_academico_id;
@@ -66,4 +68,11 @@ public class PeriodoAcademico {
         this.fecha_fin = fecha_fin;
     }
 
+    public int getActivo() {
+        return activo;
+    }
+
+    public void setActivo(int activo) {
+        this.activo = activo;
+    }
 }

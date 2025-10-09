@@ -4,8 +4,6 @@
  */
 package pe.edu.sis.model.grAcademico;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author seinc
@@ -16,16 +14,13 @@ public class GradoAcademico {
     private String nombre;
     private String abreviatura;
     private int activo;
-    private ArrayList<Aula> aulas;
-    private ArrayList<Curso> cursos;
 
     public GradoAcademico(String nombre, String abreviatura) {
         this.nombre = nombre;
         this.abreviatura = abreviatura;
     }
-    public GradoAcademico(){
-        aulas = new ArrayList<>();
-        cursos = new ArrayList<>();
+
+    public GradoAcademico() {
     }
 
     public int getActivo() {
@@ -59,37 +54,5 @@ public class GradoAcademico {
     public void setAbreviatura(String abreviatura) {
         this.abreviatura = abreviatura;
     }
-    
-    public void AgregarCursos(Curso curso){ 
-        cursos.add(curso);
-    }
 
-    /**
-     * @return the cursos
-     */
-    public ArrayList<Curso> getCursos() {
-        return cursos;
-    }
-
-    /**
-     * @param cursos the cursos to set
-     */
-    public void setCursos(ArrayList<Curso> cursos) {
-        this.cursos = cursos;
-    }
-
-    /**
-     * @return the aulas
-     */
-    public ArrayList<Aula> getAulas() {
-        return aulas;
-    }
-
-    /**
-     * @param aulas the aulas to set
-     */
-    public void setAulas(ArrayList<Aula> aulas) {
-        this.aulas = aulas;
-    }
-    
 }
