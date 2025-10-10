@@ -10,8 +10,9 @@ import java.sql.Types;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import pe.edu.sis.db.bd.DbManager;
+
 import pe.edu.sis.alumno.dao.FamiliaDAO;
+import pe.edu.sis.db.bd.DbManager;
 import pe.edu.sis.model.alumno.Familia;
 
 /**
@@ -82,6 +83,8 @@ public class FamiliaImpl implements FamiliaDAO {
             }
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
+        } catch (Exception e) {
+            System.out.println("Error en ejecucion de Procedure " + e.getMessage());
         } finally {
             DbManager.getInstance().cerrarConexion();
         }
@@ -90,13 +93,10 @@ public class FamiliaImpl implements FamiliaDAO {
 
     @Override
     public ArrayList<Familia> listarTodos() {
-        ArrayList<Familia> familia = null;
+        ArrayList<Familia> familia = new ArrayList<>();
         rs = DbManager.getInstance().ejecutarProcedimientoLectura("LISTAR_FAMILIAS", null);
         try {
             while (rs.next()) {
-                if (familia == null) {
-                    familia = new ArrayList<>();
-                }
                 Familia fam = new Familia();
                 fam.setApellido_materno(rs.getString("apellido_materno"));
                 fam.setApellido_paterno(rs.getString("apellido_paterno"));
@@ -108,6 +108,8 @@ public class FamiliaImpl implements FamiliaDAO {
             }
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
+        } catch (Exception e) {
+            System.out.println("Error en ejecucion de Procedure " + e.getMessage());
         } finally {
             DbManager.getInstance().cerrarConexion();
         }

@@ -10,9 +10,12 @@ import java.util.ArrayList;
  *
  * @author seinc
  */
-public interface IDAO <T> {
-        /**
-     * Inserta un nuevo registro en la base de datos correspondiente a la entidad proporcionada.
+public interface IDAO<T> {
+    /**
+     * Inserta un nuevo registro en la base de datos correspondiente a la entidad
+     * proporcionada.
+     * También actualiza el ID de la entidad con el valor generado por la base de
+     * datos.
      * 
      * @param objeto Entidad a persistir en la base de datos
      * @return ID generado para el registro insertado o código de resultado:
@@ -22,9 +25,11 @@ public interface IDAO <T> {
     int insertar(T objeto);
 
     /**
-     * Actualiza un registro existente en la base de datos con los datos de la entidad proporcionada.
+     * Actualiza un registro existente en la base de datos con los datos de la
+     * entidad proporcionada.
      * 
-     * @param objeto Entidad con los datos actualizados (debe incluir su identificador)
+     * @param objeto Entidad con los datos actualizados (debe incluir su
+     *               identificador)
      * @return Número de registros afectados o código de resultado:
      *         - Valor positivo: Cantidad de registros modificados
      *         - Cero: Si no se encontró el registro a modificar
@@ -55,7 +60,8 @@ public interface IDAO <T> {
     /**
      * Recupera todos los registros existentes de la entidad en la base de datos.
      * 
-     * @return Lista mutable ({@link ArrayList}) con todas las entidades encontradas.
+     * @return Lista mutable ({@link ArrayList}) con todas las entidades
+     *         encontradas.
      *         Retorna una lista vacía si no existen registros, nunca {@code null}
      */
     ArrayList<T> listarTodos();
