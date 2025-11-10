@@ -9,7 +9,9 @@
         <module>../SisProgModel</module>
         <module>../SisProgDB</module>
         <module>../SisProgDAO</module>
+        <module>../SisProgBO</module>
         <module>../SisProg</module>
+        <module>../SisProgWS</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
