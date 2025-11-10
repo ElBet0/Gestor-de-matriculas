@@ -13,37 +13,48 @@ import pe.edu.sis.model.alumno.Alumno;
 
 /**
  *
- * @author jeyson
+ * @author jeyso
  */
 @WebService(serviceName = "AlumnoWS")
 public class AlumnoWS {
     
-    private alumnoBOImpl boAlumno = new alumnoBOImpl();
+    private alumnoBOImpl boAlumno;
     
-    @WebMethod(operationName = "listarAlumnosTodos")
-    public ArrayList<Alumno> listarAlumnosTodos() {
-        ArrayList<Alumno> alumnos = null;
+    @WebMethod(operationName = "insertarAlumno")
+    public int insertarAlumno(@WebParam(name = "alumno")Alumno alumno){
+        int resultado = 0;
         try{
-            alumnos = boAlumno.listarTodos();
+            boAlumno = new alumnoBOImpl();
+            resultado = boAlumno.insertar(alumno);
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }
-        return alumnos;
+        return resultado;
     }
     
-//    @WebMethod(operationName = "insertarAlumno")
-//    public int insertarArea(
-//            @WebParam(name = "alumno")
-//            Alumno alumno){
-//        int resultado = 0;
-//        try{
-//            boAlumno = new alumnoBOImpl();
-//            resultado = boAlumno.insertar(alumno);
-//        }catch(Exception ex){
-//            System.out.println(ex.getMessage());
-//        }
-//        return resultado;
-//    }
+    @WebMethod(operationName = "modificarAlumno")
+    public int modificarAlumno(@WebParam(name = "alumno")Alumno alumno){
+        int resultado = 0;
+        try{
+            boAlumno = new alumnoBOImpl();
+            resultado = boAlumno.modificar(alumno);
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
+        return resultado;
+    }
+    
+    @WebMethod(operationName = "eliminarAlumnoPorId")
+    public int eliminarAlumnoPorId(@WebParam(name = "idAlumno")int idAlumno){
+        int resultado = 0;
+        try{
+            boAlumno = new alumnoBOImpl();
+            resultado = boAlumno.eliminar(idAlumno);
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
+        return resultado;
+    }
     
     @WebMethod(operationName = "obtenerAlumnoPorId")
     public Alumno obtenerAlumnoPorId(@WebParam(name = "idAlumno") int idAlumno){
@@ -55,5 +66,17 @@ public class AlumnoWS {
             System.out.println(ex.getMessage());
         }
         return alumno;
+    }
+    
+    @WebMethod(operationName = "listarAlumnosTodos")
+    public ArrayList<Alumno> listarAlumnosTodos() {
+        ArrayList<Alumno> alumnos = null;
+        try{
+            boAlumno = new alumnoBOImpl();
+            alumnos = boAlumno.listarTodos();
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
+        return alumnos;
     }
 }

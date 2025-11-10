@@ -43,7 +43,7 @@ public class DbManager {
         this.host = datos.getProperty("hostname");
         this.tipo = datos.getProperty("tipoBD");
         this.esquema = datos.getProperty("database");
-        this.url = "jdbc:" + this.tipo + "://" + this.host + "/" + this.esquema;
+        this.url = "jdbc:" + this.tipo + "://" + this.host + "/" + this.esquema + "?useSSL=false";
     }
 
     public static DbManager getInstance() {

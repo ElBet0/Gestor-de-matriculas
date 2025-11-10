@@ -1,10 +1,4 @@
 
-import java.util.ArrayList;
-import pe.edu.sis.alumno.BO.alumnoBO;
-import pe.edu.sis.alumno.BOImpl.alumnoBOImpl;
-import pe.edu.sis.model.alumno.Alumno;
-
-
 /**
  *
  * @author seinc
@@ -12,17 +6,11 @@ import pe.edu.sis.model.alumno.Alumno;
  */
 public class SisProg {
 
-    public static alumnoBO bo = new alumnoBOImpl();
 
+    /*
+     * En teoría ya funcionan PAGO/DEUDA/FAMILIA/ALUMNO/VACANTES-AULA
+     */
     public static void main(String[] args) {
-        ArrayList<Alumno> alumnos = null;
-        try {
-            alumnos = bo.listarTodos();
-            for (Alumno a : alumnos) {
-                System.out.println(a.getAlumno_id() + " - " + a.getNombre());
-            }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
+        System.out.println("HELLOOOOOOO!!!!!!! :D");
     }
 }
