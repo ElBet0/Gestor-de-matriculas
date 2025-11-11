@@ -39,6 +39,14 @@ namespace FrontTA.Alumnos
 
         }
 
+        protected void btnDoDelete_Click(object sender, EventArgs e)
+        {
+            // Asegúrate de exponer un método equivalente en tu WS
+            boAlumno.eliminarAlumnoPorId(int.Parse(idAlumnoDelete.Value));
+            Response.Redirect("~/Alumnos/Alumnos.aspx");
+        }
+
+
         protected void gvAlumnos_RowDataBound(object sender, GridViewRowEventArgs e)
         {
             if (e.Row.RowType == DataControlRowType.Header)
