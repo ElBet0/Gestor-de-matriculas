@@ -22,3 +22,15 @@ C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\G
 C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.Up2Date
 C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\obj\Debug\FrontTA.dll
 C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\obj\Debug\FrontTA.pdb
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.dll.config
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.dll
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.pdb
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.AssemblyReference.cache
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.CoreCompileInputs.cache
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.Up2Date
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.dll
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.pdb

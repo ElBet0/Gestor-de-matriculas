@@ -15,7 +15,7 @@ import pe.edu.sis.model.matricula.Matricula;
  */
 public interface AlumnoDAO extends IDAO<Alumno> {
     
-    public Alumno BuscarAlumno(int familia_id,String ape_pat,String ape_mat,String nombre,int dni);
+    public ArrayList<Alumno> BuscarAlumno(int familia_id,String ape_pat,String ape_mat,String nombre,int dni);
     
     public ArrayList<Matricula> ConsultarMatriculas(int alumno_id);
     

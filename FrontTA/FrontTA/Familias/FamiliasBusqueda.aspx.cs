@@ -47,7 +47,7 @@ namespace FrontTA.Familias
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-            gvFamilias.DataSource = boFamilia.listarFamiliasTodas(); 
+            gvFamilias.DataSource = boFamilia.buscarFamilia(txtApePaterno.Text, txtApeMaterno.Text); 
             gvFamilias.DataBind();
         }
 

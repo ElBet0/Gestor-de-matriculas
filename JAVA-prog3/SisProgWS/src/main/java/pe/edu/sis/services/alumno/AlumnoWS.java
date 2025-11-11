@@ -59,7 +59,9 @@ public class AlumnoWS {
     }
     
     @WebMethod(operationName = "obtenerAlumnoPorId")
-    public Alumno obtenerAlumnoPorId(@WebParam(name = "idAlumno") int idAlumno){
+    public Alumno obtenerAlumnoPorId(
+            @WebParam(name = "idAlumno") int idAlumno
+    ){
         Alumno alumno = null;
         try{
             alumno = boAlumno.obtenerPorId(idAlumno);
@@ -74,6 +76,25 @@ public class AlumnoWS {
         ArrayList<Alumno> alumnos = null;
         try{
             alumnos = boAlumno.listarTodos();
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
+        return alumnos;
+    }
+    
+    @WebMethod(operationName = "buscarAlumnos")
+    public ArrayList<Alumno> buscarAlumnos (
+        @WebParam(name = "idFamilia") String _idFamilia,
+        @WebParam(name = "apellido_paterno") String _apellido_paterno,
+        @WebParam(name = "apellido_materno") String _apellido_materno,
+        @WebParam(name = "nombre") String _nombre,
+        @WebParam(name = "dni") String _dni
+    ) {
+        ArrayList<Alumno> alumnos = null;
+        int dni = _dni == null ? -1 : Integer.parseInt(_dni);
+        int idFamilia = _idFamilia == null ? -1 : Integer.parseInt(_dni);
+        try{
+            alumnos = boAlumno.buscar(idFamilia, _nombre, _apellido_paterno, _apellido_materno, dni);
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }

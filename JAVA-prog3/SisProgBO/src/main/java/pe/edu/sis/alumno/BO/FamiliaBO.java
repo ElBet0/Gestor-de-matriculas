@@ -14,7 +14,7 @@ import pe.edu.sis.model.alumno.Familia;
  * @author sdelr
  */
 public interface FamiliaBO extends IBaseBO<Familia>{
-     Familia buscarFamilia(String ape_pat,String ape_mat);
+     ArrayList<Familia> buscarFamilia(String ape_pat,String ape_mat);
     
      ArrayList<Alumno>ObtenerHijos(int fam_id);
 }

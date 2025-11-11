@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://alumno.services.sis.edu.pe/" targetNamespace="http://alumno.services.sis.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="buscarAlumnos" type="tns:buscarAlumnos" />
+  <xs:element name="buscarAlumnosResponse" type="tns:buscarAlumnosResponse" />
   <xs:element name="eliminarAlumnoPorId" type="tns:eliminarAlumnoPorId" />
   <xs:element name="eliminarAlumnoPorIdResponse" type="tns:eliminarAlumnoPorIdResponse" />
   <xs:element name="insertarAlumno" type="tns:insertarAlumno" />
@@ -10,9 +12,18 @@
   <xs:element name="modificarAlumnoResponse" type="tns:modificarAlumnoResponse" />
   <xs:element name="obtenerAlumnoPorId" type="tns:obtenerAlumnoPorId" />
   <xs:element name="obtenerAlumnoPorIdResponse" type="tns:obtenerAlumnoPorIdResponse" />
-  <xs:complexType name="modificarAlumno">
+  <xs:complexType name="buscarAlumnos">
     <xs:sequence>
-      <xs:element minOccurs="0" name="alumno" type="tns:alumno" />
+      <xs:element minOccurs="0" name="idFamilia" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido_paterno" type="xs:string" />
+      <xs:element minOccurs="0" name="apellido_materno" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="dni" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarAlumnosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:alumno" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="alumno">
@@ -39,17 +50,12 @@
       <xs:element minOccurs="0" name="numero_telefono" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="modificarAlumnoResponse">
-    <xs:sequence>
-      <xs:element name="return" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="insertarAlumno">
+  <xs:complexType name="modificarAlumno">
     <xs:sequence>
       <xs:element minOccurs="0" name="alumno" type="tns:alumno" />
     </xs:sequence>
   </xs:complexType>
-  <xs:complexType name="insertarAlumnoResponse">
+  <xs:complexType name="modificarAlumnoResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:int" />
     </xs:sequence>
@@ -70,6 +76,16 @@
   <xs:complexType name="listarAlumnosTodosResponse">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:alumno" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarAlumno">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="alumno" type="tns:alumno" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarAlumnoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="eliminarAlumnoPorId">

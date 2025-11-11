@@ -5,18 +5,6 @@
       <xsd:import schemaLocation="http://localhost:8080/SisProgWS/AlumnoWS?xsd=1" namespace="http://alumno.services.sis.edu.pe/" />
     </xsd:schema>
   </types>
-  <message name="insertarAlumno">
-    <part name="parameters" element="tns:insertarAlumno" />
-  </message>
-  <message name="insertarAlumnoResponse">
-    <part name="parameters" element="tns:insertarAlumnoResponse" />
-  </message>
-  <message name="eliminarAlumnoPorId">
-    <part name="parameters" element="tns:eliminarAlumnoPorId" />
-  </message>
-  <message name="eliminarAlumnoPorIdResponse">
-    <part name="parameters" element="tns:eliminarAlumnoPorIdResponse" />
-  </message>
   <message name="obtenerAlumnoPorId">
     <part name="parameters" element="tns:obtenerAlumnoPorId" />
   </message>
@@ -35,15 +23,25 @@
   <message name="modificarAlumnoResponse">
     <part name="parameters" element="tns:modificarAlumnoResponse" />
   </message>
+  <message name="insertarAlumno">
+    <part name="parameters" element="tns:insertarAlumno" />
+  </message>
+  <message name="insertarAlumnoResponse">
+    <part name="parameters" element="tns:insertarAlumnoResponse" />
+  </message>
+  <message name="eliminarAlumnoPorId">
+    <part name="parameters" element="tns:eliminarAlumnoPorId" />
+  </message>
+  <message name="eliminarAlumnoPorIdResponse">
+    <part name="parameters" element="tns:eliminarAlumnoPorIdResponse" />
+  </message>
+  <message name="buscarAlumnos">
+    <part name="parameters" element="tns:buscarAlumnos" />
+  </message>
+  <message name="buscarAlumnosResponse">
+    <part name="parameters" element="tns:buscarAlumnosResponse" />
+  </message>
   <portType name="AlumnoWS">
-    <operation name="insertarAlumno">
-      <input wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/insertarAlumnoRequest" message="tns:insertarAlumno" />
-      <output wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/insertarAlumnoResponse" message="tns:insertarAlumnoResponse" />
-    </operation>
-    <operation name="eliminarAlumnoPorId">
-      <input wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/eliminarAlumnoPorIdRequest" message="tns:eliminarAlumnoPorId" />
-      <output wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/eliminarAlumnoPorIdResponse" message="tns:eliminarAlumnoPorIdResponse" />
-    </operation>
     <operation name="obtenerAlumnoPorId">
       <input wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/obtenerAlumnoPorIdRequest" message="tns:obtenerAlumnoPorId" />
       <output wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/obtenerAlumnoPorIdResponse" message="tns:obtenerAlumnoPorIdResponse" />
@@ -56,27 +54,21 @@
       <input wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/modificarAlumnoRequest" message="tns:modificarAlumno" />
       <output wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/modificarAlumnoResponse" message="tns:modificarAlumnoResponse" />
     </operation>
+    <operation name="insertarAlumno">
+      <input wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/insertarAlumnoRequest" message="tns:insertarAlumno" />
+      <output wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/insertarAlumnoResponse" message="tns:insertarAlumnoResponse" />
+    </operation>
+    <operation name="eliminarAlumnoPorId">
+      <input wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/eliminarAlumnoPorIdRequest" message="tns:eliminarAlumnoPorId" />
+      <output wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/eliminarAlumnoPorIdResponse" message="tns:eliminarAlumnoPorIdResponse" />
+    </operation>
+    <operation name="buscarAlumnos">
+      <input wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/buscarAlumnosRequest" message="tns:buscarAlumnos" />
+      <output wsam:Action="http://alumno.services.sis.edu.pe/AlumnoWS/buscarAlumnosResponse" message="tns:buscarAlumnosResponse" />
+    </operation>
   </portType>
   <binding name="AlumnoWSPortBinding" type="tns:AlumnoWS">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <operation name="insertarAlumno">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="eliminarAlumnoPorId">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
     <operation name="obtenerAlumnoPorId">
       <soap:operation soapAction="" />
       <input>
@@ -96,6 +88,33 @@
       </output>
     </operation>
     <operation name="modificarAlumno">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarAlumno">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarAlumnoPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarAlumnos">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />

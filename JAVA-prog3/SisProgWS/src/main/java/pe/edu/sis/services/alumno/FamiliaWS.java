@@ -94,10 +94,10 @@ public class FamiliaWS {
     }
     
     @WebMethod(operationName = "buscarFamilia")
-    public Familia buscarFamilia(
+    public ArrayList<Familia> buscarFamilia(
             @WebParam(name = "apellido_paterno") String apellido_paterno, 
             @WebParam(name = "apellido_materno") String apellido_materno){
-        Familia f = null;
+        ArrayList<Familia> f = null;
         try {
             f = boFamilia.buscarFamilia(apellido_paterno, apellido_materno);
 

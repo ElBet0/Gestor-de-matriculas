@@ -118,19 +118,20 @@ public class FamiliaImpl implements FamiliaDAO {
     }
 
     @Override
-    public Familia BuscarFamilia(String ape_pat, String ape_mat) {
-        
+    public ArrayList<Familia> BuscarFamilia(String ape_pat, String ape_mat) {
+        ArrayList<Familia> f=new ArrayList<>();
         Familia fam = null;
         Map<Integer, Object> in = new HashMap<>();
         in.put(1, ape_pat);
         in.put(2, ape_mat);
         rs = DbManager.getInstance().ejecutarProcedimientoLectura("BUSCAR_FAMILIA", in);
         try {
-            if (rs.next()) {
+            while (rs.next()) {
                 fam = new Familia();
                 fam.setApellido_materno(rs.getString("apellido_materno"));
                 fam.setApellido_paterno(rs.getString("apellido_paterno"));
                 fam.setFamilia_id(rs.getInt("familia_id"));
+                f.add(fam);
             }
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
@@ -139,13 +140,15 @@ public class FamiliaImpl implements FamiliaDAO {
         } finally {
             DbManager.getInstance().cerrarConexion();
         }
-        return fam;
+        return f;
     }
 
     @Override
     public ArrayList<Alumno> ObtenerHijos(int familia_id) {
         ArrayList<Alumno> alumnos = new ArrayList<>();
-        rs = DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_HIJOS_FAMILIA", null);
+        Map<Integer, Object> in = new HashMap<>();
+        in.put(1, familia_id);
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_HIJOS_FAMILIA", in);
         try {
             while (rs.next()) {
                 Alumno al = new Alumno();

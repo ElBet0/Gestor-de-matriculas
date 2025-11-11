@@ -75,9 +75,9 @@ public class FamiliaBOImpl implements FamiliaBO{
         }
     }
     @Override
-    public Familia buscarFamilia(String ape_pat,String ape_mat){
+    public ArrayList<Familia> buscarFamilia(String ape_pat,String ape_mat){
         
-        Familia f;
+        ArrayList<Familia> f;
         f = fam.BuscarFamilia(ape_pat, ape_mat);
         return f;
         

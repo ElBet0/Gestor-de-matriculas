@@ -42,7 +42,7 @@
   </xs:complexType>
   <xs:complexType name="buscarFamiliaResponse">
     <xs:sequence>
-      <xs:element minOccurs="0" name="return" type="tns:familia" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:familia" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="eliminarFamiliaPorId">
@@ -79,6 +79,14 @@
       <xs:element name="sexo" type="xs:unsignedShort" />
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="listarFamiliasTodas">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarFamiliasTodasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:familia" />
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="modificarFamilia">
     <xs:sequence>
       <xs:element minOccurs="0" name="familia" type="tns:familia" />
@@ -87,14 +95,6 @@
   <xs:complexType name="modificarFamiliaResponse">
     <xs:sequence>
       <xs:element name="return" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:complexType name="listarFamiliasTodas">
-    <xs:sequence />
-  </xs:complexType>
-  <xs:complexType name="listarFamiliasTodasResponse">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="tns:familia" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="insertarFamilia">

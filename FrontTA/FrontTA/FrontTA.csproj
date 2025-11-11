@@ -124,6 +124,9 @@
     <Content Include="Connected Services\SisProgWS\FrontTA.SisProgWS.ObtenerHijosResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <Content Include="Connected Services\SisProgWS\FrontTA.SisProgWS.buscarAlumnosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
     <None Include="Connected Services\SisProgWS\referencias.disco" />
     <None Include="Connected Services\SisProgWS\configuration91.svcinfo" />
     <None Include="Connected Services\SisProgWS\configuration.svcinfo" />

@@ -84,8 +84,8 @@ public class alumnoBOImpl implements alumnoBO{
         }
     }
     @Override
-    public Alumno buscar(int fam_id,String ape_pat,String apemat,String nombre,int dni){
-        Alumno alumno;
+    public ArrayList<Alumno> buscar(int fam_id,String ape_pat,String apemat,String nombre,int dni){
+        ArrayList<Alumno> alumno;
         
         alumno = al.BuscarAlumno(fam_id, ape_pat, apemat, nombre, dni);
         return alumno;

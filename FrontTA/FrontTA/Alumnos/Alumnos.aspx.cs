@@ -17,7 +17,7 @@ namespace FrontTA.Alumnos
             {
                 btnConfirmar.CausesValidation = false; // opcional
             }
-
+            
             if (!IsPostBack)
             {
                 gvAlumnos.DataSource = boAlumno.listarAlumnosTodos();

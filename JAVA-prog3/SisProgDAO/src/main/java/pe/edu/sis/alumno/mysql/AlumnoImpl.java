@@ -124,6 +124,7 @@ public class AlumnoImpl implements AlumnoDAO {
         try {
             while (rs.next()) {
                 Alumno al = new Alumno();
+                Familia f = new Familia();
                 al.setAlumno_id(rs.getInt("alumno_id"));
                 al.setDni(rs.getInt("dni"));
                 al.setFecha_ingreso(rs.getDate("fecha_ingreso"));
@@ -134,6 +135,16 @@ public class AlumnoImpl implements AlumnoDAO {
                 al.setPension_base(rs.getDouble("pension_base"));
                 al.setReligion(rs.getString("religion"));
                 al.setSexo(rs.getString("sexo").charAt(0));
+                
+                f.setFamilia_id(rs.getInt("familia_id"));
+                f.setApellido_paterno(rs.getString("apellido_paterno"));
+                f.setApellido_materno(rs.getString("apellido_materno"));
+                f.setNumero_telefono(rs.getString("num_telf"));
+                f.setNumero_telefono(rs.getString("correo_electronico"));
+                f.setNumero_telefono(rs.getString("direccion"));
+                
+                al.setPadres(f);
+                
                 alumno.add(al);
             }
         } catch (SQLException ex) {
@@ -143,27 +154,34 @@ public class AlumnoImpl implements AlumnoDAO {
         } finally {
             DbManager.getInstance().cerrarConexion();
         }
-        Familia fami;
-        for (int i = 0; i < ids.size(); i++) {
-            fami = fam.obtener_por_id((int) ids.get(i));
-            alumno.get(i).setPadres(fami);
-        }
+
         return alumno;
     }
 
     @Override
-    public Alumno BuscarAlumno(int familia_id, String ape_pat, String ape_mat, String nombre, int dni) {
+    public ArrayList<Alumno> BuscarAlumno(int familia_id, String ape_pat, String ape_mat, String nombre, int dni) {
+        ArrayList<Alumno> alumnos = new ArrayList<>();
         Familia fam = null;
         Alumno al = null;
         Map<Integer, Object> in = new HashMap<>();
-        in.put(1, familia_id);
+        if(familia_id==-1){
+            in.put(1, null);
+        }else{
+            in.put(1, familia_id);
+        }
         in.put(2, ape_pat);
         in.put(3, ape_mat);
         in.put(4, nombre);
-        in.put(5, dni);
+        if(dni==-1){
+            in.put(5, null);
+        }else{
+            in.put(5, dni);
+        }
+        
         rs = DbManager.getInstance().ejecutarProcedimientoLectura("BUSCAR_ALUMNO", in);
         try {
-            if (rs.next()) {
+            while (rs.next()) {
+                
                 al = new Alumno();
                 fam= new Familia();
                 fam.setFamilia_id(familia_id);
@@ -173,6 +191,7 @@ public class AlumnoImpl implements AlumnoDAO {
                 al.setNombre(rs.getString("nombre"));
                 al.setDni(dni);
                 al.setPadres(fam);
+                alumnos.add(al);
                 
             }
         } catch (SQLException ex) {
@@ -182,10 +201,8 @@ public class AlumnoImpl implements AlumnoDAO {
         } finally {
             DbManager.getInstance().cerrarConexion();
         }
-        if (al == null)
-            return null;
-
-        return al;  
+        
+        return alumnos;  
 
     }
 

@@ -15,7 +15,7 @@ import pe.edu.sis.model.alumno.Familia;
  */
 public interface FamiliaDAO extends IDAO<Familia> {
     
-    Familia BuscarFamilia(String ape_pat,String ape_mat);
+    ArrayList<Familia> BuscarFamilia(String ape_pat,String ape_mat);
     
     ArrayList<Alumno> ObtenerHijos(int familia_id);
     
