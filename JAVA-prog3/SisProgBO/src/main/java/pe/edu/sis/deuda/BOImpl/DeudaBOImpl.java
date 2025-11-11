@@ -73,16 +73,16 @@ public class DeudaBOImpl implements DeudaBO{
     }
 
     @Override
-    public ArrayList<Deuda> buscarDeudas(int fam, int al) {
+    public ArrayList<Deuda> buscarDeudasAlumno(int idFamilia, int idTipoDeuda) {
         ArrayList<Deuda> d;
-        d=deuda.buscarDeudasAlumno(fam, al);
+        d=deuda.buscarDeudasAlumno(idFamilia, idTipoDeuda);
         return d;
     }
+    
     @Override
-    public Deuda ConsultarDeuda(int id){
+    public Deuda consultarDeuda(int id){
         Deuda d;
         d=deuda.consultarDeuda(id);
         return d;
-       
     }
 }

@@ -5,7 +5,7 @@
 package pe.edu.sis.matricula.BOImpl;
 
 import java.util.ArrayList;
-import pe.edu.sis.BO.IBaseBO;
+import pe.edu.sis.matricula.BO.PeriodoXAulaBO;
 import pe.edu.sis.matricula.dao.PeriodoXAulaDAO;
 import pe.edu.sis.matricula.mysql.PeriodoXAulaImpl;
 import pe.edu.sis.model.matricula.PeriodoXAula;
@@ -14,7 +14,7 @@ import pe.edu.sis.model.matricula.PeriodoXAula;
  *
  * @author sdelr
  */
-public class PeriodoXAulaBOImpl implements IBaseBO<PeriodoXAula>{
+public class PeriodoXAulaBOImpl implements PeriodoXAulaBO{
     PeriodoXAulaDAO p;
 
     public PeriodoXAulaBOImpl() {

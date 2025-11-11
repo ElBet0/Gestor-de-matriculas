@@ -70,10 +70,10 @@ public class MatriculaBOImpl implements MatriculaBO{
     
     @Override
     public ArrayList<Matricula> buscarAlumnosAnio(int familia_id ,String apellido_paterno,String 
-            apellido_materno,String nombre,int _dni ,int _ano ){
+            apellido_materno,String nombre,int dni ,int anho ){
         
         ArrayList<Matricula> matri;
-        matri=mat.BuscarAlumnos(familia_id, nombre, nombre, nombre, _dni, _ano);
+        matri=mat.BuscarAlumnos(familia_id, apellido_paterno, apellido_materno, nombre, dni, anho);
         return matri;
     }
 
