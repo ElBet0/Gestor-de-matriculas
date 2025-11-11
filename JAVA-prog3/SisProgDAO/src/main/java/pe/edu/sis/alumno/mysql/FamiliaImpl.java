@@ -13,6 +13,7 @@ import java.util.Map;
 
 import pe.edu.sis.alumno.dao.FamiliaDAO;
 import pe.edu.sis.db.bd.DbManager;
+import pe.edu.sis.model.alumno.Alumno;
 import pe.edu.sis.model.alumno.Familia;
 
 /**
@@ -114,5 +115,53 @@ public class FamiliaImpl implements FamiliaDAO {
             DbManager.getInstance().cerrarConexion();
         }
         return familia;
+    }
+
+    @Override
+    public Familia BuscarFamilia(String ape_pat, String ape_mat) {
+        
+        Familia fam = null;
+        Map<Integer, Object> in = new HashMap<>();
+        in.put(1, ape_pat);
+        in.put(2, ape_mat);
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("BUSCAR_FAMILIA", in);
+        try {
+            if (rs.next()) {
+                fam = new Familia();
+                fam.setApellido_materno(rs.getString("apellido_materno"));
+                fam.setApellido_paterno(rs.getString("apellido_paterno"));
+                fam.setFamilia_id(rs.getInt("familia_id"));
+            }
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        } catch (Exception e) {
+            System.out.println("Error en ejecucion de Procedure " + e.getMessage());
+        } finally {
+            DbManager.getInstance().cerrarConexion();
+        }
+        return fam;
+    }
+
+    @Override
+    public ArrayList<Alumno> ObtenerHijos(int familia_id) {
+        ArrayList<Alumno> alumnos = new ArrayList<>();
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("LISTAR_FAMILIAS", null);
+        try {
+            while (rs.next()) {
+                Alumno al = new Alumno();
+                al.setNombre(rs.getString("nombre_alumno"));
+                al.setDni(rs.getInt("dni"));
+                al.setSexo(rs.getString("sexo").charAt(0));
+                alumnos.add(al);
+            }
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        } catch (Exception e) {
+            System.out.println("Error en ejecucion de Procedure " + e.getMessage());
+        } finally {
+            DbManager.getInstance().cerrarConexion();
+        }
+        return alumnos;
+        
     }
 }

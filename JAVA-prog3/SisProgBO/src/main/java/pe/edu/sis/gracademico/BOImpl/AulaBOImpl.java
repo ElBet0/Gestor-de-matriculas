@@ -64,4 +64,11 @@ public class AulaBOImpl implements AulaBO{
         }
     }
     
+    @Override
+    public ArrayList<Aula> buscarNombre(String nombre,String nombre_grado){
+        ArrayList<Aula> aulas;
+        aulas=aula.buscarAulaPorNombreONombreGrado(nombre, nombre_grado);
+        return aulas;
+    }
+    
 }

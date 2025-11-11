@@ -4,7 +4,9 @@
  */
 package pe.edu.sis.alumno.BO;
 
+import java.util.ArrayList;
 import pe.edu.sis.BO.IBaseBO;
+import pe.edu.sis.model.alumno.Alumno;
 import pe.edu.sis.model.alumno.Familia;
 
 /**
@@ -12,5 +14,7 @@ import pe.edu.sis.model.alumno.Familia;
  * @author sdelr
  */
 public interface FamiliaBO extends IBaseBO<Familia>{
+     Familia buscarFamilia(String ape_pat,String ape_mat);
     
+     ArrayList<Alumno>ObtenerHijos(int fam_id);
 }

@@ -4,6 +4,7 @@
  */
 package pe.edu.sis.usuario.BO;
 
+import java.util.ArrayList;
 import pe.edu.sis.BO.IBaseBO;
 import pe.edu.sis.model.usuario.Personal;
 
@@ -12,5 +13,5 @@ import pe.edu.sis.model.usuario.Personal;
  * @author sdelr
  */
 public interface PersonalBO extends IBaseBO<Personal>{
-    
+    ArrayList<Personal> buscarDniNombre(int dni,String nombre);
 }

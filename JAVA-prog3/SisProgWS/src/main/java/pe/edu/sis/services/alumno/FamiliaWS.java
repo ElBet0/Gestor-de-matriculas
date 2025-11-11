@@ -9,6 +9,7 @@ import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;
 import java.util.ArrayList;
 import pe.edu.sis.alumno.BOImpl.FamiliaBOImpl;
+import pe.edu.sis.model.alumno.Alumno;
 import pe.edu.sis.model.alumno.Familia;
 
 /**
@@ -46,11 +47,11 @@ public class FamiliaWS {
     }
     
     @WebMethod(operationName = "eliminarFamiliaPorId")
-    public int eliminarFamiliaPorId(@WebParam(name = "familia")Familia familia){
+    public int eliminarFamiliaPorId(@WebParam(name = "idFamilia")int idFamilia){
         int resultado = 0;
         try{
             boFamilia = new FamiliaBOImpl();
-            resultado = boFamilia.insertar(familia);
+            resultado = boFamilia.eliminar(idFamilia);
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }
@@ -79,5 +80,33 @@ public class FamiliaWS {
             System.out.println(ex.getMessage());
         }
         return familias;
+    }
+    
+    @WebMethod(operationName = "ObtenerHijos")
+    public ArrayList<Alumno> ObtenerHijos(@WebParam(name = "idFamilia") int idFamilia){
+        ArrayList<Alumno> hijos = null;
+        try{
+            boFamilia = new FamiliaBOImpl();
+            hijos = boFamilia.ObtenerHijos(idFamilia);
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
+        return hijos;
+    }
+    
+    @WebMethod(operationName = "buscarFamilia")
+    public Familia buscarFamilia(
+            @WebParam(name = "apellido_paterno") String apellido_paterno, 
+            @WebParam(name = "apellido_materno") String apellido_materno){
+        Familia f = null;
+        try {
+            boFamilia = new FamiliaBOImpl();
+            f = boFamilia.buscarFamilia(apellido_paterno, apellido_materno);
+
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        }
+
+        return f;
     }
 }

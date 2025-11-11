@@ -92,7 +92,10 @@ public class DbManager {
                 obtenerValoresSalida(cst, parametrosSalida);
         } catch (SQLException ex) {
             System.out.println("Error ejecutando procedimiento almacenado: " + ex.getMessage());
-            resultado = -1;
+            if(ex.getErrorCode() > 0) resultado = -ex.getErrorCode();
+            else if(ex.getErrorCode() == 0) resultado = -1;
+            else resultado = ex.getErrorCode();
+            
         } catch (Exception e) {
             System.out.println("Error inesperado: " + e.getMessage());
             resultado = -1;

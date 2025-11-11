@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import pe.edu.sis.gracademico.BO.GradoAcademicoBO;
 import pe.edu.sis.gracademico.dao.GradoDAO;
 import pe.edu.sis.gracademico.mysql.GradoImpl;
+import pe.edu.sis.model.grAcademico.Aula;
 import pe.edu.sis.model.grAcademico.GradoAcademico;
 
 /**
@@ -19,6 +20,7 @@ public class GradoAcademicoBOImpl implements GradoAcademicoBO{
 
     public GradoAcademicoBOImpl() {
         grado=new GradoImpl();
+        
     }
     
     
@@ -63,5 +65,22 @@ public class GradoAcademicoBOImpl implements GradoAcademicoBO{
             throw new Exception("la longitud del nombre no es valida");
         }
     }
+    
+    @Override
+    public GradoAcademico buscarGrado(String abre,String nombre){
+        GradoAcademico g;
+        
+        g=grado.buscarPorNombreOAbreviatura(abre, nombre);
+        return g;
+    }
+    @Override
+    public ArrayList<Aula> obtenerAulas(int id){
+        ArrayList<Aula> aulas;
+        aulas=grado.listarAulasPorGrado(id);
+        return aulas;
+        
+        
+    }
+
     
 }

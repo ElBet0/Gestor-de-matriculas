@@ -19,6 +19,7 @@ public class CursoBOImpl implements CursoBO {
 
     public CursoBOImpl() {
         curso = new CursoImpl();
+        
     }
     
     @Override
@@ -73,6 +74,12 @@ public class CursoBOImpl implements CursoBO {
             throw new Exception("las horas semanales asignadas al curso no son validas");
         }
     
+    }
+    @Override
+    public ArrayList<Curso> BuscarNombreAbre(String nombre,String abre,String grado){
+        ArrayList<Curso> cursos;
+        cursos=curso.buscarCurso(nombre, abre, nombre);
+        return cursos;
     }
     
 }

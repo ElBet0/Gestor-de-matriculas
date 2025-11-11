@@ -81,5 +81,13 @@ public class PersonalBOImpl implements PersonalBO{
         if (objeto.getCorreo_electronico().length()>45){
             throw new Exception("La longitud del correo electronico no es valida");
         }
+        
     }
+    @Override
+    public ArrayList<Personal> buscarDniNombre(int dni,String nombre){
+        ArrayList<Personal> pe;
+        pe=personal.buscarPersonal(dni, nombre);
+        return pe;
+    }
+    
 }

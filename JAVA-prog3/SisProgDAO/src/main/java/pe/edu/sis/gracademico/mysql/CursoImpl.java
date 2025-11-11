@@ -127,4 +127,41 @@ public class CursoImpl implements CursoDAO {
         return lista;
     }
 
+    
+    @Override
+    public ArrayList<Curso> buscarCurso(String nombre, String abreviatura, String nombreGrado) {
+        
+        Map<Integer, Object> in = new HashMap<>();
+        in.put(1, nombre);
+        in.put(2, abreviatura);
+        in.put(3, nombreGrado);
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("BUSCAR_CURSO_POR_NOMBRE_ABREVIATURA_GRADO_ACADEMICO", in);
+        ArrayList<Curso> lista = new ArrayList<>();
+
+        try {
+
+            while (rs != null && rs.next()) {
+                Curso c = new Curso();
+                c.setCurso_id(rs.getInt("CURSO_ID"));
+                c.setNombre(rs.getString("NOMBRE"));
+                c.setAbreviatura(rs.getString("ABREVIATURA"));
+                c.setHoras_semanales(rs.getInt("HORAS_SEMANALES"));
+
+                GradoAcademico g = new GradoAcademico();
+                g.setNombre(rs.getString("NOMBRE_GRADO"));
+                c.setGrado(g);
+
+                lista.add(c);
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error en BUSCAR_CURSO...: " + ex.getMessage());
+        } catch (NullPointerException nul) {
+            System.out.println("Error: rs devolvió null");
+        } finally {
+            DbManager.getInstance().cerrarConexion();
+        }
+        return lista;
+    }
+
+
 }

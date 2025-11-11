@@ -6,18 +6,21 @@ package pe.edu.sis.matricula.BOImpl;
 
 import java.util.ArrayList;
 import pe.edu.sis.BO.IBaseBO;
+import pe.edu.sis.matricula.BO.MatriculaBO;
 import pe.edu.sis.matricula.dao.MatriculaDAO;
 import pe.edu.sis.matricula.mysql.MatriculaImpl;
 import pe.edu.sis.model.matricula.Matricula;
+import pe.edu.sis.model.matricula.PeriodoXAula;
 
 /**
  *
  * @author sdelr
  */
-public class MatriculaBOImpl implements IBaseBO<Matricula>{
+public class MatriculaBOImpl implements MatriculaBO{
     MatriculaDAO mat;
     public MatriculaBOImpl() {
         mat = new MatriculaImpl();
+        
     }
    
     
@@ -52,6 +55,7 @@ public class MatriculaBOImpl implements IBaseBO<Matricula>{
         ArrayList<Matricula> m ;
         m=mat.listarTodos();
         return m;
+        
     }
 
     @Override
@@ -63,5 +67,25 @@ public class MatriculaBOImpl implements IBaseBO<Matricula>{
             throw new Exception("El Periodo_Aula asignado a la matricula no es valido");
         }
     }
+    
+    @Override
+    public ArrayList<Matricula> buscarAlumnosAnio(int familia_id ,String apellido_paterno,String 
+            apellido_materno,String nombre,int _dni ,int _ano ){
+        
+        ArrayList<Matricula> matri;
+        matri=mat.BuscarAlumnos(familia_id, nombre, nombre, nombre, _dni, _ano);
+        return matri;
+    }
+
+    @Override
+    public ArrayList<PeriodoXAula> ListarAulaAsignarMat() {
+        
+        
+        ArrayList<PeriodoXAula> p;
+        p=mat.listarAulasParaAsignarMatricula();
+        return p;
+        
+    }
+    
     
 }

@@ -4,7 +4,9 @@
  */
 package pe.edu.sis.alumno.dao;
 
+import java.util.ArrayList;
 import pe.edu.sis.dao.IDAO;
+import pe.edu.sis.model.alumno.Alumno;
 import pe.edu.sis.model.alumno.Familia;
 
 /**
@@ -12,5 +14,9 @@ import pe.edu.sis.model.alumno.Familia;
  * @author seinc
  */
 public interface FamiliaDAO extends IDAO<Familia> {
+    
+    Familia BuscarFamilia(String ape_pat,String ape_mat);
+    
+    ArrayList<Alumno> ObtenerHijos(int familia_id);
     
 }

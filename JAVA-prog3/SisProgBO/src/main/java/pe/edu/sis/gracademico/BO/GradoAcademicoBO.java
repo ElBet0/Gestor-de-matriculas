@@ -4,7 +4,9 @@
  */
 package pe.edu.sis.gracademico.BO;
 
+import java.util.ArrayList;
 import pe.edu.sis.BO.IBaseBO;
+import pe.edu.sis.model.grAcademico.Aula;
 import pe.edu.sis.model.grAcademico.GradoAcademico;
 
 /**
@@ -12,5 +14,7 @@ import pe.edu.sis.model.grAcademico.GradoAcademico;
  * @author sdelr
  */
 public interface GradoAcademicoBO extends IBaseBO<GradoAcademico>{
+    GradoAcademico buscarGrado(String abre,String nombre);
     
+    ArrayList<Aula> obtenerAulas(int id);
 }

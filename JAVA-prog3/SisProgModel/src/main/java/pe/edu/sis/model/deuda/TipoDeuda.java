@@ -19,6 +19,9 @@ public class TipoDeuda {
         this.monto_general = monto_general;
     }
 
+    public TipoDeuda() {
+    }
+
     /**
      * @return the tipo_deuda_id
      */

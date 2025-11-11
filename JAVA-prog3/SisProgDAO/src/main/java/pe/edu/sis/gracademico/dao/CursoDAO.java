@@ -4,6 +4,7 @@
  */
 package pe.edu.sis.gracademico.dao;
 
+import java.util.ArrayList;
 import pe.edu.sis.dao.IDAO;
 import pe.edu.sis.model.grAcademico.Curso;
 
@@ -12,5 +13,7 @@ import pe.edu.sis.model.grAcademico.Curso;
  * @author seinc
  */
 public interface CursoDAO extends IDAO<Curso>{
+    
+    public ArrayList<Curso> buscarCurso(String nombre, String abreviatura, String nombreGrado) ;
     
 }

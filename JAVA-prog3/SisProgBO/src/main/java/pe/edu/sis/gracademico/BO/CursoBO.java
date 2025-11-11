@@ -4,6 +4,7 @@
  */
 package pe.edu.sis.gracademico.BO;
 
+import java.util.ArrayList;
 import pe.edu.sis.BO.IBaseBO;
 import pe.edu.sis.model.grAcademico.Curso;
 
@@ -12,5 +13,5 @@ import pe.edu.sis.model.grAcademico.Curso;
  * @author sdelr
  */
 public interface CursoBO extends IBaseBO<Curso>{
-    
+    ArrayList<Curso> BuscarNombreAbre(String nombre,String abre,String grado);
 }

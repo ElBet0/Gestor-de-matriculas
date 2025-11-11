@@ -17,6 +17,11 @@ import pe.edu.sis.alumno.dao.FamiliaDAO;
 import pe.edu.sis.db.bd.DbManager;
 import pe.edu.sis.model.alumno.Alumno;
 import pe.edu.sis.model.alumno.Familia;
+import pe.edu.sis.model.grAcademico.Aula;
+import pe.edu.sis.model.grAcademico.GradoAcademico;
+import pe.edu.sis.model.matricula.Matricula;
+import pe.edu.sis.model.matricula.PeriodoAcademico;
+import pe.edu.sis.model.matricula.PeriodoXAula;
 
 /**
  *
@@ -145,4 +150,83 @@ public class AlumnoImpl implements AlumnoDAO {
         }
         return alumno;
     }
+
+    @Override
+    public Alumno BuscarAlumno(int familia_id, String ape_pat, String ape_mat, String nombre, int dni) {
+        Familia fam = null;
+        Alumno al = null;
+        Map<Integer, Object> in = new HashMap<>();
+        in.put(1, familia_id);
+        in.put(2, ape_pat);
+        in.put(3, ape_mat);
+        in.put(4, nombre);
+        in.put(5, dni);
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("BUSCAR_ALUMNO", in);
+        try {
+            if (rs.next()) {
+                al = new Alumno();
+                fam= new Familia();
+                fam.setFamilia_id(familia_id);
+                fam.setApellido_paterno(rs.getString("apellido_paterno"));
+                fam.setApellido_materno(rs.getString("apellido_materno"));
+                al.setSexo(rs.getString("sexo").charAt(0));
+                al.setNombre(rs.getString("nombre"));
+                al.setDni(dni);
+                al.setPadres(fam);
+                
+            }
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        } catch (Exception e) {
+            System.out.println("Error en ejecucion de Procedure " + e.getMessage());
+        } finally {
+            DbManager.getInstance().cerrarConexion();
+        }
+        if (al == null)
+            return null;
+
+        return al;  
+
+    }
+
+    @Override
+    public ArrayList<Matricula> ConsultarMatriculas(int alumno_id) {
+        ArrayList<Matricula> matriculas=null;
+        Matricula mat=null;
+        GradoAcademico grad=null;
+        Aula au=null;
+        PeriodoAcademico per=null;
+        PeriodoXAula p=null;
+        Map<Integer, Object> in = new HashMap<>();
+        in.put(1, alumno_id);
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("CONSULTAR_MATRICULA_ALUMNO", in);
+        try {
+            while (rs.next()) {
+                matriculas=new ArrayList<Matricula>();
+                mat = new Matricula();
+                grad= new GradoAcademico();
+                au=new Aula();
+                per=new PeriodoAcademico();
+                p=new PeriodoXAula();
+                per.setFecha_inicio(rs.getDate("fecha"));
+                per.setNombre(rs.getString("periodo_nombre"));
+                mat.setActivo(rs.getInt("activo"));
+                grad.setNombre(rs.getString("grado_nombre"));
+                au.setNombre(rs.getString("aula_nombre"));
+                au.setGrado(grad);
+                p.setAula(au);
+                p.setPeriodo(per);
+                mat.setPeriodo_Aula(p);
+                matriculas.add(mat);
+            }
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        } catch (Exception e) {
+            System.out.println("Error en ejecucion de Procedure " + e.getMessage());
+        } finally {
+            DbManager.getInstance().cerrarConexion();
+        }
+        return matriculas;
+    }
+    
 }

@@ -9,6 +9,7 @@ import pe.edu.sis.alumno.BO.alumnoBO;
 import pe.edu.sis.alumno.dao.AlumnoDAO;
 import pe.edu.sis.alumno.mysql.AlumnoImpl;
 import pe.edu.sis.model.alumno.Alumno;
+import pe.edu.sis.model.matricula.Matricula;
 
 /**
  *
@@ -48,6 +49,7 @@ public class alumnoBOImpl implements alumnoBO{
     public ArrayList<Alumno> listarTodos() throws Exception {
         ArrayList<Alumno> alumnos;
         alumnos=al.listarTodos();
+        
         return alumnos;
     }
 
@@ -81,5 +83,23 @@ public class alumnoBOImpl implements alumnoBO{
             throw new Exception ("error en las observaciones del alumno");
         }
     }
+    @Override
+    public Alumno buscar(int fam_id,String ape_pat,String apemat,String nombre,int dni){
+        Alumno alumno;
+        
+        alumno = al.BuscarAlumno(fam_id, ape_pat, apemat, nombre, dni);
+        return alumno;
+        
+    }
+    
+    @Override 
+    public ArrayList<Matricula> consultarMatriculas(int alumno_id){
+        
+        ArrayList<Matricula> mat;
+        mat=al.ConsultarMatriculas(alumno_id);
+        return mat;
+        
+    }
+    
     
 }

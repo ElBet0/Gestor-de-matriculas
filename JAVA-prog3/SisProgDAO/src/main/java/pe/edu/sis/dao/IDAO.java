@@ -44,6 +44,7 @@ public interface IDAO<T> {
      * @return Número de registros afectados o código de resultado:
      *         - Valor positivo: Cantidad de registros eliminados
      *         - Cero: Si no se encontró el registro con el ID proporcionado
+     *         - Menos uno: Si es un error inesperado
      *         - Valor negativo: Código de error en caso de fallo
      */
     int eliminar(int idObjeto);

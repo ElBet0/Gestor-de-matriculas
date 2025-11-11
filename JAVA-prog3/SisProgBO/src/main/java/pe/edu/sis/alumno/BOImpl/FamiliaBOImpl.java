@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import pe.edu.sis.alumno.BO.FamiliaBO;
 import pe.edu.sis.alumno.dao.FamiliaDAO;
 import pe.edu.sis.alumno.mysql.FamiliaImpl;
+import pe.edu.sis.model.alumno.Alumno;
 import pe.edu.sis.model.alumno.Familia;
 
 /**
@@ -72,6 +73,22 @@ public class FamiliaBOImpl implements FamiliaBO{
         if(objeto.getDireccion().length()>100){
             throw new Exception("la longitud de la direccion no es valida");
         }
+    }
+    @Override
+    public Familia buscarFamilia(String ape_pat,String ape_mat){
+        
+        Familia f;
+        f = fam.BuscarFamilia(ape_pat, ape_mat);
+        return f;
+        
+    }
+    
+    @Override
+    public ArrayList<Alumno>ObtenerHijos(int fam_id){
+        
+        ArrayList <Alumno>al;
+        al = fam.ObtenerHijos(fam_id);
+        return al;
     }
     
 }

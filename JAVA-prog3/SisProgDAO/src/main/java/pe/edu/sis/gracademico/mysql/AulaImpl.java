@@ -106,4 +106,37 @@ public class AulaImpl implements AulaDAO {
 
         return lista;
     }
+    @Override
+     public ArrayList<Aula> buscarAulaPorNombreONombreGrado(String nombreAula, String nombreGrado) {
+         Map<Integer, Object> in = new HashMap<>();
+        in.put(1, nombreAula);
+        
+        in.put(2, nombreGrado);
+        
+     
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("BUSCAR_AULA_POR_NOMBRE_O_NOMBRE_GRADO", in);
+        ArrayList<Aula> lista = new ArrayList<>();
+
+        try {
+            while (rs.next()) {
+                Aula a = new Aula();
+                a.setAula_id(rs.getInt("ID_AULA"));
+                a.setNombre(rs.getString("NOMBRE"));
+
+                GradoAcademico g = new GradoAcademico();
+                g.setNombre(rs.getString("NOMBRE_GRADO"));
+                a.setGrado(g);
+
+                lista.add(a);
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error en BUSCAR_AULA_POR_NOMBRE_O_NOMBRE_GRADO: " + ex.getMessage());
+        } catch (NullPointerException nul) {
+            System.out.println("Error: rs devolvió null");
+        } finally {
+            DbManager.getInstance().cerrarConexion();
+        }
+        return lista;
+
+     }
 }

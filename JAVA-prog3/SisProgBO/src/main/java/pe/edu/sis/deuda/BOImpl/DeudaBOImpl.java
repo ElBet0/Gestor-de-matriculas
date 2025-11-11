@@ -71,5 +71,18 @@ public class DeudaBOImpl implements DeudaBO{
             throw new Exception("la deuda no tiene un tipo deuda valido registrado");
         }
     }
-    
+
+    @Override
+    public ArrayList<Deuda> buscarDeudas(int fam, int al) {
+        ArrayList<Deuda> d;
+        d=deuda.buscarDeudasAlumno(fam, al);
+        return d;
+    }
+    @Override
+    public Deuda ConsultarDeuda(int id){
+        Deuda d;
+        d=deuda.consultarDeuda(id);
+        return d;
+       
+    }
 }

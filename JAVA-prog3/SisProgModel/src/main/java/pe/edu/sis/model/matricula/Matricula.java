@@ -15,6 +15,7 @@ public class Matricula {
     private int matricula_id;
     private Alumno alumno;
     private PeriodoXAula periodo;
+    private int activo;
 
     public Matricula(Alumno alumno, PeriodoXAula periodo) {
         this.alumno = alumno;
@@ -46,5 +47,19 @@ public class Matricula {
 
     public void setPeriodo_Aula(PeriodoXAula periodo) {
         this.periodo = periodo;
+    }
+
+    /**
+     * @return the activo
+     */
+    public int getActivo() {
+        return activo;
+    }
+
+    /**
+     * @param activo the activo to set
+     */
+    public void setActivo(int activo) {
+        this.activo = activo;
     }
 }

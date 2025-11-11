@@ -213,4 +213,94 @@ public class MatriculaImpl implements MatriculaDAO {
         return lista;
     }
 
+    @Override
+    public ArrayList<Matricula> BuscarAlumnos(int familia_id, String ape_pat, String ape_mat, String nombre, int dni, int anho) {
+        ArrayList<Matricula> matriculas;
+        matriculas=new ArrayList<>();
+        Map<Integer, Object> in = new HashMap<>();
+        in.put(1, familia_id);
+        in.put(2, ape_pat);
+        in.put(3, ape_mat);
+        in.put(4, nombre);
+        in.put(5, dni);
+        in.put(6, anho);
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("BUSCAR_ANIO_ALUMNOS_MAT", in);
+        
+        try {
+            while (rs.next()) {
+                Matricula mat = new Matricula();
+                Familia fam = new Familia();
+                Alumno al=new Alumno();
+                PeriodoXAula per=new PeriodoXAula();
+                PeriodoAcademico p=new PeriodoAcademico();
+                fam.setApellido_paterno(rs.getString("apellido_paterno"));
+                fam.setApellido_materno(rs.getString("apellido_materno"));
+                al.setSexo(rs.getString("genero").charAt(0));
+                al.setNombre(rs.getString("nombre"));
+                p.setFecha_inicio(rs.getDate("anio"));
+                per.setPeriodo_aula_id(rs.getInt("PERIODO_AULA_ID"));
+                al.setAlumno_id(rs.getInt("ALUMNO_ID"));
+                fam.setFamilia_id(rs.getInt("FAMILIA_ID"));
+                
+                al.setPadres(fam);
+                per.setPeriodo(p);
+                mat.setAlumno(al);
+                mat.setPeriodo_Aula(per);
+                
+
+                matriculas.add(mat);
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error al listar matrículas: " + ex.getMessage());
+        } catch (NullPointerException nul) {
+            System.out.println("Error : rs devolvio null ");
+        } finally {
+            DbManager.getInstance().cerrarConexion();
+        }
+
+        return matriculas;
+    }
+    
+    
+    @Override
+    public ArrayList<PeriodoXAula> listarAulasParaAsignarMatricula() {
+        
+        ArrayList<PeriodoXAula> lista = new ArrayList<>();
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("LISTAR_AULA_ASIGNAR_MATR", null);
+        rs = DbManager.getInstance()
+                    .ejecutarProcedimientoLectura("LISTAR_AULA_ASIGNAR_MATR", null);
+        try {
+            while ( rs.next()) {
+                // ---- Grado ----
+                GradoAcademico grado = new GradoAcademico();
+                grado.setNombre(rs.getString("grado_nombre"));
+
+                // ---- Aula ----
+                Aula aula = new Aula();
+                aula.setNombre(rs.getString("aula_nombre"));
+                aula.setGrado(grado);
+
+                // ---- Periodo x Aula ----
+                PeriodoXAula pa = new PeriodoXAula();
+                pa.setPeriodo_aula_id(rs.getInt("periodo_aula_id")); // si lo tienes en tu modelo
+                pa.setAula(aula);
+                pa.setVacantes_disponibles(rs.getInt("vacantes_disponibles"));
+                // si tienes vacantes_ocupadas en el modelo y no viene en el SP, setéalo a 0:
+                pa.setVacantes_ocupadas(0);
+
+                lista.add(pa);
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error en LISTAR_AULA_ASIGNAR_MATR: " + ex.getMessage());
+        } catch (NullPointerException nul) {
+            System.out.println("Error: rs devolvió null");
+        } finally {
+            DbManager.getInstance().cerrarConexion();
+        }
+        return lista;
+    }
+
+    
+    
+    
 }

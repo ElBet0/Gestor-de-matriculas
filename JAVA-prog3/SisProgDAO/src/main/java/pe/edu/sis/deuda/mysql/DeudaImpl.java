@@ -17,6 +17,8 @@ import pe.edu.sis.deuda.dao.DeudaDAO;
 import pe.edu.sis.model.alumno.Alumno;
 import pe.edu.sis.model.alumno.Familia;
 import pe.edu.sis.model.deuda.Deuda;
+import pe.edu.sis.model.deuda.MedioPago;
+import pe.edu.sis.model.deuda.Pago;
 import pe.edu.sis.model.deuda.TipoDeuda;
 
 /**
@@ -24,6 +26,7 @@ import pe.edu.sis.model.deuda.TipoDeuda;
  * @author seinc
  */
 public class DeudaImpl implements DeudaDAO {
+
     private ResultSet rs;
 
     @Override
@@ -38,8 +41,9 @@ public class DeudaImpl implements DeudaDAO {
         in.put(6, deu.getDescripcion());
         in.put(7, deu.getDescuento());
         in.put(8, deu.getAlumno().getAlumno_id());
-        if (DbManager.getInstance().ejecutarProcedimiento("INSERTAR_DEUDA", in, out) < 0)
+        if (DbManager.getInstance().ejecutarProcedimiento("INSERTAR_DEUDA", in, out) < 0) {
             return -1;
+        }
         deu.setDeuda_id((int) out.get(1));
         System.out.println("Se ha realizado el registro de la deuda");
         return deu.getDeuda_id();
@@ -187,5 +191,114 @@ public class DeudaImpl implements DeudaDAO {
 
         return deuda;
     }
+
+    @Override
+    public ArrayList<Deuda> buscarDeudasAlumno(int familiaId, int idTipoDeuda) {
+
+        ArrayList<Deuda> lista = new ArrayList<>();
+        Map<Integer, Object> in = new HashMap<>();
+        in.put(1, familiaId);
+        in.put(2, idTipoDeuda);
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("BUSCAR_DEUDAS_ALUM", in);
+        try {
+            while (rs.next()) {
+                Deuda d = new Deuda();
+                d.setDeuda_id(rs.getInt("DEUDA_ID"));
+
+                Alumno a = new Alumno();
+                a.setNombre(rs.getString("alumno_nombre"));
+                d.setAlumno(a);
+
+                TipoDeuda t = new TipoDeuda();
+                t.setDescripcion(rs.getString("tipo_deuda"));
+                d.setConcepto_deuda(t);
+
+                d.setMonto(rs.getDouble("MONTO"));
+                d.setFecha_emision(rs.getDate("FECHA_EMISION"));
+                d.setFecha_vencimiento(rs.getDate("FECHA_VENCIMIENTO"));
+                d.setDescuento(rs.getDouble("DESCUENTO"));
+                d.setMonto(rs.getDouble("monto_pagado"));
+
+                lista.add(d);
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error en BUSCAR_DEUDAS_ALUM: " + ex.getMessage());
+        } catch (NullPointerException nul) {
+            System.out.println("Error: rs devolvió null");
+        } finally {
+            DbManager.getInstance().cerrarConexion();
+        }
+        return lista;
+    }
+
+    @Override
+    public Deuda consultarDeuda(int idDeuda) {
+        Map<Integer, Object> in = new HashMap<>();
+        in.put(1, idDeuda);
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("CONSULTAR_DEUDA", in);
+        Deuda d = null;
+
+        try {
+            if (rs.next()) {
+                d = new Deuda();
+                d.setDeuda_id(rs.getInt("DEUDA_ID"));
+
+                Alumno a = new Alumno();
+                a.setNombre(rs.getString("alumno_nombre"));
+                d.setAlumno(a);
+
+                TipoDeuda t = new TipoDeuda();
+                t.setDescripcion(rs.getString("tipo_deuda"));
+                d.setConcepto_deuda(t);
+
+                d.setMonto(rs.getDouble("MONTO"));
+                d.setFecha_emision(rs.getDate("FECHA_EMISION"));
+                d.setFecha_vencimiento(rs.getDate("FECHA_VENCIMIENTO"));
+                d.setDescuento(rs.getDouble("DESCUENTO"));
+                // el SP expone (d.MONTO - d.DESCUENTO) AS monto_neto si lo necesitas
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error en CONSULTAR_DEUDA: " + ex.getMessage());
+        } catch (NullPointerException nul) {
+            System.out.println("Error: rs devolvió null");
+        } finally {
+            DbManager.getInstance().cerrarConexion();
+        }
+        return d;
+    }
+
+    
+    
+    @Override
+    public Pago obtenerPagoPorId(int pagoId) {
+        Map<Integer, Object> in = new HashMap<>();
+        in.put(1, pagoId);
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_PAGO_POR_ID", in);
+        Pago p = null;
+        Deuda d=new Deuda();
+        try {
+
+            if (rs.next()) {
+                p = new Pago();
+                p.setPago_id(rs.getInt("pago_id"));
+                p.setMedio(MedioPago.valueOf(rs.getString("medio")));
+                p.setMonto(rs.getDouble("monto"));
+                p.setObservaciones(rs.getString("observaciones"));
+                p.setFecha(rs.getDate("fecha"));
+                d.setDeuda_id(rs.getInt("deuda_id"));
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error en OBTENER_PAGO_POR_ID: " + ex.getMessage());
+        } catch (NullPointerException nul) {
+            System.out.println("Error: rs devolvió null");
+        } finally {
+            DbManager.getInstance().cerrarConexion();
+        }
+        return p;
+    }
+    
+    
+    
+    
 
 }

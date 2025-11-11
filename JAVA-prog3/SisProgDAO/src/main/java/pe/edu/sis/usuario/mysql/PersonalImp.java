@@ -133,4 +133,48 @@ public class PersonalImp implements PersonalDAO {
 
         return personales;
     }
+    
+    @Override
+    public ArrayList<Personal> buscarPersonal(int dni, String nombreApellidos) {
+        
+        Map<Integer, Object> in = new HashMap<>();
+        in.put(1, dni);
+        in.put(2, nombreApellidos);
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("BUSCAR_PERSONAL_POR_DNI_O_NOMBRE_APELLIDOS", in);
+        ArrayList<Personal> lista = new ArrayList<>();
+
+        try {
+            
+            while ( rs.next()) {
+                Personal p = new Personal();
+                p.setPersonal_id(rs.getInt("ID_PERSONAL"));
+                p.setNombre(rs.getString("NOMBRE"));
+                p.setApellido_paterno(rs.getString("APELLIDO_PATERNO"));
+                p.setApellido_materno(rs.getString("APELLIDO_MATERNO"));
+                p.setDni(rs.getInt("DNI"));
+
+                Cargo c = new Cargo();
+                c.setNombre(rs.getString("NOMBRE_CARGO"));
+                p.setCargo(c);
+
+                p.setCorreo_electronico(rs.getString("CORREO_ELECTRONICO"));
+                p.setTelefono(rs.getString("TELEFONO"));
+                p.setSalario(rs.getDouble("SALARIO"));
+                p.setFecha_Contratacion(rs.getDate("FECHA_CONTRATACION"));
+                p.setFin_fecha_Contratacion(rs.getDate("FIN_FECHA_CONTRATO"));
+
+                lista.add(p);
+            }
+        } catch (SQLException ex) {
+            System.out.println("Error en BUSCAR_PERSONAL...: " + ex.getMessage());
+        } catch (NullPointerException nul) {
+            System.out.println("Error: rs devolvió null");
+        } finally {
+            DbManager.getInstance().cerrarConexion();
+        }
+        return lista;
+    }
+
+    
+    
 }
