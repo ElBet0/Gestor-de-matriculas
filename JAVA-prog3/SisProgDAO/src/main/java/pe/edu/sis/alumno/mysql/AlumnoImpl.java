@@ -161,22 +161,15 @@ public class AlumnoImpl implements AlumnoDAO {
     @Override
     public ArrayList<Alumno> BuscarAlumno(int familia_id, String ape_pat, String ape_mat, String nombre, int dni) {
         ArrayList<Alumno> alumnos = new ArrayList<>();
-        Familia fam = null;
-        Alumno al = null;
+        Familia fam;
+        Alumno al;
         Map<Integer, Object> in = new HashMap<>();
-        if(familia_id==-1){
-            in.put(1, null);
-        }else{
-            in.put(1, familia_id);
-        }
+
+        in.put(1, familia_id);
         in.put(2, ape_pat);
         in.put(3, ape_mat);
         in.put(4, nombre);
-        if(dni==-1){
-            in.put(5, null);
-        }else{
-            in.put(5, dni);
-        }
+        in.put(5, dni);
         
         rs = DbManager.getInstance().ejecutarProcedimientoLectura("BUSCAR_ALUMNO", in);
         try {

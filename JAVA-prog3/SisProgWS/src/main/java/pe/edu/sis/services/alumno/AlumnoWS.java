@@ -91,8 +91,12 @@ public class AlumnoWS {
         @WebParam(name = "dni") String _dni
     ) {
         ArrayList<Alumno> alumnos = null;
-        int dni = _dni == null ? -1 : Integer.parseInt(_dni);
-        int idFamilia = _idFamilia == null ? -1 : Integer.parseInt(_dni);
+        int dni = (_dni == null || _dni.trim().isEmpty() ) ? -1 : Integer.parseInt(_dni);
+        int idFamilia = (_idFamilia == null  || _idFamilia.trim().isEmpty()) ? -1 : Integer.parseInt(_idFamilia);
+        _apellido_materno = _apellido_materno == null ? "" : _apellido_materno;
+        _apellido_paterno = _apellido_paterno == null ? "" : _apellido_paterno;
+        _nombre = _nombre == null ? "" : _nombre;
+        
         try{
             alumnos = boAlumno.buscar(idFamilia, _nombre, _apellido_paterno, _apellido_materno, dni);
         }catch(Exception ex){
