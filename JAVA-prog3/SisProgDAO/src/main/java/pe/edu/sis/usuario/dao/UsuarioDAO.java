@@ -12,5 +12,6 @@ import pe.edu.sis.model.usuario.Usuario;
  * @author seinc
  */
 public interface UsuarioDAO extends IDAO<Usuario>{
-    
+    Usuario obtenerDatos(String nombre);
+    int verificarUsuario(String nombre,String clave);
 }

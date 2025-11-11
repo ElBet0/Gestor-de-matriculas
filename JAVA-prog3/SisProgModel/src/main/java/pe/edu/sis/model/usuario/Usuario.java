@@ -24,6 +24,7 @@ public class Usuario {
     private Date ultimo_acceso;
     private Rol rol;
     private int iteracion;
+    public Usuario(){}
 
     public Usuario(String nombre, String Password, Rol rol) throws Exception {
         this.nombre = nombre;
@@ -141,7 +142,21 @@ public class Usuario {
 
         // Convertir a Base64 para almacenamiento
         hashClave = Base64.getEncoder().encodeToString(_hash);
-        salt = Base64.getEncoder().encodeToString(_salt);
-        iteracion = ITERATIONS;
+        setSalt(Base64.getEncoder().encodeToString(_salt));
+        setIteracion(ITERATIONS);
+    }
+
+    /**
+     * @param salt the salt to set
+     */
+    public void setSalt(String salt) {
+        this.salt = salt;
+    }
+
+    /**
+     * @param iteracion the iteracion to set
+     */
+    public void setIteracion(int iteracion) {
+        this.iteracion = iteracion;
     }
 }

@@ -12,5 +12,5 @@ import pe.edu.sis.model.usuario.Usuario;
  * @author sdelr
  */
 public interface UsuarioBO extends IBaseBO<Usuario>{
-    
+    int verificarUsuario(String nombre,String clave);
 }

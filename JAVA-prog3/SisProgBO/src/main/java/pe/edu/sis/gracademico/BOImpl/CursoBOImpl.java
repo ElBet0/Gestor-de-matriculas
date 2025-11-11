@@ -78,7 +78,7 @@ public class CursoBOImpl implements CursoBO {
     @Override
     public ArrayList<Curso> BuscarNombreAbre(String nombre,String abre,String grado){
         ArrayList<Curso> cursos;
-        cursos=curso.buscarCurso(nombre, abre, nombre);
+        cursos=curso.buscarCurso(nombre, abre, grado);
         return cursos;
     }
     

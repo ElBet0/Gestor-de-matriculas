@@ -25,6 +25,41 @@ public class UsuarioImpl implements UsuarioDAO {
     private ResultSet rs;
 
     @Override
+    public Usuario obtenerDatos(String nombre){
+        Usuario user = null;
+        Map<Integer, Object> in = new HashMap<>();
+        in.put(1, nombre);
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("obtener_salt_iteracion", in);
+        try {
+            while (rs.next()) {
+                user=new Usuario();
+                user.setSalt(rs.getString("SALT"));
+                user.setIteracion(rs.getInt("ITERACION"));
+                
+            }
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        } finally {
+            DbManager.getInstance().cerrarConexion();
+        }
+        return user;
+    }
+    @Override
+    public int verificarUsuario(String nombre,String clave) {
+        Map<Integer, Object> in = new HashMap<>();
+        in.put(1, nombre);
+        in.put(2, clave);
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("verificar_cuenta", in);
+        int res=-1;
+        try{
+            res=(rs.next())?1:0;
+        }catch(Exception ex){
+            System.out.println(ex.getMessage());
+        }
+        DbManager.getInstance().cerrarConexion();
+        return res;
+    }
+    @Override
     public int insertar(Usuario user) {
         Map<Integer, Object> in = new HashMap<>();
         Map<Integer, Object> out = new HashMap<>();
@@ -120,8 +155,7 @@ public class UsuarioImpl implements UsuarioDAO {
         } finally {
             DbManager.getInstance().cerrarConexion();
         }
-
+        
         return usuarios;
     }
-
 }

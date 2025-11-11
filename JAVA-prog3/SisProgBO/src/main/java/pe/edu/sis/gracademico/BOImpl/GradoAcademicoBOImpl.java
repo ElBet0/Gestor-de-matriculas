@@ -73,14 +73,11 @@ public class GradoAcademicoBOImpl implements GradoAcademicoBO{
         g=grado.buscarPorNombreOAbreviatura(abre, nombre);
         return g;
     }
+    
     @Override
     public ArrayList<Aula> obtenerAulas(int id){
         ArrayList<Aula> aulas;
         aulas=grado.listarAulasPorGrado(id);
         return aulas;
-        
-        
     }
-
-    
 }

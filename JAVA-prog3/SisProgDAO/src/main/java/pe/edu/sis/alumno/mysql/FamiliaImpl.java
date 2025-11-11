@@ -145,7 +145,7 @@ public class FamiliaImpl implements FamiliaDAO {
     @Override
     public ArrayList<Alumno> ObtenerHijos(int familia_id) {
         ArrayList<Alumno> alumnos = new ArrayList<>();
-        rs = DbManager.getInstance().ejecutarProcedimientoLectura("LISTAR_FAMILIAS", null);
+        rs = DbManager.getInstance().ejecutarProcedimientoLectura("OBTENER_HIJOS_FAMILIA", null);
         try {
             while (rs.next()) {
                 Alumno al = new Alumno();

@@ -8,6 +8,7 @@ import jakarta.jws.WebService;
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;
 import java.util.ArrayList;
+import pe.edu.sis.alumno.BO.FamiliaBO;
 import pe.edu.sis.alumno.BOImpl.FamiliaBOImpl;
 import pe.edu.sis.model.alumno.Alumno;
 import pe.edu.sis.model.alumno.Familia;
@@ -20,13 +21,16 @@ import pe.edu.sis.model.alumno.Familia;
 @WebService(serviceName = "FamiliaWS")
 public class FamiliaWS {
 
-    private FamiliaBOImpl boFamilia;
+    private FamiliaBO boFamilia;
+    
+    public FamiliaWS(){
+        this.boFamilia=new FamiliaBOImpl();
+    }
     
     @WebMethod(operationName = "insertarFamilia")
     public int insertarFamilia(@WebParam(name = "familia")Familia familia){
         int resultado = 0;
         try{
-            boFamilia = new FamiliaBOImpl();
             resultado = boFamilia.insertar(familia);
         }catch(Exception ex){
             System.out.println(ex.getMessage());
@@ -38,7 +42,6 @@ public class FamiliaWS {
     public int modificarFamilia(@WebParam(name = "familia")Familia familia){
         int resultado = 0;
         try{
-            boFamilia = new FamiliaBOImpl();
             resultado = boFamilia.modificar(familia);
         }catch(Exception ex){
             System.out.println(ex.getMessage());
@@ -50,7 +53,6 @@ public class FamiliaWS {
     public int eliminarFamiliaPorId(@WebParam(name = "idFamilia")int idFamilia){
         int resultado = 0;
         try{
-            boFamilia = new FamiliaBOImpl();
             resultado = boFamilia.eliminar(idFamilia);
         }catch(Exception ex){
             System.out.println(ex.getMessage());
@@ -62,7 +64,6 @@ public class FamiliaWS {
     public Familia obtenerFamiliaPorId(@WebParam(name = "idFamilia") int idFamilia){
         Familia familia = null;
         try{
-            boFamilia = new FamiliaBOImpl();
             familia = boFamilia.obtenerPorId(idFamilia);
         }catch(Exception ex){
             System.out.println(ex.getMessage());
@@ -74,7 +75,6 @@ public class FamiliaWS {
     public ArrayList<Familia> listarFamiliasTodas() {
         ArrayList<Familia> familias = null;
         try{
-            boFamilia = new FamiliaBOImpl();
             familias = boFamilia.listarTodos();
         }catch(Exception ex){
             System.out.println(ex.getMessage());
@@ -86,7 +86,6 @@ public class FamiliaWS {
     public ArrayList<Alumno> ObtenerHijos(@WebParam(name = "idFamilia") int idFamilia){
         ArrayList<Alumno> hijos = null;
         try{
-            boFamilia = new FamiliaBOImpl();
             hijos = boFamilia.ObtenerHijos(idFamilia);
         }catch(Exception ex){
             System.out.println(ex.getMessage());
@@ -100,13 +99,11 @@ public class FamiliaWS {
             @WebParam(name = "apellido_materno") String apellido_materno){
         Familia f = null;
         try {
-            boFamilia = new FamiliaBOImpl();
             f = boFamilia.buscarFamilia(apellido_paterno, apellido_materno);
 
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
-
         return f;
     }
 }
