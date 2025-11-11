@@ -9,6 +9,8 @@
         <module>../SisProgModel</module>
         <module>../SisProgDB</module>
         <module>../SisProgDAO</module>
+        <module>../SisProgBO</module>
+        <module>../SisProgWS</module>
         <module>../SisProg</module>
     </modules>
     <properties>

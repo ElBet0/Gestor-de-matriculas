@@ -4,9 +4,6 @@
  */
 package pe.edu.sis.model.grAcademico;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  *
  * @author seinc
@@ -16,81 +13,46 @@ public class GradoAcademico {
     private int grado_academico_id;
     private String nombre;
     private String abreviatura;
-    private int estado;
-    private List<Curso> cursos=new ArrayList<>();
+    private int activo;
 
     public GradoAcademico(String nombre, String abreviatura) {
         this.nombre = nombre;
         this.abreviatura = abreviatura;
     }
-    public GradoAcademico(){}
-    /**
-     * @return the estado
-     */
-    public int getEstado() {
-        return estado;
+
+    public GradoAcademico() {
     }
 
-    /**
-     * @param estado the estado to set
-     */
-    public void setEstado(int estado) {
-        this.estado = estado;
+    public int getActivo() {
+        return activo;
     }
-    /**
-     * @return the grado_academico_id
-     */
+
+    public void setActivo(int activo) {
+        this.activo = activo;
+    }
+
     public int getGrado_academico_id() {
         return grado_academico_id;
     }
 
-    /**
-     * @param grado_academico_id the grado_academico_id to set
-     */
     public void setGrado_academico_id(int grado_academico_id) {
         this.grado_academico_id = grado_academico_id;
     }
 
-    /**
-     * @return the nombre
-     */
     public String getNombre() {
         return nombre;
     }
 
-    /**
-     * @param nombre the nombre to set
-     */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    /**
-     * @return the abreviatura
-     */
     public String getAbreviatura() {
         return abreviatura;
     }
 
-    /**
-     * @param abreviatura the abreviatura to set
-     */
     public void setAbreviatura(String abreviatura) {
         this.abreviatura = abreviatura;
     }
 
-    /**
-     * @return the cursos
-     */
-    public List<Curso> getCursos() {
-        return new ArrayList<>(cursos); //shadowcpy
-    }
-
-    /**
-     * @param cursos the cursos to set
-     */
-    public void setCursos(List<Curso> cursos) {
-        this.cursos = cursos;
-    }
-    
 }

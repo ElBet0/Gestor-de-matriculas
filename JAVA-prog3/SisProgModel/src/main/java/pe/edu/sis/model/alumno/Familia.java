@@ -4,43 +4,19 @@
  */
 package pe.edu.sis.model.alumno;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  *
  * @author seinc
  */
 public class Familia {
-    /**
-     * El código único que identifica a la familia.
-     */
     private int familia_id;
-    /**
-     * El apellido paterno de la familia.
-     */
     private String apellido_paterno;
-    /**
-     * El apellido materno de la familia.
-     */
     private String apellido_materno;
-    /**
-     * El número de teléfono de contacto de la familia.
-     */
     private String numero_telefono;
-    /**
-     * El correo electrónico de contacto de la familia.
-     */
     private String correo_electronico;
-    /**
-     * La dirección de la familia.
-     */
     private String direccion;
-    /**
-     * La lista de hijos de la familia que son alumnos en la institución.
-     */
-    private List<Alumno> hijos = new ArrayList<>();
-
+    
+    //Si estas usando este, cambialo por el que tiene familia_id, evitamos errores
     public Familia(String apellido_paterno, String apellido_materno, String numero_telefono, String correo_electronico, String direccion) {
         this.apellido_paterno = apellido_paterno;
         this.apellido_materno = apellido_materno;
@@ -48,11 +24,30 @@ public class Familia {
         this.correo_electronico = correo_electronico;
         this.direccion = direccion;
     }
+
+    public Familia(int familia_id, String apellido_paterno, String apellido_materno) {
+        this.familia_id = familia_id;
+        this.apellido_paterno = apellido_paterno;
+        this.apellido_materno = apellido_materno;
+        this.numero_telefono = "Sin asignar";
+        this.correo_electronico = "Sin asignar";
+        this.direccion = "Sin asignar";
+    }
+
     public Familia (){}
+
+    public Familia(int familia_id){
+        this.familia_id = familia_id;
+        this.apellido_paterno = "No asignado";
+        this.apellido_materno = "No asignado";
+        this.numero_telefono = "No asignado";
+        this.correo_electronico = "No asignado";
+        this.direccion = "No asignado";
+    }
+
     /**
      * @return the familia_id
      */
-    
     public int getFamilia_id() {
         return familia_id;
     }
@@ -137,19 +132,5 @@ public class Familia {
      */
     public void setDireccion(String direccion) {
         this.direccion = direccion;
-    }
-
-    /**
-     * @return the hijos
-     */
-    public List<Alumno> getHijos() {
-        return new ArrayList<Alumno>(hijos);
-    }
-
-    /**
-     * @param hijos the hijos to set
-     */
-    public void setHijos(List<Alumno> hijos) {
-        this.hijos = hijos;
     }
 }

@@ -1,21 +1,17 @@
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\alumno\Alumno.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\alumno\Familia.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\deuda\Deuda.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\deuda\Medio.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\deuda\Pago.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\deuda\TipoDeuda.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\grAcademico\Calificaciones.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\grAcademico\Competencia.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\grAcademico\Curso.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\grAcademico\GradoAcademico.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\matricula\Matricula.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\matricula\PeriodoAcademico.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\matricula\VacantesAula.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\matricula\VacantesGrado.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\notas\Bimestre.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\notas\CompetenciaNotas.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\notas\CursoNotas.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\notas\NotaAcademica.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\usuario\Rol.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\usuario\Usuario.java
-C:\Users\seinc\OneDrive\Escritorio\forkear\Gestor-de-matriculas\JAVA-prog3\SisProgModel\src\main\java\SisProgModel.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\alumno\Alumno.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\alumno\Familia.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\deuda\Deuda.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\deuda\MedioPago.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\deuda\Pago.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\deuda\TipoDeuda.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\grAcademico\Aula.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\grAcademico\Curso.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\grAcademico\GradoAcademico.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\matricula\Matricula.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\matricula\PeriodoAcademico.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\matricula\PeriodoXAula.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\usuario\Cargo.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\usuario\Personal.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\usuario\Rol.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\usuario\TipoContrato.java
+E:\Ete serge TA\JAVA-prog3\SisProgModel\src\main\java\pe\edu\sis\model\usuario\Usuario.java
