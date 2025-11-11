@@ -691,6 +691,10 @@
                     <ItemStyle Width="180px" />
                 </asp:BoundField>
 
+                <asp:TemplateField HeaderText="Nombre">
+                    <ItemTemplate><%# Eval("nombre") %></ItemTemplate>
+                </asp:TemplateField>
+
                 <asp:TemplateField HeaderText="Apellido Paterno">
                     <ItemTemplate><%# Eval("padres.apellido_paterno") %></ItemTemplate>
                 </asp:TemplateField>
@@ -713,7 +717,7 @@
                         ToolTip="Sí, eliminar"
                         CausesValidation="false"
                         UseSubmitBehavior="false"
-                        OnClientClick="btnDoDelete_Click">
+                        OnClick="btnDoDelete_Click">
 <i class="fa-solid fa-check"></i>
                     </asp:LinkButton>
                     <asp:HiddenField ID="idAlumnoDelete" runat="server" Value="" />
@@ -826,6 +830,5 @@
                 </div>
             </div>
         </div>
-
     </div>
 </asp:Content>

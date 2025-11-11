@@ -298,6 +298,14 @@
                             </div>
                             <div class="mb-2 row">
                                 <div class="col-md-4 align-content-lg-center">
+                                    <label class="form-label">DNI:</label>
+                                </div>
+                                <div class="col-md-6 align-content-md-center">
+                                    <asp:TextBox ID="txtDNI" runat="server" CssClass="form-control" MaxLength="60"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="mb-2 row">
+                                <div class="col-md-4 align-content-lg-center">
                                     <label class="form-label">Fecha Nacimiento:</label>
                                 </div>
                                 <div class="col-md-6 align-content-md-center">

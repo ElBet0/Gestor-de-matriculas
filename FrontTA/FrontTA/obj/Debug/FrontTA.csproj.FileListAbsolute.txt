@@ -46,3 +46,15 @@ C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gest
 C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.Up2Date
 C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.dll
 C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.pdb
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.dll.config
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.dll
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.pdb
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.AssemblyReference.cache
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.CoreCompileInputs.cache
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.Up2Date
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.dll
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.pdb

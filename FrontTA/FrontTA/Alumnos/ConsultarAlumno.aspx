@@ -447,7 +447,15 @@
                                     <label class="form-label">Nombre:</label>
                                 </div>
                                 <div class="col-md-6 align-content-md-center">
-                                    <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control input-disabled" MaxLength="60"></asp:TextBox>
+                                    <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control input-disabled" ReadOnly="true" MaxLength="60"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="mb-2 row">
+                                <div class="col-md-4 align-content-lg-center">
+                                    <label class="form-label">Dni:</label>
+                                </div>
+                                <div class="col-md-6 align-content-md-center">
+                                    <asp:TextBox ID="txtDNI" runat="server" CssClass="form-control input-disabled" ReadOnly="true" MaxLength="60"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="mb-2 row">
@@ -455,7 +463,7 @@
                                     <label class="form-label">Fecha Nacimiento:</label>
                                 </div>
                                 <div class="col-md-6 align-content-md-center">
-                                    <asp:TextBox ID="txtFechaNacimiento" runat="server" CssClass="form-control input-disabled" ></asp:TextBox>
+                                    <asp:TextBox ID="txtFechaNacimiento" runat="server" CssClass="form-control input-disabled" ReadOnly="true" ></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -478,7 +486,7 @@
                                     <label class="form-label">Fecha Ingreso:</label>
                                 </div>
                                 <div class="col-md-6 align-content-md-center">
-                                    <asp:TextBox ID="txtFechaIngreso" runat="server" CssClass="form-control input-disabled"></asp:TextBox>
+                                    <asp:TextBox ID="txtFechaIngreso" runat="server" CssClass="form-control input-disabled" ReadOnly="true"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="mb-2 row">
@@ -486,7 +494,7 @@
                                     <label class="form-label">Religión:</label>
                                 </div>
                                 <div class="col-md-6 align-content-md-center">
-                                    <asp:TextBox ID="txtReligion" runat="server" CssClass="form-control input-disabled" MaxLength="60"></asp:TextBox>
+                                    <asp:TextBox ID="txtReligion" runat="server" CssClass="form-control input-disabled" ReadOnly="true" MaxLength="60"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -496,7 +504,7 @@
                                     <label class="form-label">Género:</label>
                                 </div>
                                 <div class="col-md-8 align-content-md-center">
-                                    <asp:TextBox ID="txtGenero" runat="server" CssClass="form-control input-disabled" MaxLength="60"></asp:TextBox>
+                                    <asp:TextBox ID="txtGenero" runat="server" CssClass="form-control input-disabled" ReadOnly="true" MaxLength="60"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="mb-2 row">
@@ -504,7 +512,7 @@
                                     <label class="form-label">Pensión base:</label>
                                 </div>
                                 <div class="col-md-8 align-content-md-center">
-                                    <asp:TextBox ID="txtPension" runat="server" CssClass="form-control input-disabled" MaxLength="60"></asp:TextBox>
+                                    <asp:TextBox ID="txtPension" runat="server" CssClass="form-control input-disabled" ReadOnly="true" MaxLength="60"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -514,7 +522,7 @@
                             <label class="form-label align-content-center">Observaciones:</label>
                         </div>
                         <div class="mb-0 row p-lg-3">
-                            <asp:TextBox ID="txtObservaciones" runat="server" CssClass="form-control align-content-center"  Multiline="True"></asp:TextBox>
+                            <asp:TextBox ID="txtObservaciones" runat="server" CssClass="form-control input-disabled" ReadOnly="true" Multiline="True"></asp:TextBox>
                         </div>
                     </div>
                 </div>

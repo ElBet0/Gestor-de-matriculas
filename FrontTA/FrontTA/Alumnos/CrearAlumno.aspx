@@ -24,6 +24,9 @@
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0,0,0,.1);
             overflow-x: auto;
+            max-height: 200px;
+            overflow-y: auto;
+            display: block;
         }
 
         .tabla-box {
@@ -31,6 +34,9 @@
             border-radius: 10px;
             box-shadow: 0 2px 6px rgba(0,0,0,.1);
             overflow-x: auto;
+            max-height: 200px;
+            overflow-y: auto;
+            display: block;
         }
 
         tr.data-row.row-selected {
@@ -459,7 +465,8 @@
                                     <label class="form-label">Código Familia:</label>
                                 </div>
                                 <div class="col-md-6 align-content-md-center">
-                                    <asp:TextBox ID="txtCodigoFamilia" runat="server" CssClass="form-control" ReadOnly="true" Text=""></asp:TextBox>
+                                    <!-- Se quito en solo lectura para pruebas, una vez arreglado el modal, volver a colocar -->
+                                    <asp:TextBox ID="txtCodigoFamilia" runat="server" CssClass="form-control" Text=""></asp:TextBox>
                                 </div>
                                 <div class="col-md-1 align-content-lg-start">
                                     <button type="button" id="btnAddFamilia" class="btn btn-icon-2 btn-add-family" title="Añadir familia">
@@ -473,6 +480,14 @@
                                 </div>
                                 <div class="col-md-6 align-content-md-center">
                                     <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" MaxLength="60"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="mb-2 row">
+                                <div class="col-md-4 align-content-lg-center">
+                                    <label class="form-label">DNI:</label>
+                                </div>
+                                <div class="col-md-6 align-content-md-center">
+                                    <asp:TextBox ID="txtDNI" runat="server" CssClass="form-control" MaxLength="60"></asp:TextBox>
                                 </div>
                             </div>
                             <div class="mb-2 row">
@@ -523,8 +538,8 @@
                                 <div class="col-md-8 align-content-md-center">
                                     <asp:DropDownList ID="ddlGenero" runat="server" CssClass="form-control">
                                         <asp:ListItem Text="Seleccionar..." Value="" />
-                                        <asp:ListItem Text="Masculino" Value="TiempoCompleto" />
-                                        <asp:ListItem Text="Femenino" Value="MedioTiempo" />
+                                        <asp:ListItem Text="Masculino" Value="M" />
+                                        <asp:ListItem Text="Femenino" Value="F" />
                                     </asp:DropDownList>
                                 </div>
                             </div>
@@ -614,9 +629,9 @@
                                         <asp:Repeater ID="reFamilias" runat="server">
                                             <ItemTemplate>
                                                 <tr class="data-row">
-                                                    <td><%# Eval("Codigo") %></td>
-                                                    <td><%# Eval("apePaterno") %></td>
-                                                    <td><%# Eval("apeMaterno") %></td>
+                                                    <td><%# Eval("familia_id") %></td>
+                                                    <td><%# Eval("apellido_paterno") %></td>
+                                                    <td><%# Eval("apellido_materno") %></td>
                                                 </tr>
                                             </ItemTemplate>
                                         </asp:Repeater>

@@ -98,7 +98,7 @@ public class AlumnoWS {
         _nombre = _nombre == null ? "" : _nombre;
         
         try{
-            alumnos = boAlumno.buscar(idFamilia, _nombre, _apellido_paterno, _apellido_materno, dni);
+            alumnos = boAlumno.buscar(idFamilia, _apellido_paterno, _apellido_materno, _nombre, dni);
         }catch(Exception ex){
             System.out.println(ex.getMessage());
         }

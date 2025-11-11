@@ -32,7 +32,14 @@ namespace FrontTA.Alumnos
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-
+            gvAlumnos.DataSource = boAlumno.buscarAlumnos(
+                txtCodigoFamilia.Text,
+                txtApellidoPaterno.Text,
+                txtApellidoMaterno.Text,
+                txtNombre.Text,
+                txtDNI.Text
+                );
+            gvAlumnos.DataBind();
         }
         protected void btnBuscar_Click2(object sender, EventArgs e)
         {

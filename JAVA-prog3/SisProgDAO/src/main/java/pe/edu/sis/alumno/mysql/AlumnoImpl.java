@@ -174,18 +174,17 @@ public class AlumnoImpl implements AlumnoDAO {
         rs = DbManager.getInstance().ejecutarProcedimientoLectura("BUSCAR_ALUMNO", in);
         try {
             while (rs.next()) {
-                
                 al = new Alumno();
                 fam= new Familia();
-                fam.setFamilia_id(familia_id);
+                fam.setFamilia_id(rs.getInt("familia_id"));
                 fam.setApellido_paterno(rs.getString("apellido_paterno"));
                 fam.setApellido_materno(rs.getString("apellido_materno"));
                 al.setSexo(rs.getString("sexo").charAt(0));
                 al.setNombre(rs.getString("nombre"));
-                al.setDni(dni);
+                al.setDni(rs.getInt("dni"));
+                al.setAlumno_id(rs.getInt("alumno_id"));
                 al.setPadres(fam);
                 alumnos.add(al);
-                
             }
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
