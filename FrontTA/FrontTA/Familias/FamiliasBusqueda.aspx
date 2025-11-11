@@ -449,7 +449,7 @@
 
         <div class="d-flex justify-content-between align-items-center mb-2">
             <div></div>
-            <span id="subTitle" class="header-cta" style="display: none;">Eliminar Familia</span>
+<%--            <span id="subTitle" class="header-cta" style="display: none;">Eliminar Familia</span>--%>
         </div>
 
 

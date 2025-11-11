@@ -30,14 +30,22 @@
         }
 
         /* Selección de fila */
-        /* Fila seleccionada: pinta celdas */
-        .tabla-box table.table tbody tr.data-row.row-selected > td {
-            background-color: #E6F4FF !important; /* celeste claro */
+        /* === Forzar resaltado celeste de la fila seleccionada en Bootstrap === */
+        .tabla-box .table tbody tr.data-row.row-selected > td,
+        .table tbody tr.data-row.row-selected > td,
+        .table.table-hover tbody tr.data-row.row-selected:hover > td {
+            background-color: #E6F4FF !important;
             transition: background-color .15s ease-in-out;
         }
 
-        /* Hover solo si NO está seleccionada */
-        .tabla-box table.table tbody tr.data-row:hover:not(.row-selected) > td {
+        /* Si la tabla tiene striping, anula la cebra para la fila seleccionada */
+        .table.table-striped > tbody > tr.data-row.row-selected:nth-of-type(odd) > td {
+            --bs-table-accent-bg: transparent; /* BS5 */
+            background-color: #E6F4FF !important;
+        }
+
+        /* Mantén el hover solo cuando NO esté seleccionada */
+        .table tbody tr.data-row:hover:not(.row-selected) > td {
             background-color: #F3FAFF !important;
         }
 
@@ -398,183 +406,166 @@
 </style>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const tbody = document.getElementById('tbodyFamilias');
-            const btnView = document.getElementById('btnView');
-            const btnEdit = document.getElementById('btnEdit');
-            const btnDel = document.getElementById('btnDelete');
+        (function () {
+            function getTable() {
+                return document.getElementById('<%= gvAlumnos.ClientID %>');
+      }
+      function getSelected() {
+          return getTable()?.querySelector('tr.data-row.row-selected');
+      }
 
-            function setEnabled(enabled) {
-                [btnView, btnEdit, btnDel].forEach(b => {
-                    b.disabled = !enabled;
-                    b.classList.toggle('btn-disabled', !enabled);
-                });
-            }
+      function wireUp() {
+          const table = getTable();
+          const btnAdd = document.getElementById('btnAdd');
+          const btnView = document.getElementById('btnView');
+          const btnEdit = document.getElementById('btnEdit');
+          const btnDel = document.getElementById('btnDelete');
 
-            setEnabled(false);
-            let selectedRow = null;
+          const overlay = document.getElementById('confirmDelete');
+          const btnCancelDelete = document.getElementById('btnCancelDelete');
+          const hiddenID = document.getElementById('<%= idAlumnoDelete.ClientID %>');
 
-            if (tbody) {
-                tbody.addEventListener('click', (e) => {
-                    const tr = e.target.closest('tr.data-row');
-                    if (!tr || !tbody.contains(tr)) return;
+          const ovFamilia = document.getElementById('ovFamilia');
+          const btnAddFamilia = document.getElementById('btnAddFamilia');
+          const btnCloseFamilia = document.getElementById('btnCloseFamilia');
 
-                    // quita selección previa (y limpia posibles 'selected' antiguas)
-                    tbody.querySelectorAll('tr.row-selected, tr.selected').forEach(r => r.classList.remove('row-selected', 'selected'));
 
-                    // marca la nueva
-                    tr.classList.add('row-selected');
-                    selectedRow = tr;
-                    setEnabled(true);
+        function setEnabled(enabled) {
+            [btnView, btnEdit, btnDel].forEach(b => {
+                if (!b) return;
+                b.disabled = !enabled;
+                b.classList.toggle('btn-disabled', !enabled);
+            });
+        }
+          setEnabled(false);
 
-                    e.stopPropagation();
-                });
-            }
+          function openOv() {
+              if (!ovFamilia) return;
+              ovFamilia.classList.add('show');
+              ovFamilia.setAttribute('aria-hidden', 'false');
+          }
+          function closeOv() {
+              if (!ovFamilia) return;
+              ovFamilia.classList.remove('show');
+              ovFamilia.setAttribute('aria-hidden', 'true');
+          }
 
-            // click fuera => deseleccionar
-            document.addEventListener('click', () => {
-                if (selectedRow) {
-                    selectedRow.classList.remove('row-selected');
-                    selectedRow = null;
-                    setEnabled(false);
+          if (btnAddFamilia) {
+              btnAddFamilia.type = 'button';
+              btnAddFamilia.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  openOv();
+              });
+          }
+          if (btnCloseFamilia) {
+              btnCloseFamilia.addEventListener('click', function (e) {
+                  e.preventDefault();
+                  closeOv();
+              });
+          }
+          if (ovFamilia) {
+              // click fuera del cuadro cierra
+              ovFamilia.addEventListener('click', function (e) {
+                  if (e.target === ovFamilia) closeOv();
+              });
+          }
+          document.addEventListener('keydown', function (e) {
+              if (e.key === 'Escape' && ovFamilia && ovFamilia.classList.contains('show')) {
+                  closeOv();
+              }
+          });
+        
+
+          if (!table) return;
+
+          if (window.__alumnosWireUpBound) return;
+          window.__alumnosWireUpBound = true;
+
+          // Selección de fila en GridView
+          table.addEventListener('click', function (e) {
+              const tr = e.target.closest('tr');
+              if (!tr || !table.contains(tr)) return;
+              if (tr.parentElement && tr.parentElement.tagName === 'THEAD') return;
+              if (!tr.classList.contains('data-row')) return;
+
+              table.querySelectorAll('tr.row-selected, tr.selected')
+                  .forEach(r => r.classList.remove('row-selected', 'selected'));
+
+              tr.classList.add('row-selected');
+              setEnabled(true);
+
+              // detiene la burbuja para que NO llegue al document click
+              e.stopPropagation();
+          });
+
+          // Click fuera -> deseleccionar (ignora clicks dentro del gvAlumnos)
+          document.addEventListener('click', function (ev) {
+              // si el click estuvo dentro del grid, no hagas nada
+              if (ev.target.closest('#<%= gvAlumnos.ClientID %>')) return;
+
+              const sel = getSelected();
+              if (sel) sel.classList.remove('row-selected');
+              setEnabled(false);
+          });
+
+        // Navegación
+        if (btnAdd) {
+            btnAdd.type = 'button';
+            btnAdd.addEventListener('click', function (e) {
+                e.preventDefault();
+                window.location.href = "<%= ResolveUrl("~/Alumnos/CrearAlumno.aspx") %>";
+        });
+      }
+      if (btnView) {
+        btnView.addEventListener('click', function () {
+          const sel = getSelected(); if (!sel) return;
+          const id = sel.getAttribute('data-id');
+          window.location.href = '<%= ResolveUrl("~/Alumnos/ConsultarAlumno.aspx") %>?id=' + encodeURIComponent(id);
+        });
+      }
+      if (btnEdit) {
+        btnEdit.addEventListener('click', function () {
+          const sel = getSelected(); if (!sel) return;
+          const id = sel.getAttribute('data-id');
+          window.location.href = '<%= ResolveUrl("~/Alumnos/EditarAlumno.aspx") %>?id=' + encodeURIComponent(id);
+        });
                 }
-            });
 
-            const btnAdd = document.getElementById("btnAdd");
-            if (btnAdd) {
-                btnAdd.addEventListener("click", function (e) {
-                    e.preventDefault(); // evita que recargue la página
-                    window.location.href = "<%= ResolveUrl("~/Alumnos/CrearAlumno.aspx") %>";
-                });
-            }
-
-            btnView.addEventListener('click', function () {
-                const sel = document.querySelector('#tbodyFamilias tr.row-selected');
-                if (!sel) return;
-                const id = sel.getAttribute('data-id');
-                window.location.href = '<%= ResolveUrl("~/Alumnos/ConsultarAlumno.aspx") %>?id=' + encodeURIComponent(id);
-        });
-
-        document.getElementById('btnEdit').addEventListener('click', function () {
-            const sel = document.querySelector('#tbodyFamilias tr.row-selected');
-            if (!sel) return;
-            const id = sel.getAttribute('data-id');
-            window.location.href = '<%= ResolveUrl("~/Alumnos/EditarAlumno.aspx") %>?id=' + encodeURIComponent(id);
-        });
-
-
-            /*Logica de borrado: */
-            const overlay = document.getElementById('confirmDelete');
-            const btnDoDelete = document.getElementById('btnDoDelete');
-            const btnCancelDelete = document.getElementById('btnCancelDelete');
-            const subTitle = document.getElementById('subTitle');
-
-            btnDel.addEventListener('click', function () {
-                const sel = document.querySelector('#tbodyFamilias tr.row-selected');
-                if (!sel) return;
-
-                // Mostrar subtítulo y estado "eliminar": tacho activo, otros grises
-                //subTitle.style.display = 'inline-block';
-                // subTitle.textContent = 'Eliminar Familia';
-
-                btnAdd.classList.add('btn-disabled');
-                btnView.classList.add('btn-disabled');
-                btnEdit.classList.add('btn-disabled');
-
-                btnDel.classList.remove('btn-disabled');   // por si acaso
-                btnDel.classList.add('btn-active');        // pinta celeste
-                btnDel.disabled = false;
-
-                // Abre modal
-                overlay.classList.add('show');
-                overlay.setAttribute('aria-hidden', 'false');
-            });
-
-            // Confirmar eliminación
-            btnDoDelete.addEventListener('click', function () {
-                const sel = document.querySelector('#tbodyFamilias tr.row-selected');
-                if (!sel) { closeDeleteUI(); return; }
-
-                const id = sel.getAttribute('data-id');
-
-                // TODO: aquí llama a tu API/BD para eliminar realmente:
-                // fetch('.../familias/' + id, { method: 'DELETE' })
-                //   .then(r => { if(!r.ok) throw new Error('Error'); });
-
-                // Elimina la fila en la UI
-                sel.parentElement.removeChild(sel);
-
-                // Restablece estado
-                closeDeleteUI();
-                setEnabled(false);      // deshabilita acciones (ya no hay selección)
-            });
-
-            // Cancelar (X) en la ventanita
-            btnCancelDelete.addEventListener('click', function () {
-                closeDeleteUI();
-            });
-
-            // Cerrar modal con click fuera
-            overlay.addEventListener('click', function (e) {
-                if (e.target === overlay) closeDeleteUI();
-            });
-
-            // Esc para cerrar
-            document.addEventListener('keydown', function (e) {
-                if (e.key === 'Escape' && overlay.classList.contains('show')) {
-                    closeDeleteUI();
-                }
-            });
-
-            // Función util para restaurar todo
-            function closeDeleteUI() {
-                // Ocultar modal
-                overlay.classList.remove('show');
-                overlay.setAttribute('aria-hidden', 'true');
-
-                // Quitar estado temporal
-                subTitle.style.display = 'none';
-                btnDel.classList.remove('btn-active');
-
-                // Devuelve barra de iconos a estado “inicial” de la página
-                btnAdd.classList.remove('btn-disabled');
-                btnView.classList.add('btn-disabled');
-                btnEdit.classList.add('btn-disabled');
-                btnDel.classList.add('btn-disabled');
-
-                // Importante: no hagas selectedRow = null aquí; setEnabled(false) ya lo hace
-            }
-
-
-        });
-        // Modal Seleccionar Familia
-        document.addEventListener('DOMContentLoaded', function () {
-            // Abrir / cerrar Historial
-            const ovFamilia = document.getElementById('ovFamilia');
-            document.getElementById('btnAddFamilia').addEventListener('click', () => {
-                ovFamilia.classList.add('show');
-                ovFamilia.setAttribute('aria-hidden', 'false');
-            });
-            document.getElementById('btnCloseFamilia').addEventListener('click', () => closeOv(ovFamilia));
-            ovFamilia.addEventListener('click', (e) => { if (e.target === ovFamilia) closeOv(ovFamilia); });
-
-
-            // ESC cierra cualquier overlay
-            document.addEventListener('keydown', (e) => {
-                if (e.key === 'Escape') {
-                    [ovFamilia].forEach(o => {
-                        if (o.classList.contains('show')) closeOv(o);
+                // Borrado (abre modal y guarda id en HiddenField)
+                if (btnDel && overlay) {
+                    btnDel.addEventListener('click', function () {
+                        const sel = getSelected(); if (!sel) return;
+                        const id = sel.getAttribute('data-id') || '';
+                        if (hiddenID) hiddenID.value = id.trim();
+                        overlay.classList.add('show');
+                        overlay.setAttribute('aria-hidden', 'false');
                     });
                 }
-            });
 
-            function closeOv(ov) {
-                ov.classList.remove('show');
-                ov.setAttribute('aria-hidden', 'true');
+                // Cancelar modal
+                if (btnCancelDelete && overlay) {
+                    btnCancelDelete.addEventListener('click', closeDeleteUI);
+                    overlay.addEventListener('click', function (e) {
+                        if (e.target === overlay) closeDeleteUI();
+                    });
+                    document.addEventListener('keydown', function (e) {
+                        if (e.key === 'Escape' && overlay.classList.contains('show')) closeDeleteUI();
+                    });
+                }
+
+                function closeDeleteUI() {
+                    overlay.classList.remove('show');
+                    overlay.setAttribute('aria-hidden', 'true');
+                }
             }
-        });
 
+            document.addEventListener('DOMContentLoaded', wireUp);
+            if (window.Sys && Sys.Application) {
+                Sys.Application.add_load(wireUp);
+            }
+        })();
     </script>
+
 
 
 
@@ -689,21 +680,26 @@
                 </tbody>
             </table>
             -->
-            <asp:GridView ID="gvAlumnos" 
-                runat="server"
-                AutoGenerateColumns="false" 
-                CssClass="table table-hover table-responsive table-striped"
-                DataKeyNames="alumno_id"
-                OnRowDataBound="gvAlumnos_RowDataBound">
-                <Columns>
-                    <asp:BoundField DataField="alumno_id" HeaderText="Código Alumno">
-                        <ItemStyle Width="180px" />
-                    </asp:BoundField>                    
-                    <asp:BoundField DataField="padres.apellido_paterno" HeaderText="Apellido Paterno" />
-                    <asp:BoundField DataField="padres.apellido_materno" HeaderText="Apellido Materno" />
-                </Columns>
-            </asp:GridView>
-        </div>
+        <asp:GridView ID="gvAlumnos"
+            runat="server"
+            AutoGenerateColumns="false"
+            CssClass="table table-bordered table-hover align-middle mb-0"
+            DataKeyNames="alumno_id"
+            OnRowDataBound="gvAlumnos_RowDataBound">
+            <Columns>
+                <asp:BoundField DataField="alumno_id" HeaderText="Código Alumno">
+                    <ItemStyle Width="180px" />
+                </asp:BoundField>
+
+                <asp:TemplateField HeaderText="Apellido Paterno">
+                    <ItemTemplate><%# Eval("padres.apellido_paterno") %></ItemTemplate>
+                </asp:TemplateField>
+
+                <asp:TemplateField HeaderText="Apellido Materno">
+                    <ItemTemplate><%# Eval("padres.apellido_materno") %></ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
+</asp:GridView>
 
         <!-- BORRADO -->
         <div id="confirmDelete" class="confirm-overlay" aria-hidden="true">
@@ -717,9 +713,10 @@
                         ToolTip="Sí, eliminar"
                         CausesValidation="false"
                         UseSubmitBehavior="false"
-                        OnClientClick="return false;">
+                        OnClientClick="btnDoDelete_Click">
 <i class="fa-solid fa-check"></i>
                     </asp:LinkButton>
+                    <asp:HiddenField ID="idAlumnoDelete" runat="server" Value="" />
 
                     <asp:LinkButton ID="btnCancelDelete"
                         runat="server"
