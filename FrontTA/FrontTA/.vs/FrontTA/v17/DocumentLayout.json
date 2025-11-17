@@ -1,0 +1,1511 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\aula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\aula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|c:\\users\\joaqu\\onedrive\\desktop\\documents\\ciclo 9\\progra3\\ta\\front\\frontgit\\practicagit\\gestor-de-matriculas\\lab12_bytebandidos\\lab12\\frontta\\frontta\\frontta\\gestionacademica\\consultaraula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\consultaraula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\consultaraula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\consultaraula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\consultarcursos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\consultarcursos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\crearcursos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\crearcursos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\editaraula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\editaraula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|c:\\users\\joaqu\\onedrive\\desktop\\documents\\ciclo 9\\progra3\\ta\\front\\frontgit\\practicagit\\gestor-de-matriculas\\lab12_bytebandidos\\lab12\\frontta\\frontta\\frontta\\gestionacademica\\editaraula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\editaraula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\editarcursos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\editarcursos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\editarcursos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\editarcursos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\crearaula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\crearaula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|c:\\users\\joaqu\\onedrive\\desktop\\documents\\ciclo 9\\progra3\\ta\\front\\frontgit\\practicagit\\gestor-de-matriculas\\lab12_bytebandidos\\lab12\\frontta\\frontta\\frontta\\gestionacademica\\crearaula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\crearaula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\consultarpersonal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\consultarpersonal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|c:\\users\\joaqu\\onedrive\\desktop\\documents\\ciclo 9\\progra3\\ta\\front\\frontgit\\practicagit\\gestor-de-matriculas\\lab12_bytebandidos\\lab12\\frontta\\frontta\\frontta\\gestionacademica\\aula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\aula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\cursos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\cursos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\cursos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\cursos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\editarpersonal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\editarpersonal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\aula.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\aula.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\softprog.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\softprog.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\gradoacademico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\gradoacademico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\gradoacademico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\gradoacademico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\consultargradoacademico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\consultargradoacademico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\consultargradoacademico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\consultargradoacademico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\consultarcursos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\consultarcursos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\creargradoacademico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\creargradoacademico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\personal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\personal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\editargradoacademico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\editargradoacademico.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\editargradoacademico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\editargradoacademico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\creargradoacademico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\creargradoacademico.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\crearcursos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\crearcursos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\usuarios\\usuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\usuarios\\usuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\alumnos\\crearalumno.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\alumnos\\crearalumno.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\home.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\usuarios\\usuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\usuarios\\usuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\usuarios\\editarusuarios.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\usuarios\\editarusuarios.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\usuarios\\editarusuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\usuarios\\editarusuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\usuarios\\editarusuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\usuarios\\editarusuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\usuarios\\crearusuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\usuarios\\crearusuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\usuarios\\crearusuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\usuarios\\crearusuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\usuarios\\consultarusuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\usuarios\\consultarusuarios.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\editarpersonal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\editarpersonal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\crearpersonal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\crearpersonal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\alumnos\\crearalumno.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\alumnos\\crearalumno.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\alumnos\\alumnos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\alumnos\\alumnos.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\crearpersonal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\crearpersonal.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\personal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\personal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\familias\\crearfamilia.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\familias\\crearfamilia.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\familias\\editarfamilia.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\familias\\editarfamilia.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\familias\\consultarfamilia.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\familias\\consultarfamilia.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\familias\\crearfamilia.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\familias\\crearfamilia.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\alumnos\\alumnos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\alumnos\\alumnos.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\alumnos\\editaralumno.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\alumnos\\editaralumno.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\alumnos\\editaralumno.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\alumnos\\editaralumno.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\familias\\crearfamilia.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\familias\\crearfamilia.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\alumnos\\consultaralumno.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\alumnos\\consultaralumno.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\familias\\editarfamilia.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\familias\\editarfamilia.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\familias\\familiasbusqueda.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\familias\\familiasbusqueda.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\familias\\familiasbusqueda.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\familias\\familiasbusqueda.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\matricula\\matricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\matricula\\matricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\matricula\\editarmatricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\matricula\\editarmatricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\matricula\\reportematricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\matricula\\reportematricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\matricula\\crearmatricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\matricula\\crearmatricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\cobranza.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\cobranza.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\editardeuda.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\editardeuda.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\editardeuda.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\editardeuda.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\editardeuda.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\editardeuda.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\consultarpago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\consultarpago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\consultarpago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\consultarpago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\consultardeuda.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\consultardeuda.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\matricula\\buscarmatricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\matricula\\buscarmatricula.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\consultardeuda.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\consultardeuda.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\personal.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\personal.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\editarpersonal.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\editarpersonal.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\consultarpersonal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\consultarpersonal.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\gestionacademica\\consultarpersonal.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\gestionacademica\\consultarpersonal.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\creardeuda.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\creardeuda.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\editarpago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\editarpago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\editarpago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\editarpago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\creardeuda.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\creardeuda.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\crearpago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\crearpago.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\consultardeuda.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\consultardeuda.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\crearpago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\crearpago.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\crearpago.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\crearpago.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\cobranza\\cobranza.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\cobranza\\cobranza.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\usuarios\\consultarusuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\usuarios\\consultarusuarios.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\alumnos\\alumnos.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\alumnos\\alumnos.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\alumnos\\crearalumno.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\alumnos\\crearalumno.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\usuarios\\usuarios.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\usuarios\\usuarios.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\frontta\\matricula\\matricula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0EF1E549-15E6-4E53-BB82-079BD5D99E52}|FrontTA\\FrontTA.csproj|solutionrelative:frontta\\matricula\\matricula.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsultarAula.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarAula.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\ConsultarAula.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarAula.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\ConsultarAula.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T19:14:55.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EditarAula.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarAula.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\EditarAula.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarAula.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\EditarAula.aspx.cs",
+              "ViewState": "AgIAAB4BAAAAAAAAAAAAAB0BAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T19:05:16.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CrearCursos.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearCursos.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\CrearCursos.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearCursos.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\CrearCursos.aspx.cs",
+              "ViewState": "AgIAALAAAAAAAAAAAAAiwNMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T04:32:26.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditarCursos.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarCursos.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\EditarCursos.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarCursos.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\EditarCursos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T04:35:25.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditarCursos.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarCursos.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\EditarCursos.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarCursos.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\EditarCursos.aspx.cs",
+              "ViewState": "AgIAANoAAAAAAAAAAAAiwP0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T04:35:42.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EditarAula.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarAula.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\EditarAula.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarAula.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\EditarAula.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T07:31:15.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Aula.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Aula.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\Aula.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Aula.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\Aula.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-14T23:04:39.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ConsultarCursos.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarCursos.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\ConsultarCursos.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarCursos.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\ConsultarCursos.aspx.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAUwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T04:31:53.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConsultarAula.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarAula.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\ConsultarAula.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarAula.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\ConsultarAula.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T05:41:04.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CrearAula.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearAula.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\CrearAula.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearAula.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\CrearAula.aspx.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAnwKMAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T02:59:29.487Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConsultarPersonal.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarPersonal.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\ConsultarPersonal.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarPersonal.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\ConsultarPersonal.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T07:30:21.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Cursos.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Cursos.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\Cursos.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Cursos.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\Cursos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T04:26:34.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Aula.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Aula.aspx.designer.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\Aula.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Aula.aspx.designer.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\Aula.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T06:57:30.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Web.config",
+              "RelativeDocumentMoniker": "FrontTA\\Web.config",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Web.config",
+              "RelativeToolTip": "FrontTA\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-12T04:11:27.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ConsultarCursos.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarCursos.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\ConsultarCursos.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarCursos.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\ConsultarCursos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T04:31:43.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GradoAcademico.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\GradoAcademico.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\GradoAcademico.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\GradoAcademico.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\GradoAcademico.aspx.cs",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAUwMUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T05:03:58.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CrearAula.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearAula.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\CrearAula.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearAula.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\CrearAula.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-15T16:23:56.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Aula.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Aula.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\Aula.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Aula.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\Aula.aspx.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAIAjwKMAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T06:55:41.611Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "SoftProg.Master",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\SoftProg.Master",
+              "RelativeDocumentMoniker": "FrontTA\\SoftProg.Master",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\SoftProg.Master",
+              "RelativeToolTip": "FrontTA\\SoftProg.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-15T07:02:29.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Cursos.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Cursos.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\Cursos.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Cursos.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\Cursos.aspx.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAADwv6YAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T04:30:42.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EditarPersonal.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarPersonal.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\EditarPersonal.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarPersonal.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\EditarPersonal.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T05:41:05.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "GradoAcademico.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\GradoAcademico.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\GradoAcademico.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\GradoAcademico.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\GradoAcademico.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T05:38:46.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ConsultarGradoAcademico.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarGradoAcademico.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\ConsultarGradoAcademico.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarGradoAcademico.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\ConsultarGradoAcademico.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T05:43:37.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ConsultarGradoAcademico.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarGradoAcademico.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\ConsultarGradoAcademico.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarGradoAcademico.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\ConsultarGradoAcademico.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-15T05:43:42.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CrearGradoAcademico.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearGradoAcademico.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\CrearGradoAcademico.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearGradoAcademico.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\CrearGradoAcademico.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T05:38:42.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "EditarGradoAcademico.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarGradoAcademico.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\EditarGradoAcademico.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarGradoAcademico.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\EditarGradoAcademico.aspx.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAIAiwLoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T05:35:48.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EditarGradoAcademico.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarGradoAcademico.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\EditarGradoAcademico.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarGradoAcademico.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\EditarGradoAcademico.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-15T05:35:53.229Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Personal.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Personal.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\Personal.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Personal.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\Personal.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T05:41:06.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CrearCursos.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearCursos.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\CrearCursos.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearCursos.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\CrearCursos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T04:32:07.409Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CrearAlumno.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\CrearAlumno.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Alumnos\\CrearAlumno.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\CrearAlumno.aspx",
+              "RelativeToolTip": "FrontTA\\Alumnos\\CrearAlumno.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T00:21:31.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Home.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Home.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Home.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Home.aspx",
+              "RelativeToolTip": "FrontTA\\Home.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T05:56:55.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "EditarUsuarios.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\EditarUsuarios.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Usuarios\\EditarUsuarios.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\EditarUsuarios.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Usuarios\\EditarUsuarios.aspx.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswIMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T04:58:23.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CrearUsuarios.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\CrearUsuarios.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Usuarios\\CrearUsuarios.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\CrearUsuarios.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Usuarios\\CrearUsuarios.aspx.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAA2wHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T04:57:41.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CrearGradoAcademico.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearGradoAcademico.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\CrearGradoAcademico.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearGradoAcademico.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\CrearGradoAcademico.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T05:27:13.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "CrearUsuarios.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\CrearUsuarios.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Usuarios\\CrearUsuarios.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\CrearUsuarios.aspx",
+              "RelativeToolTip": "FrontTA\\Usuarios\\CrearUsuarios.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T04:56:45.823Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Usuarios.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\Usuarios.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Usuarios\\Usuarios.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\Usuarios.aspx",
+              "RelativeToolTip": "FrontTA\\Usuarios\\Usuarios.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T01:28:48.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "EditarUsuarios.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\EditarUsuarios.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Usuarios\\EditarUsuarios.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\EditarUsuarios.aspx",
+              "RelativeToolTip": "FrontTA\\Usuarios\\EditarUsuarios.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T01:28:45.217Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ConsultarUsuarios.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\ConsultarUsuarios.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Usuarios\\ConsultarUsuarios.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\ConsultarUsuarios.aspx",
+              "RelativeToolTip": "FrontTA\\Usuarios\\ConsultarUsuarios.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T01:28:46.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Usuarios.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\Usuarios.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Usuarios\\Usuarios.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\Usuarios.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Usuarios\\Usuarios.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T01:29:08.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "EditarUsuarios.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\EditarUsuarios.aspx.designer.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Usuarios\\EditarUsuarios.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\EditarUsuarios.aspx.designer.cs",
+              "RelativeToolTip": "FrontTA\\Usuarios\\EditarUsuarios.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T04:58:46.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "CrearAlumno.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\CrearAlumno.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Alumnos\\CrearAlumno.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\CrearAlumno.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Alumnos\\CrearAlumno.aspx.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAIAnwEEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T01:42:52.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EditarPersonal.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarPersonal.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\EditarPersonal.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarPersonal.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\EditarPersonal.aspx.cs",
+              "ViewState": "AgIAAKgAAAAAAAAAAIAjwMMAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T07:29:35.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CrearPersonal.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearPersonal.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\CrearPersonal.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearPersonal.aspx",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\CrearPersonal.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T07:29:53.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "CrearPersonal.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearPersonal.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\CrearPersonal.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\CrearPersonal.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\CrearPersonal.aspx.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAADgv7QAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T07:30:08.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Personal.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Personal.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\Personal.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Personal.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\Personal.aspx.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAGwHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T07:28:30.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Alumnos.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\Alumnos.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Alumnos\\Alumnos.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\Alumnos.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Alumnos\\Alumnos.aspx.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAhwEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T04:31:59.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ConsultarFamilia.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\ConsultarFamilia.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Familias\\ConsultarFamilia.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\ConsultarFamilia.aspx",
+              "RelativeToolTip": "FrontTA\\Familias\\ConsultarFamilia.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-11T16:40:42.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CrearFamilia.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\CrearFamilia.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Familias\\CrearFamilia.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\CrearFamilia.aspx",
+              "RelativeToolTip": "FrontTA\\Familias\\CrearFamilia.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T01:41:25.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "CrearFamilia.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\CrearFamilia.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Familias\\CrearFamilia.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\CrearFamilia.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Familias\\CrearFamilia.aspx.cs",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAiwI0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T01:41:32.528Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "EditarAlumno.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\EditarAlumno.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Alumnos\\EditarAlumno.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\EditarAlumno.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Alumnos\\EditarAlumno.aspx.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAwwFEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T03:39:10.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "Alumnos.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\Alumnos.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Alumnos\\Alumnos.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\Alumnos.aspx",
+              "RelativeToolTip": "FrontTA\\Alumnos\\Alumnos.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-11T04:30:15.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "EditarFamilia.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\EditarFamilia.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Familias\\EditarFamilia.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\EditarFamilia.aspx",
+              "RelativeToolTip": "FrontTA\\Familias\\EditarFamilia.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-11T16:41:14.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CrearFamilia.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\CrearFamilia.aspx.designer.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Familias\\CrearFamilia.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\CrearFamilia.aspx.designer.cs",
+              "RelativeToolTip": "FrontTA\\Familias\\CrearFamilia.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T02:16:28.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ConsultarAlumno.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\ConsultarAlumno.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Alumnos\\ConsultarAlumno.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\ConsultarAlumno.aspx",
+              "RelativeToolTip": "FrontTA\\Alumnos\\ConsultarAlumno.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-11T22:27:02.113Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "EditarFamilia.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\EditarFamilia.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Familias\\EditarFamilia.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\EditarFamilia.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Familias\\EditarFamilia.aspx.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAuwFQAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T03:38:09.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "EditarAlumno.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\EditarAlumno.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Alumnos\\EditarAlumno.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\EditarAlumno.aspx",
+              "RelativeToolTip": "FrontTA\\Alumnos\\EditarAlumno.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T03:39:11.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "FamiliasBusqueda.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\FamiliasBusqueda.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Familias\\FamiliasBusqueda.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\FamiliasBusqueda.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Familias\\FamiliasBusqueda.aspx.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAGwEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T04:31:53.287Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ReporteMatricula.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Matricula\\ReporteMatricula.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Matricula\\ReporteMatricula.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Matricula\\ReporteMatricula.aspx",
+              "RelativeToolTip": "FrontTA\\Matricula\\ReporteMatricula.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-14T23:02:21.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "FamiliasBusqueda.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\FamiliasBusqueda.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Familias\\FamiliasBusqueda.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Familias\\FamiliasBusqueda.aspx",
+              "RelativeToolTip": "FrontTA\\Familias\\FamiliasBusqueda.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-11T04:36:36.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "CrearMatricula.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Matricula\\CrearMatricula.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Matricula\\CrearMatricula.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Matricula\\CrearMatricula.aspx",
+              "RelativeToolTip": "FrontTA\\Matricula\\CrearMatricula.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-14T23:01:44.462Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Matricula.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Matricula\\Matricula.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Matricula\\Matricula.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Matricula\\Matricula.aspx",
+              "RelativeToolTip": "FrontTA\\Matricula\\Matricula.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-11T21:54:17.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "EditarDeuda.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\EditarDeuda.aspx.designer.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\EditarDeuda.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\EditarDeuda.aspx.designer.cs",
+              "RelativeToolTip": "FrontTA\\Cobranza\\EditarDeuda.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T06:58:45.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "EditarDeuda.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\EditarDeuda.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\EditarDeuda.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\EditarDeuda.aspx",
+              "RelativeToolTip": "FrontTA\\Cobranza\\EditarDeuda.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T06:40:42.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "BuscarMatricula.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Matricula\\BuscarMatricula.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Matricula\\BuscarMatricula.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Matricula\\BuscarMatricula.aspx",
+              "RelativeToolTip": "FrontTA\\Matricula\\BuscarMatricula.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-11T21:54:16.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "EditarMatricula.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Matricula\\EditarMatricula.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Matricula\\EditarMatricula.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Matricula\\EditarMatricula.aspx",
+              "RelativeToolTip": "FrontTA\\Matricula\\EditarMatricula.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-14T23:02:23.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "ConsultarDeuda.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\ConsultarDeuda.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\ConsultarDeuda.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\ConsultarDeuda.aspx",
+              "RelativeToolTip": "FrontTA\\Cobranza\\ConsultarDeuda.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T06:19:41.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ConsultarPago.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\ConsultarPago.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\ConsultarPago.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\ConsultarPago.aspx",
+              "RelativeToolTip": "FrontTA\\Cobranza\\ConsultarPago.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T06:28:49.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Cobranza.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\Cobranza.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\Cobranza.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\Cobranza.aspx",
+              "RelativeToolTip": "FrontTA\\Cobranza\\Cobranza.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-11T21:52:49.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "EditarDeuda.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\EditarDeuda.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\EditarDeuda.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\EditarDeuda.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Cobranza\\EditarDeuda.aspx.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T06:40:41.11Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "ConsultarPago.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\ConsultarPago.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\ConsultarPago.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\ConsultarPago.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Cobranza\\ConsultarPago.aspx.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAACIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T07:14:09.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "ConsultarDeuda.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\ConsultarDeuda.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\ConsultarDeuda.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\ConsultarDeuda.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Cobranza\\ConsultarDeuda.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T06:39:45.877Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Web.Debug.config",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Web.Debug.config",
+              "RelativeDocumentMoniker": "FrontTA\\Web.Debug.config",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Web.Debug.config",
+              "RelativeToolTip": "FrontTA\\Web.Debug.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-12T04:11:26.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "EditarPersonal.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarPersonal.aspx.designer.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\EditarPersonal.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\EditarPersonal.aspx.designer.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\EditarPersonal.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T07:31:23.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Personal.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Personal.aspx.designer.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\Personal.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\Personal.aspx.designer.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\Personal.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T07:31:40.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "ConsultarPersonal.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarPersonal.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\ConsultarPersonal.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarPersonal.aspx.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\ConsultarPersonal.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T07:30:36.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "ConsultarPersonal.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarPersonal.aspx.designer.cs",
+              "RelativeDocumentMoniker": "FrontTA\\GestionAcademica\\ConsultarPersonal.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\GestionAcademica\\ConsultarPersonal.aspx.designer.cs",
+              "RelativeToolTip": "FrontTA\\GestionAcademica\\ConsultarPersonal.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T07:31:00.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "EditarPago.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\EditarPago.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\EditarPago.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\EditarPago.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Cobranza\\EditarPago.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T07:27:23.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "EditarPago.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\EditarPago.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\EditarPago.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\EditarPago.aspx",
+              "RelativeToolTip": "FrontTA\\Cobranza\\EditarPago.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T06:19:30.227Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "CrearDeuda.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\CrearDeuda.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\CrearDeuda.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\CrearDeuda.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Cobranza\\CrearDeuda.aspx.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAuwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T21:53:59.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "CrearDeuda.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\CrearDeuda.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\CrearDeuda.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\CrearDeuda.aspx",
+              "RelativeToolTip": "FrontTA\\Cobranza\\CrearDeuda.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-11T21:53:58.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "CrearPago.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\CrearPago.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\CrearPago.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\CrearPago.aspx",
+              "RelativeToolTip": "FrontTA\\Cobranza\\CrearPago.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T06:18:55.386Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "ConsultarDeuda.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\ConsultarDeuda.aspx.designer.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\ConsultarDeuda.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\ConsultarDeuda.aspx.designer.cs",
+              "RelativeToolTip": "FrontTA\\Cobranza\\ConsultarDeuda.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T07:01:12.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "CrearPago.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\CrearPago.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\CrearPago.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\CrearPago.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Cobranza\\CrearPago.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T06:38:19.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "CrearPago.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\CrearPago.aspx.designer.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\CrearPago.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\CrearPago.aspx.designer.cs",
+              "RelativeToolTip": "FrontTA\\Cobranza\\CrearPago.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T06:41:35.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "Login.aspx",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Login.aspx",
+              "RelativeDocumentMoniker": "FrontTA\\Login.aspx",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Login.aspx",
+              "RelativeToolTip": "FrontTA\\Login.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-12T04:10:58.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "Cobranza.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\Cobranza.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Cobranza\\Cobranza.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Cobranza\\Cobranza.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Cobranza\\Cobranza.aspx.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAwwEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T21:53:07.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "ConsultarUsuarios.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\ConsultarUsuarios.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Usuarios\\ConsultarUsuarios.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\ConsultarUsuarios.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Usuarios\\ConsultarUsuarios.aspx.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAYwCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T04:59:05.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Login.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Login.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Login.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T04:11:16.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "CrearAlumno.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\CrearAlumno.aspx.designer.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Alumnos\\CrearAlumno.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\CrearAlumno.aspx.designer.cs",
+              "RelativeToolTip": "FrontTA\\Alumnos\\CrearAlumno.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAEwMUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T01:46:26.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "Alumnos.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\Alumnos.aspx.designer.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Alumnos\\Alumnos.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Alumnos\\Alumnos.aspx.designer.cs",
+              "RelativeToolTip": "FrontTA\\Alumnos\\Alumnos.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T23:01:34.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "Usuarios.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\Usuarios.aspx.designer.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Usuarios\\Usuarios.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Usuarios\\Usuarios.aspx.designer.cs",
+              "RelativeToolTip": "FrontTA\\Usuarios\\Usuarios.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T01:29:43.907Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "Matricula.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Matricula\\Matricula.aspx.cs",
+              "RelativeDocumentMoniker": "FrontTA\\Matricula\\Matricula.aspx.cs",
+              "ToolTip": "C:\\Users\\joaqu\\OneDrive\\Desktop\\Documents\\Ciclo 9\\Progra3\\TA\\Front\\FrontGit\\PracticaGit\\Gestor-de-matriculas\\LAB12_ByteBandidos\\Lab12\\FrontTA\\FrontTA\\FrontTA\\Matricula\\Matricula.aspx.cs",
+              "RelativeToolTip": "FrontTA\\Matricula\\Matricula.aspx.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAuwLcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T21:54:39.675Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

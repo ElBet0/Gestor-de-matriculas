@@ -1,0 +1,96 @@
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontTA\FrontTA\bin\FrontTA.dll.config
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontTA\FrontTA\bin\FrontTA.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontTA\FrontTA\bin\FrontTA.pdb
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.AssemblyReference.cache
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.CoreCompileInputs.cache
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.Up2Date
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontTA\FrontTA\obj\Debug\FrontTA.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontTA\FrontTA\obj\Debug\FrontTA.pdb
+C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\bin\FrontTA.dll.config
+C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\bin\FrontTA.dll
+C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\bin\FrontTA.pdb
+C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.AssemblyReference.cache
+C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.CoreCompileInputs.cache
+C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.Up2Date
+C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\obj\Debug\FrontTA.dll
+C:\Users\aaa\Desktop\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\Gestor-de-matriculas-BackEnd\FrontTA\FrontTA\obj\Debug\FrontTA.pdb
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.dll.config
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.dll
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.pdb
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.AssemblyReference.cache
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.CoreCompileInputs.cache
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.Up2Date
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.dll
+C:\Users\aml\Desktop\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.pdb
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.dll.config
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.pdb
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.AssemblyReference.cache
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.CoreCompileInputs.cache
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.Up2Date
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.pdb
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.dll.config
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.dll
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.pdb
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.AssemblyReference.cache
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.CoreCompileInputs.cache
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.Up2Date
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.dll
+C:\Users\aml\Desktop\xddd\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.pdb
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\2Git\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.dll.config
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\2Git\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\2Git\Gestor-de-matriculas\FrontTA\FrontTA\bin\FrontTA.pdb
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\2Git\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\2Git\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\2Git\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\2Git\Gestor-de-matriculas\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\2Git\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.AssemblyReference.cache
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\2Git\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.CoreCompileInputs.cache
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\2Git\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.Up2Date
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\2Git\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\2Git\Gestor-de-matriculas\FrontTA\FrontTA\obj\Debug\FrontTA.pdb
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\PracticaGit\Gestor-de-matriculas\LAB12_ByteBandidos\Lab12\FrontTA\FrontTA\FrontTA\bin\FrontTA.dll.config
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\PracticaGit\Gestor-de-matriculas\LAB12_ByteBandidos\Lab12\FrontTA\FrontTA\FrontTA\bin\FrontTA.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\PracticaGit\Gestor-de-matriculas\LAB12_ByteBandidos\Lab12\FrontTA\FrontTA\FrontTA\bin\FrontTA.pdb
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\PracticaGit\Gestor-de-matriculas\LAB12_ByteBandidos\Lab12\FrontTA\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\PracticaGit\Gestor-de-matriculas\LAB12_ByteBandidos\Lab12\FrontTA\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\PracticaGit\Gestor-de-matriculas\LAB12_ByteBandidos\Lab12\FrontTA\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\PracticaGit\Gestor-de-matriculas\LAB12_ByteBandidos\Lab12\FrontTA\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\PracticaGit\Gestor-de-matriculas\LAB12_ByteBandidos\Lab12\FrontTA\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.AssemblyReference.cache
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\PracticaGit\Gestor-de-matriculas\LAB12_ByteBandidos\Lab12\FrontTA\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.CoreCompileInputs.cache
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\PracticaGit\Gestor-de-matriculas\LAB12_ByteBandidos\Lab12\FrontTA\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.Up2Date
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\PracticaGit\Gestor-de-matriculas\LAB12_ByteBandidos\Lab12\FrontTA\FrontTA\FrontTA\obj\Debug\FrontTA.dll
+C:\Users\joaqu\OneDrive\Desktop\Documents\Ciclo 9\Progra3\TA\Front\FrontGit\PracticaGit\Gestor-de-matriculas\LAB12_ByteBandidos\Lab12\FrontTA\FrontTA\FrontTA\obj\Debug\FrontTA.pdb
+C:\Users\aml\Desktop\FrontTA\FrontTA\FrontTA\bin\FrontTA.dll.config
+C:\Users\aml\Desktop\FrontTA\FrontTA\FrontTA\bin\FrontTA.dll
+C:\Users\aml\Desktop\FrontTA\FrontTA\FrontTA\bin\FrontTA.pdb
+C:\Users\aml\Desktop\FrontTA\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\aml\Desktop\FrontTA\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\aml\Desktop\FrontTA\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\aml\Desktop\FrontTA\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\aml\Desktop\FrontTA\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.AssemblyReference.cache
+C:\Users\aml\Desktop\FrontTA\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.CoreCompileInputs.cache
+C:\Users\aml\Desktop\FrontTA\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.Up2Date
+C:\Users\aml\Desktop\FrontTA\FrontTA\FrontTA\obj\Debug\FrontTA.dll
+C:\Users\aml\Desktop\FrontTA\FrontTA\FrontTA\obj\Debug\FrontTA.pdb

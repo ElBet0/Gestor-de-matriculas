@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://usuario.services.sis.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="UsuarioWS" targetNamespace="http://usuario.services.sis.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/UsuarioWS?xsd=1" namespace="http://usuario.services.sis.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="obtenerUsuarioPorId">
+    <part name="parameters" element="tns:obtenerUsuarioPorId" />
+  </message>
+  <message name="obtenerUsuarioPorIdResponse">
+    <part name="parameters" element="tns:obtenerUsuarioPorIdResponse" />
+  </message>
+  <message name="verificarUsuario">
+    <part name="parameters" element="tns:verificarUsuario" />
+  </message>
+  <message name="verificarUsuarioResponse">
+    <part name="parameters" element="tns:verificarUsuarioResponse" />
+  </message>
+  <message name="modificarUsuario">
+    <part name="parameters" element="tns:modificarUsuario" />
+  </message>
+  <message name="modificarUsuarioResponse">
+    <part name="parameters" element="tns:modificarUsuarioResponse" />
+  </message>
+  <message name="listarUsuariosTodos">
+    <part name="parameters" element="tns:listarUsuariosTodos" />
+  </message>
+  <message name="listarUsuariosTodosResponse">
+    <part name="parameters" element="tns:listarUsuariosTodosResponse" />
+  </message>
+  <message name="insertarUsuario">
+    <part name="parameters" element="tns:insertarUsuario" />
+  </message>
+  <message name="insertarUsuarioResponse">
+    <part name="parameters" element="tns:insertarUsuarioResponse" />
+  </message>
+  <message name="eliminarUsuarioPorId">
+    <part name="parameters" element="tns:eliminarUsuarioPorId" />
+  </message>
+  <message name="eliminarUsuarioPorIdResponse">
+    <part name="parameters" element="tns:eliminarUsuarioPorIdResponse" />
+  </message>
+  <portType name="UsuarioWS">
+    <operation name="obtenerUsuarioPorId">
+      <input wsam:Action="http://usuario.services.sis.edu.pe/UsuarioWS/obtenerUsuarioPorIdRequest" message="tns:obtenerUsuarioPorId" />
+      <output wsam:Action="http://usuario.services.sis.edu.pe/UsuarioWS/obtenerUsuarioPorIdResponse" message="tns:obtenerUsuarioPorIdResponse" />
+    </operation>
+    <operation name="verificarUsuario">
+      <input wsam:Action="http://usuario.services.sis.edu.pe/UsuarioWS/verificarUsuarioRequest" message="tns:verificarUsuario" />
+      <output wsam:Action="http://usuario.services.sis.edu.pe/UsuarioWS/verificarUsuarioResponse" message="tns:verificarUsuarioResponse" />
+    </operation>
+    <operation name="modificarUsuario">
+      <input wsam:Action="http://usuario.services.sis.edu.pe/UsuarioWS/modificarUsuarioRequest" message="tns:modificarUsuario" />
+      <output wsam:Action="http://usuario.services.sis.edu.pe/UsuarioWS/modificarUsuarioResponse" message="tns:modificarUsuarioResponse" />
+    </operation>
+    <operation name="listarUsuariosTodos">
+      <input wsam:Action="http://usuario.services.sis.edu.pe/UsuarioWS/listarUsuariosTodosRequest" message="tns:listarUsuariosTodos" />
+      <output wsam:Action="http://usuario.services.sis.edu.pe/UsuarioWS/listarUsuariosTodosResponse" message="tns:listarUsuariosTodosResponse" />
+    </operation>
+    <operation name="insertarUsuario">
+      <input wsam:Action="http://usuario.services.sis.edu.pe/UsuarioWS/insertarUsuarioRequest" message="tns:insertarUsuario" />
+      <output wsam:Action="http://usuario.services.sis.edu.pe/UsuarioWS/insertarUsuarioResponse" message="tns:insertarUsuarioResponse" />
+    </operation>
+    <operation name="eliminarUsuarioPorId">
+      <input wsam:Action="http://usuario.services.sis.edu.pe/UsuarioWS/eliminarUsuarioPorIdRequest" message="tns:eliminarUsuarioPorId" />
+      <output wsam:Action="http://usuario.services.sis.edu.pe/UsuarioWS/eliminarUsuarioPorIdResponse" message="tns:eliminarUsuarioPorIdResponse" />
+    </operation>
+  </portType>
+  <binding name="UsuarioWSPortBinding" type="tns:UsuarioWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="obtenerUsuarioPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="verificarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarUsuariosTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarUsuario">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarUsuarioPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="UsuarioWS">
+    <port name="UsuarioWSPort" binding="tns:UsuarioWSPortBinding">
+      <soap:address location="http://localhost:8080/SisProgWS/UsuarioWS" />
+    </port>
+  </service>
+</definitions>
