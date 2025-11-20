@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://gracademico.services.sis.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="AulaWS" targetNamespace="http://gracademico.services.sis.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/AulaWS?xsd=1" namespace="http://sisprog.com/model" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/AulaWS?xsd=2" namespace="http://gracademico.services.sis.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="modificarAula">
+    <part name="parameters" element="tns:modificarAula" />
+  </message>
+  <message name="modificarAulaResponse">
+    <part name="parameters" element="tns:modificarAulaResponse" />
+  </message>
+  <message name="obtenerAulaPorId">
+    <part name="parameters" element="tns:obtenerAulaPorId" />
+  </message>
+  <message name="obtenerAulaPorIdResponse">
+    <part name="parameters" element="tns:obtenerAulaPorIdResponse" />
+  </message>
+  <message name="listarAulasTodas">
+    <part name="parameters" element="tns:listarAulasTodas" />
+  </message>
+  <message name="listarAulasTodasResponse">
+    <part name="parameters" element="tns:listarAulasTodasResponse" />
+  </message>
+  <message name="insertarAula">
+    <part name="parameters" element="tns:insertarAula" />
+  </message>
+  <message name="insertarAulaResponse">
+    <part name="parameters" element="tns:insertarAulaResponse" />
+  </message>
+  <message name="eliminarAulaPorId">
+    <part name="parameters" element="tns:eliminarAulaPorId" />
+  </message>
+  <message name="eliminarAulaPorIdResponse">
+    <part name="parameters" element="tns:eliminarAulaPorIdResponse" />
+  </message>
+  <message name="listarAulasPorNombreONombreGrado">
+    <part name="parameters" element="tns:listarAulasPorNombreONombreGrado" />
+  </message>
+  <message name="listarAulasPorNombreONombreGradoResponse">
+    <part name="parameters" element="tns:listarAulasPorNombreONombreGradoResponse" />
+  </message>
+  <portType name="AulaWS">
+    <operation name="modificarAula">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/AulaWS/modificarAulaRequest" message="tns:modificarAula" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/AulaWS/modificarAulaResponse" message="tns:modificarAulaResponse" />
+    </operation>
+    <operation name="obtenerAulaPorId">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/AulaWS/obtenerAulaPorIdRequest" message="tns:obtenerAulaPorId" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/AulaWS/obtenerAulaPorIdResponse" message="tns:obtenerAulaPorIdResponse" />
+    </operation>
+    <operation name="listarAulasTodas">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/AulaWS/listarAulasTodasRequest" message="tns:listarAulasTodas" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/AulaWS/listarAulasTodasResponse" message="tns:listarAulasTodasResponse" />
+    </operation>
+    <operation name="insertarAula">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/AulaWS/insertarAulaRequest" message="tns:insertarAula" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/AulaWS/insertarAulaResponse" message="tns:insertarAulaResponse" />
+    </operation>
+    <operation name="eliminarAulaPorId">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/AulaWS/eliminarAulaPorIdRequest" message="tns:eliminarAulaPorId" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/AulaWS/eliminarAulaPorIdResponse" message="tns:eliminarAulaPorIdResponse" />
+    </operation>
+    <operation name="listarAulasPorNombreONombreGrado">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/AulaWS/listarAulasPorNombreONombreGradoRequest" message="tns:listarAulasPorNombreONombreGrado" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/AulaWS/listarAulasPorNombreONombreGradoResponse" message="tns:listarAulasPorNombreONombreGradoResponse" />
+    </operation>
+  </portType>
+  <binding name="AulaWSPortBinding" type="tns:AulaWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="modificarAula">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerAulaPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAulasTodas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarAula">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarAulaPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAulasPorNombreONombreGrado">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="AulaWS">
+    <port name="AulaWSPort" binding="tns:AulaWSPortBinding">
+      <soap:address location="http://localhost:8080/SisProgWS/AulaWS" />
+    </port>
+  </service>
+</definitions>

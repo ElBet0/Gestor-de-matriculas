@@ -1,0 +1,16 @@
+pe\edu\sis\services\alumno\AlumnoWS.class
+pe\edu\sis\services\reportes\ReportesWS.class
+pe\edu\sis\services\ServiceWS.class
+pe\edu\sis\services\deuda\DeudaWS.class
+pe\edu\sis\services\usuario\PersonalWS.class
+pe\edu\sis\services\gracademico\CursoWS.class
+pe\edu\sis\services\matricula\MatriculaWS.class
+pe\edu\sis\services\matricula\PeriodoWS.class
+pe\edu\sis\services\gracademico\AulaWS.class
+pe\edu\sis\services\gracademico\GradoAcademicoWS.class
+pe\edu\sis\services\usuario\CargoWS.class
+pe\edu\sis\services\matricula\PeriodoXAulaWS.class
+pe\edu\sis\services\alumno\FamiliaWS.class
+pe\edu\sis\services\deuda\TipoDeudaWS.class
+pe\edu\sis\services\deuda\PagoWS.class
+pe\edu\sis\services\usuario\UsuarioWS.class

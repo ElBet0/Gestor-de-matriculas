@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://gracademico.services.sis.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="CursoWS" targetNamespace="http://gracademico.services.sis.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/CursoWS?xsd=1" namespace="http://sisprog.com/model" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/CursoWS?xsd=2" namespace="http://gracademico.services.sis.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarCursosPorNombreAbreviaturaOGradoAcademico">
+    <part name="parameters" element="tns:listarCursosPorNombreAbreviaturaOGradoAcademico" />
+  </message>
+  <message name="listarCursosPorNombreAbreviaturaOGradoAcademicoResponse">
+    <part name="parameters" element="tns:listarCursosPorNombreAbreviaturaOGradoAcademicoResponse" />
+  </message>
+  <message name="modificarCurso">
+    <part name="parameters" element="tns:modificarCurso" />
+  </message>
+  <message name="modificarCursoResponse">
+    <part name="parameters" element="tns:modificarCursoResponse" />
+  </message>
+  <message name="insertarCurso">
+    <part name="parameters" element="tns:insertarCurso" />
+  </message>
+  <message name="insertarCursoResponse">
+    <part name="parameters" element="tns:insertarCursoResponse" />
+  </message>
+  <message name="obtenerCursoPorId">
+    <part name="parameters" element="tns:obtenerCursoPorId" />
+  </message>
+  <message name="obtenerCursoPorIdResponse">
+    <part name="parameters" element="tns:obtenerCursoPorIdResponse" />
+  </message>
+  <message name="eliminarCursoPorId">
+    <part name="parameters" element="tns:eliminarCursoPorId" />
+  </message>
+  <message name="eliminarCursoPorIdResponse">
+    <part name="parameters" element="tns:eliminarCursoPorIdResponse" />
+  </message>
+  <message name="listarCursosTodos">
+    <part name="parameters" element="tns:listarCursosTodos" />
+  </message>
+  <message name="listarCursosTodosResponse">
+    <part name="parameters" element="tns:listarCursosTodosResponse" />
+  </message>
+  <portType name="CursoWS">
+    <operation name="listarCursosPorNombreAbreviaturaOGradoAcademico">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/CursoWS/listarCursosPorNombreAbreviaturaOGradoAcademicoRequest" message="tns:listarCursosPorNombreAbreviaturaOGradoAcademico" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/CursoWS/listarCursosPorNombreAbreviaturaOGradoAcademicoResponse" message="tns:listarCursosPorNombreAbreviaturaOGradoAcademicoResponse" />
+    </operation>
+    <operation name="modificarCurso">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/CursoWS/modificarCursoRequest" message="tns:modificarCurso" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/CursoWS/modificarCursoResponse" message="tns:modificarCursoResponse" />
+    </operation>
+    <operation name="insertarCurso">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/CursoWS/insertarCursoRequest" message="tns:insertarCurso" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/CursoWS/insertarCursoResponse" message="tns:insertarCursoResponse" />
+    </operation>
+    <operation name="obtenerCursoPorId">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/CursoWS/obtenerCursoPorIdRequest" message="tns:obtenerCursoPorId" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/CursoWS/obtenerCursoPorIdResponse" message="tns:obtenerCursoPorIdResponse" />
+    </operation>
+    <operation name="eliminarCursoPorId">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/CursoWS/eliminarCursoPorIdRequest" message="tns:eliminarCursoPorId" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/CursoWS/eliminarCursoPorIdResponse" message="tns:eliminarCursoPorIdResponse" />
+    </operation>
+    <operation name="listarCursosTodos">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/CursoWS/listarCursosTodosRequest" message="tns:listarCursosTodos" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/CursoWS/listarCursosTodosResponse" message="tns:listarCursosTodosResponse" />
+    </operation>
+  </portType>
+  <binding name="CursoWSPortBinding" type="tns:CursoWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarCursosPorNombreAbreviaturaOGradoAcademico">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarCurso">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerCursoPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarCursoPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarCursosTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="CursoWS">
+    <port name="CursoWSPort" binding="tns:CursoWSPortBinding">
+      <soap:address location="http://localhost:8080/SisProgWS/CursoWS" />
+    </port>
+  </service>
+</definitions>

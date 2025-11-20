@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://deuda.services.sis.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="TipoDeudaWS" targetNamespace="http://deuda.services.sis.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/TipoDeudaWS?xsd=1" namespace="http://sisprog.com/model" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/TipoDeudaWS?xsd=2" namespace="http://deuda.services.sis.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="insertarTipoDeuda">
+    <part name="parameters" element="tns:insertarTipoDeuda" />
+  </message>
+  <message name="insertarTipoDeudaResponse">
+    <part name="parameters" element="tns:insertarTipoDeudaResponse" />
+  </message>
+  <message name="modificarTipoDeuda">
+    <part name="parameters" element="tns:modificarTipoDeuda" />
+  </message>
+  <message name="modificarTipoDeudaResponse">
+    <part name="parameters" element="tns:modificarTipoDeudaResponse" />
+  </message>
+  <message name="eliminarTipoDeudaPorId">
+    <part name="parameters" element="tns:eliminarTipoDeudaPorId" />
+  </message>
+  <message name="eliminarTipoDeudaPorIdResponse">
+    <part name="parameters" element="tns:eliminarTipoDeudaPorIdResponse" />
+  </message>
+  <message name="listarTiposDeudaTodos">
+    <part name="parameters" element="tns:listarTiposDeudaTodos" />
+  </message>
+  <message name="listarTiposDeudaTodosResponse">
+    <part name="parameters" element="tns:listarTiposDeudaTodosResponse" />
+  </message>
+  <message name="obtenerTipoDeudaPorId">
+    <part name="parameters" element="tns:obtenerTipoDeudaPorId" />
+  </message>
+  <message name="obtenerTipoDeudaPorIdResponse">
+    <part name="parameters" element="tns:obtenerTipoDeudaPorIdResponse" />
+  </message>
+  <portType name="TipoDeudaWS">
+    <operation name="insertarTipoDeuda">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/TipoDeudaWS/insertarTipoDeudaRequest" message="tns:insertarTipoDeuda" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/TipoDeudaWS/insertarTipoDeudaResponse" message="tns:insertarTipoDeudaResponse" />
+    </operation>
+    <operation name="modificarTipoDeuda">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/TipoDeudaWS/modificarTipoDeudaRequest" message="tns:modificarTipoDeuda" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/TipoDeudaWS/modificarTipoDeudaResponse" message="tns:modificarTipoDeudaResponse" />
+    </operation>
+    <operation name="eliminarTipoDeudaPorId">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/TipoDeudaWS/eliminarTipoDeudaPorIdRequest" message="tns:eliminarTipoDeudaPorId" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/TipoDeudaWS/eliminarTipoDeudaPorIdResponse" message="tns:eliminarTipoDeudaPorIdResponse" />
+    </operation>
+    <operation name="listarTiposDeudaTodos">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/TipoDeudaWS/listarTiposDeudaTodosRequest" message="tns:listarTiposDeudaTodos" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/TipoDeudaWS/listarTiposDeudaTodosResponse" message="tns:listarTiposDeudaTodosResponse" />
+    </operation>
+    <operation name="obtenerTipoDeudaPorId">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/TipoDeudaWS/obtenerTipoDeudaPorIdRequest" message="tns:obtenerTipoDeudaPorId" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/TipoDeudaWS/obtenerTipoDeudaPorIdResponse" message="tns:obtenerTipoDeudaPorIdResponse" />
+    </operation>
+  </portType>
+  <binding name="TipoDeudaWSPortBinding" type="tns:TipoDeudaWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="insertarTipoDeuda">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarTipoDeuda">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarTipoDeudaPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarTiposDeudaTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerTipoDeudaPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="TipoDeudaWS">
+    <port name="TipoDeudaWSPort" binding="tns:TipoDeudaWSPortBinding">
+      <soap:address location="http://localhost:8080/SisProgWS/TipoDeudaWS" />
+    </port>
+  </service>
+</definitions>

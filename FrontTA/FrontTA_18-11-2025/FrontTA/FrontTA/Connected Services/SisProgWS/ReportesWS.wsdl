@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="pe.edu.sis.services" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="ReportesWS" targetNamespace="pe.edu.sis.services" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/ReportesWS?xsd=1" namespace="pe.edu.sis.services" />
+    </xsd:schema>
+  </types>
+  <message name="generarReporteDeudasFamilia">
+    <part name="parameters" element="tns:generarReporteDeudasFamilia" />
+  </message>
+  <message name="generarReporteDeudasFamiliaResponse">
+    <part name="parameters" element="tns:generarReporteDeudasFamiliaResponse" />
+  </message>
+  <portType name="ReportesWS">
+    <operation name="generarReporteDeudasFamilia">
+      <input wsam:Action="pe.edu.sis.services/ReportesWS/generarReporteDeudasFamiliaRequest" message="tns:generarReporteDeudasFamilia" />
+      <output wsam:Action="pe.edu.sis.services/ReportesWS/generarReporteDeudasFamiliaResponse" message="tns:generarReporteDeudasFamiliaResponse" />
+    </operation>
+  </portType>
+  <binding name="ReportesWSPortBinding" type="tns:ReportesWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="generarReporteDeudasFamilia">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="ReportesWS">
+    <port name="ReportesWSPort" binding="tns:ReportesWSPortBinding">
+      <soap:address location="http://localhost:8080/SisProgWS/ReportesWS" />
+    </port>
+  </service>
+</definitions>

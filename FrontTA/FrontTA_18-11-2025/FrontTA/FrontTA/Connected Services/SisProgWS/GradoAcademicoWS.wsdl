@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://gracademico.services.sis.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="GradoAcademicoWS" targetNamespace="http://gracademico.services.sis.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/GradoAcademicoWS?xsd=1" namespace="http://sisprog.com/model" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/GradoAcademicoWS?xsd=2" namespace="http://gracademico.services.sis.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="obtenerGradoAcademicoPorId">
+    <part name="parameters" element="tns:obtenerGradoAcademicoPorId" />
+  </message>
+  <message name="obtenerGradoAcademicoPorIdResponse">
+    <part name="parameters" element="tns:obtenerGradoAcademicoPorIdResponse" />
+  </message>
+  <message name="modificarGradoAcademico">
+    <part name="parameters" element="tns:modificarGradoAcademico" />
+  </message>
+  <message name="modificarGradoAcademicoResponse">
+    <part name="parameters" element="tns:modificarGradoAcademicoResponse" />
+  </message>
+  <message name="insertarGradoAcademico">
+    <part name="parameters" element="tns:insertarGradoAcademico" />
+  </message>
+  <message name="insertarGradoAcademicoResponse">
+    <part name="parameters" element="tns:insertarGradoAcademicoResponse" />
+  </message>
+  <message name="listarGradosAcademicosTodos">
+    <part name="parameters" element="tns:listarGradosAcademicosTodos" />
+  </message>
+  <message name="listarGradosAcademicosTodosResponse">
+    <part name="parameters" element="tns:listarGradosAcademicosTodosResponse" />
+  </message>
+  <message name="eliminarGradoAcademicoPorId">
+    <part name="parameters" element="tns:eliminarGradoAcademicoPorId" />
+  </message>
+  <message name="eliminarGradoAcademicoPorIdResponse">
+    <part name="parameters" element="tns:eliminarGradoAcademicoPorIdResponse" />
+  </message>
+  <message name="obtenerGradoAcademicoPorAbreviaturaONombre">
+    <part name="parameters" element="tns:obtenerGradoAcademicoPorAbreviaturaONombre" />
+  </message>
+  <message name="obtenerGradoAcademicoPorAbreviaturaONombreResponse">
+    <part name="parameters" element="tns:obtenerGradoAcademicoPorAbreviaturaONombreResponse" />
+  </message>
+  <message name="listarAulasPorGradoAcademico">
+    <part name="parameters" element="tns:listarAulasPorGradoAcademico" />
+  </message>
+  <message name="listarAulasPorGradoAcademicoResponse">
+    <part name="parameters" element="tns:listarAulasPorGradoAcademicoResponse" />
+  </message>
+  <portType name="GradoAcademicoWS">
+    <operation name="obtenerGradoAcademicoPorId">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/obtenerGradoAcademicoPorIdRequest" message="tns:obtenerGradoAcademicoPorId" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/obtenerGradoAcademicoPorIdResponse" message="tns:obtenerGradoAcademicoPorIdResponse" />
+    </operation>
+    <operation name="modificarGradoAcademico">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/modificarGradoAcademicoRequest" message="tns:modificarGradoAcademico" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/modificarGradoAcademicoResponse" message="tns:modificarGradoAcademicoResponse" />
+    </operation>
+    <operation name="insertarGradoAcademico">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/insertarGradoAcademicoRequest" message="tns:insertarGradoAcademico" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/insertarGradoAcademicoResponse" message="tns:insertarGradoAcademicoResponse" />
+    </operation>
+    <operation name="listarGradosAcademicosTodos">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/listarGradosAcademicosTodosRequest" message="tns:listarGradosAcademicosTodos" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/listarGradosAcademicosTodosResponse" message="tns:listarGradosAcademicosTodosResponse" />
+    </operation>
+    <operation name="eliminarGradoAcademicoPorId">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/eliminarGradoAcademicoPorIdRequest" message="tns:eliminarGradoAcademicoPorId" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/eliminarGradoAcademicoPorIdResponse" message="tns:eliminarGradoAcademicoPorIdResponse" />
+    </operation>
+    <operation name="obtenerGradoAcademicoPorAbreviaturaONombre">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/obtenerGradoAcademicoPorAbreviaturaONombreRequest" message="tns:obtenerGradoAcademicoPorAbreviaturaONombre" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/obtenerGradoAcademicoPorAbreviaturaONombreResponse" message="tns:obtenerGradoAcademicoPorAbreviaturaONombreResponse" />
+    </operation>
+    <operation name="listarAulasPorGradoAcademico">
+      <input wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/listarAulasPorGradoAcademicoRequest" message="tns:listarAulasPorGradoAcademico" />
+      <output wsam:Action="http://gracademico.services.sis.edu.pe/GradoAcademicoWS/listarAulasPorGradoAcademicoResponse" message="tns:listarAulasPorGradoAcademicoResponse" />
+    </operation>
+  </portType>
+  <binding name="GradoAcademicoWSPortBinding" type="tns:GradoAcademicoWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="obtenerGradoAcademicoPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarGradoAcademico">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarGradoAcademico">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarGradosAcademicosTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarGradoAcademicoPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerGradoAcademicoPorAbreviaturaONombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarAulasPorGradoAcademico">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="GradoAcademicoWS">
+    <port name="GradoAcademicoWSPort" binding="tns:GradoAcademicoWSPortBinding">
+      <soap:address location="http://localhost:8080/SisProgWS/GradoAcademicoWS" />
+    </port>
+  </service>
+</definitions>

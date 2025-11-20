@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://matricula.services.sis.edu.pe/" xmlns:ns1="http://sisprog.com/model" targetNamespace="http://matricula.services.sis.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8080/SisProgWS/PeriodoWS?xsd=1" namespace="http://sisprog.com/model" />
+  <xs:element name="eliminarPeriodoPorId" type="tns:eliminarPeriodoPorId" />
+  <xs:element name="eliminarPeriodoPorIdResponse" type="tns:eliminarPeriodoPorIdResponse" />
+  <xs:element name="insertarPeriodo" type="tns:insertarPeriodo" />
+  <xs:element name="insertarPeriodoResponse" type="tns:insertarPeriodoResponse" />
+  <xs:element name="listarPeriodosTodos" type="tns:listarPeriodosTodos" />
+  <xs:element name="listarPeriodosTodosResponse" type="tns:listarPeriodosTodosResponse" />
+  <xs:element name="modificarPeriodo" type="tns:modificarPeriodo" />
+  <xs:element name="modificarPeriodoResponse" type="tns:modificarPeriodoResponse" />
+  <xs:element name="obtenerPeriodoPorId" type="tns:obtenerPeriodoPorId" />
+  <xs:element name="obtenerPeriodoPorIdResponse" type="tns:obtenerPeriodoPorIdResponse" />
+  <xs:complexType name="modificarPeriodo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="periodo" type="ns1:periodoAcademico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPeriodoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPeriodo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="periodo" type="ns1:periodoAcademico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPeriodoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPeriodosTodos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPeriodosTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:periodoAcademico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPeriodoPorId">
+    <xs:sequence>
+      <xs:element name="idPeriodo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPeriodoPorIdResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPeriodoPorId">
+    <xs:sequence>
+      <xs:element name="idPeriodo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPeriodoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:periodoAcademico" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://deuda.services.sis.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="DeudaWS" targetNamespace="http://deuda.services.sis.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/DeudaWS?xsd=1" namespace="http://sisprog.com/model" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/DeudaWS?xsd=2" namespace="http://deuda.services.sis.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="obtenerDeudaPorId">
+    <part name="parameters" element="tns:obtenerDeudaPorId" />
+  </message>
+  <message name="obtenerDeudaPorIdResponse">
+    <part name="parameters" element="tns:obtenerDeudaPorIdResponse" />
+  </message>
+  <message name="modificarDeuda">
+    <part name="parameters" element="tns:modificarDeuda" />
+  </message>
+  <message name="modificarDeudaResponse">
+    <part name="parameters" element="tns:modificarDeudaResponse" />
+  </message>
+  <message name="eliminarDeudaPorId">
+    <part name="parameters" element="tns:eliminarDeudaPorId" />
+  </message>
+  <message name="eliminarDeudaPorIdResponse">
+    <part name="parameters" element="tns:eliminarDeudaPorIdResponse" />
+  </message>
+  <message name="buscarDeudasAlumno">
+    <part name="parameters" element="tns:buscarDeudasAlumno" />
+  </message>
+  <message name="buscarDeudasAlumnoResponse">
+    <part name="parameters" element="tns:buscarDeudasAlumnoResponse" />
+  </message>
+  <message name="listarDeudasTodas">
+    <part name="parameters" element="tns:listarDeudasTodas" />
+  </message>
+  <message name="listarDeudasTodasResponse">
+    <part name="parameters" element="tns:listarDeudasTodasResponse" />
+  </message>
+  <message name="consultarDeudaPorId">
+    <part name="parameters" element="tns:consultarDeudaPorId" />
+  </message>
+  <message name="consultarDeudaPorIdResponse">
+    <part name="parameters" element="tns:consultarDeudaPorIdResponse" />
+  </message>
+  <message name="insertarDeuda">
+    <part name="parameters" element="tns:insertarDeuda" />
+  </message>
+  <message name="insertarDeudaResponse">
+    <part name="parameters" element="tns:insertarDeudaResponse" />
+  </message>
+  <portType name="DeudaWS">
+    <operation name="obtenerDeudaPorId">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/obtenerDeudaPorIdRequest" message="tns:obtenerDeudaPorId" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/obtenerDeudaPorIdResponse" message="tns:obtenerDeudaPorIdResponse" />
+    </operation>
+    <operation name="modificarDeuda">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/modificarDeudaRequest" message="tns:modificarDeuda" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/modificarDeudaResponse" message="tns:modificarDeudaResponse" />
+    </operation>
+    <operation name="eliminarDeudaPorId">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/eliminarDeudaPorIdRequest" message="tns:eliminarDeudaPorId" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/eliminarDeudaPorIdResponse" message="tns:eliminarDeudaPorIdResponse" />
+    </operation>
+    <operation name="buscarDeudasAlumno">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/buscarDeudasAlumnoRequest" message="tns:buscarDeudasAlumno" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/buscarDeudasAlumnoResponse" message="tns:buscarDeudasAlumnoResponse" />
+    </operation>
+    <operation name="listarDeudasTodas">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/listarDeudasTodasRequest" message="tns:listarDeudasTodas" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/listarDeudasTodasResponse" message="tns:listarDeudasTodasResponse" />
+    </operation>
+    <operation name="consultarDeudaPorId">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/consultarDeudaPorIdRequest" message="tns:consultarDeudaPorId" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/consultarDeudaPorIdResponse" message="tns:consultarDeudaPorIdResponse" />
+    </operation>
+    <operation name="insertarDeuda">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/insertarDeudaRequest" message="tns:insertarDeuda" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/DeudaWS/insertarDeudaResponse" message="tns:insertarDeudaResponse" />
+    </operation>
+  </portType>
+  <binding name="DeudaWSPortBinding" type="tns:DeudaWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="obtenerDeudaPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarDeuda">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarDeudaPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="buscarDeudasAlumno">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarDeudasTodas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="consultarDeudaPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarDeuda">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="DeudaWS">
+    <port name="DeudaWSPort" binding="tns:DeudaWSPortBinding">
+      <soap:address location="http://localhost:8080/SisProgWS/DeudaWS" />
+    </port>
+  </service>
+</definitions>

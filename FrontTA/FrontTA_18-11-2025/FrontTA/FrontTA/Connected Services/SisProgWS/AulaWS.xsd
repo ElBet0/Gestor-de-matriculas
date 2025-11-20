@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://gracademico.services.sis.edu.pe/" xmlns:ns1="http://sisprog.com/model" targetNamespace="http://gracademico.services.sis.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8080/SisProgWS/AulaWS?xsd=1" namespace="http://sisprog.com/model" />
+  <xs:element name="eliminarAulaPorId" type="tns:eliminarAulaPorId" />
+  <xs:element name="eliminarAulaPorIdResponse" type="tns:eliminarAulaPorIdResponse" />
+  <xs:element name="insertarAula" type="tns:insertarAula" />
+  <xs:element name="insertarAulaResponse" type="tns:insertarAulaResponse" />
+  <xs:element name="listarAulasPorNombreONombreGrado" type="tns:listarAulasPorNombreONombreGrado" />
+  <xs:element name="listarAulasPorNombreONombreGradoResponse" type="tns:listarAulasPorNombreONombreGradoResponse" />
+  <xs:element name="listarAulasTodas" type="tns:listarAulasTodas" />
+  <xs:element name="listarAulasTodasResponse" type="tns:listarAulasTodasResponse" />
+  <xs:element name="modificarAula" type="tns:modificarAula" />
+  <xs:element name="modificarAulaResponse" type="tns:modificarAulaResponse" />
+  <xs:element name="obtenerAulaPorId" type="tns:obtenerAulaPorId" />
+  <xs:element name="obtenerAulaPorIdResponse" type="tns:obtenerAulaPorIdResponse" />
+  <xs:complexType name="insertarAula">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="aula" type="ns1:aula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarAulaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerAulaPorId">
+    <xs:sequence>
+      <xs:element name="idAula" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerAulaPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:aula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarAulaPorId">
+    <xs:sequence>
+      <xs:element name="idAula" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarAulaPorIdResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarAulasPorNombreONombreGrado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+      <xs:element minOccurs="0" name="nombreGrado" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarAulasPorNombreONombreGradoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:aula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarAulasTodas">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarAulasTodasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:aula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarAula">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="aula" type="ns1:aula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarAulaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

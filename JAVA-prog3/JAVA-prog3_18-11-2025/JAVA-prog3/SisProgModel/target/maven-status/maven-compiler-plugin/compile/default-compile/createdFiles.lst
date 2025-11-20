@@ -1,0 +1,17 @@
+pe\edu\sis\model\grAcademico\Curso.class
+pe\edu\sis\model\usuario\TipoContrato.class
+pe\edu\sis\model\usuario\Rol.class
+pe\edu\sis\model\grAcademico\GradoAcademico.class
+pe\edu\sis\model\deuda\Deuda.class
+pe\edu\sis\model\deuda\TipoDeuda.class
+pe\edu\sis\model\alumno\Alumno.class
+pe\edu\sis\model\deuda\Pago.class
+pe\edu\sis\model\matricula\Matricula.class
+pe\edu\sis\model\usuario\Personal.class
+pe\edu\sis\model\matricula\PeriodoAcademico.class
+pe\edu\sis\model\usuario\Cargo.class
+pe\edu\sis\model\grAcademico\Aula.class
+pe\edu\sis\model\matricula\PeriodoXAula.class
+pe\edu\sis\model\usuario\Usuario.class
+pe\edu\sis\model\alumno\Familia.class
+pe\edu\sis\model\deuda\MedioPago.class

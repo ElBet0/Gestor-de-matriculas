@@ -1,0 +1,12 @@
+C:\Users\aaa\Desktop\FrontTA_18-11-2025\FrontTA_18-11-2025\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.AssemblyReference.cache
+C:\Users\aaa\Desktop\FrontTA_18-11-2025\FrontTA_18-11-2025\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.CoreCompileInputs.cache
+C:\Users\aaa\Desktop\FrontTA_18-11-2025\FrontTA_18-11-2025\FrontTA\FrontTA\bin\FrontTA.dll.config
+C:\Users\aaa\Desktop\FrontTA_18-11-2025\FrontTA_18-11-2025\FrontTA\FrontTA\bin\FrontTA.dll
+C:\Users\aaa\Desktop\FrontTA_18-11-2025\FrontTA_18-11-2025\FrontTA\FrontTA\bin\FrontTA.pdb
+C:\Users\aaa\Desktop\FrontTA_18-11-2025\FrontTA_18-11-2025\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\aaa\Desktop\FrontTA_18-11-2025\FrontTA_18-11-2025\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\aaa\Desktop\FrontTA_18-11-2025\FrontTA_18-11-2025\FrontTA\FrontTA\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\aaa\Desktop\FrontTA_18-11-2025\FrontTA_18-11-2025\FrontTA\FrontTA\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\aaa\Desktop\FrontTA_18-11-2025\FrontTA_18-11-2025\FrontTA\FrontTA\obj\Debug\FrontTA.csproj.Up2Date
+C:\Users\aaa\Desktop\FrontTA_18-11-2025\FrontTA_18-11-2025\FrontTA\FrontTA\obj\Debug\FrontTA.dll
+C:\Users\aaa\Desktop\FrontTA_18-11-2025\FrontTA_18-11-2025\FrontTA\FrontTA\obj\Debug\FrontTA.pdb
