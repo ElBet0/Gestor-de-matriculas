@@ -3,12 +3,12 @@
 Este documento detalla el procedimiento técnico para el despliegue de la solución en un entorno de producción utilizando Amazon Web Services (AWS). La arquitectura se compone de una base de datos relacional (RDS) y un servidor de aplicaciones alojado en una instancia EC2 con Windows Server.
 
 ## Tabla de Contenidos
-1. [Requisitos Previos](#requisitos-previos)
-2. [Aprovisionamiento de Infraestructura (EC2)](#1-aprovisionamiento-de-infraestructura-ec2)
-3. [Configuración del Entorno de Ejecución](#2-configuración-del-entorno-de-ejecución)
-4. [Despliegue del Backend (GlassFish)](#3-despliegue-del-backend-glassfish)
-5. [Despliegue del Frontend (IIS)](#4-despliegue-del-frontend-iis)
-6. [Verificación y Acceso](#5-verificación-y-acceso)
+   [Requisitos Previos](#requisitos-previos)
+1. [Aprovisionamiento de Infraestructura (EC2)](#1-aprovisionamiento-de-infraestructura-ec2)
+2. [Configuración del Entorno de Ejecución](#2-configuración-del-entorno-de-ejecución)
+3. [Despliegue del Backend (GlassFish)](#3-despliegue-del-backend-glassfish)
+4. [Despliegue del Frontend (IIS)](#4-despliegue-del-frontend-iis)
+5. [Verificación y Acceso](#5-verificación-y-acceso)
 
 ---
 
