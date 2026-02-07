@@ -1,3 +1,37 @@
+# Esencial
+Para que el proyecto funcione, es escencial crear el archivo .properties en la siguiente ubicación `BackEnd/SisProgDB/src/main/resources/db.properties`
+Esta tendra el siguiente formato:
+``` txt
+hostname=propioenlace.ca4123.us-east-1.rds.amazonaws.com
+user=admin
+password=bytebandidos
+puerto=3306
+database=ProyectoProgra
+tipoBD=mysql
+```
+> **Nota:** Este proyecto también permite el uso de Microsoft SQL Server, solo se debe cambiar el tipoBD a mssql y el puerto a 1433
+---
+
+# Especificaciones Técnicas
+
+### Backend (Java Web Services)
+- **Framework:** Jakarta EE 10
+- **Java:** Versión 11 (Compatible con JDK 24 en despliegue)
+- **Servicios:** JAX-WS (SOAP)
+- **Reportes:** JasperReports 7.0.3
+- **Gestión de Dependencias:** Apache Maven
+
+
+### Frontend (.NET Application)
+- **Framework:** .NET Framework 4.8.1
+- **Lenguaje:** C# / ASP.NET
+
+### Infraestructura Cloud
+- **Cloud Provider:** AWS (Amazon Web Services)
+- **Servidor EC2:** Windows Server 2025 Base
+- **Base de Datos:** AWS RDS (MySQL 9.4 compatible)
+
+---
 # Manual de Despliegue de Infraestructura en AWS
 
 Este documento detalla el procedimiento técnico para el despliegue de la solución en un entorno de producción utilizando Amazon Web Services (AWS). La arquitectura se compone de una base de datos relacional (RDS) y un servidor de aplicaciones alojado en una instancia EC2 con Windows Server.
