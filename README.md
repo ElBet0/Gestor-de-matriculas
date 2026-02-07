@@ -1,17 +1,3 @@
-# Esencial
-Para que el proyecto funcione, es escencial crear el archivo .properties en la siguiente ubicación `BackEnd/SisProgDB/src/main/resources/db.properties`
-Esta tendra el siguiente formato:
-``` txt
-hostname=propioenlace.ca4123.us-east-1.rds.amazonaws.com
-user=admin
-password=bytebandidos
-puerto=3306
-database=ProyectoProgra
-tipoBD=mysql
-```
-> **Nota:** Este proyecto también permite el uso de Microsoft SQL Server, solo se debe cambiar el tipoBD a mssql y el puerto a 1433
----
-
 # Especificaciones Técnicas
 
 ### Backend (Java Web Services)
@@ -32,6 +18,22 @@ tipoBD=mysql
 - **Base de Datos:** AWS RDS (MySQL 9.4 compatible)
 
 ---
+
+# Pasos previos
+Para que el proyecto funcione, es escencial crear el archivo .properties en la siguiente ubicación `BackEnd/SisProgDB/src/main/resources/db.properties`
+Esta tendra el siguiente formato:
+``` txt
+hostname=propioenlace.ca4123.us-east-1.rds.amazonaws.com
+user=admin
+password=bytebandidos
+puerto=3306
+database=ProyectoProgra
+tipoBD=mysql
+```
+Para compilar el backend, se recomienda usar el archivo `BackEnd/SisProgSolution/pom.xml`. Mientras que el frontend, se recomienda usar Visual Studio 2022.
+> **Nota:** Este proyecto también permite el uso de Microsoft SQL Server, solo se debe cambiar el tipoBD a mssql y el puerto a 1433
+---
+
 # Manual de Despliegue de Infraestructura en AWS
 
 Este documento detalla el procedimiento técnico para el despliegue de la solución en un entorno de producción utilizando Amazon Web Services (AWS). La arquitectura se compone de una base de datos relacional (RDS) y un servidor de aplicaciones alojado en una instancia EC2 con Windows Server.
