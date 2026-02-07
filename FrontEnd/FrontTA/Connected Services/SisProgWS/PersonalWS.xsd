@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://usuario.services.sis.edu.pe/" xmlns:ns1="http://sisprog.com/model" targetNamespace="http://usuario.services.sis.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8080/SisProgWS/PersonalWS?xsd=2" namespace="http://sisprog.com/model" />
+  <xs:element name="eliminarPersonalPorId" type="tns:eliminarPersonalPorId" />
+  <xs:element name="eliminarPersonalPorIdResponse" type="tns:eliminarPersonalPorIdResponse" />
+  <xs:element name="insertarPersonal" type="tns:insertarPersonal" />
+  <xs:element name="insertarPersonalResponse" type="tns:insertarPersonalResponse" />
+  <xs:element name="listarPersonalPorDniONombreApellidos" type="tns:listarPersonalPorDniONombreApellidos" />
+  <xs:element name="listarPersonalPorDniONombreApellidosResponse" type="tns:listarPersonalPorDniONombreApellidosResponse" />
+  <xs:element name="listarPersonalTodos" type="tns:listarPersonalTodos" />
+  <xs:element name="listarPersonalTodosResponse" type="tns:listarPersonalTodosResponse" />
+  <xs:element name="modificarPersonal" type="tns:modificarPersonal" />
+  <xs:element name="modificarPersonalResponse" type="tns:modificarPersonalResponse" />
+  <xs:element name="obtenerPersonalPorId" type="tns:obtenerPersonalPorId" />
+  <xs:element name="obtenerPersonalPorIdResponse" type="tns:obtenerPersonalPorIdResponse" />
+  <xs:complexType name="listarPersonalPorDniONombreApellidos">
+    <xs:sequence>
+      <xs:element name="dni" type="xs:int" />
+      <xs:element minOccurs="0" name="nombreApellidos" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPersonalPorDniONombreApellidosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:personal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPersonalTodos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPersonalTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:personal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPersonal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="personal" type="ns1:personal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPersonalResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPersonalPorId">
+    <xs:sequence>
+      <xs:element name="idPersonal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPersonalPorIdResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPersonalPorId">
+    <xs:sequence>
+      <xs:element name="idPersonal" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPersonalPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:personal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPersonal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="personal" type="ns1:personal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPersonalResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

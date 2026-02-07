@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://gracademico.services.sis.edu.pe/" xmlns:ns1="http://sisprog.com/model" targetNamespace="http://gracademico.services.sis.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8080/SisProgWS/GradoAcademicoWS?xsd=1" namespace="http://sisprog.com/model" />
+  <xs:element name="eliminarGradoAcademicoPorId" type="tns:eliminarGradoAcademicoPorId" />
+  <xs:element name="eliminarGradoAcademicoPorIdResponse" type="tns:eliminarGradoAcademicoPorIdResponse" />
+  <xs:element name="insertarGradoAcademico" type="tns:insertarGradoAcademico" />
+  <xs:element name="insertarGradoAcademicoResponse" type="tns:insertarGradoAcademicoResponse" />
+  <xs:element name="listarAulasPorGradoAcademico" type="tns:listarAulasPorGradoAcademico" />
+  <xs:element name="listarAulasPorGradoAcademicoResponse" type="tns:listarAulasPorGradoAcademicoResponse" />
+  <xs:element name="listarGradosAcademicosTodos" type="tns:listarGradosAcademicosTodos" />
+  <xs:element name="listarGradosAcademicosTodosResponse" type="tns:listarGradosAcademicosTodosResponse" />
+  <xs:element name="modificarGradoAcademico" type="tns:modificarGradoAcademico" />
+  <xs:element name="modificarGradoAcademicoResponse" type="tns:modificarGradoAcademicoResponse" />
+  <xs:element name="obtenerGradoAcademicoPorAbreviaturaONombre" type="tns:obtenerGradoAcademicoPorAbreviaturaONombre" />
+  <xs:element name="obtenerGradoAcademicoPorAbreviaturaONombreResponse" type="tns:obtenerGradoAcademicoPorAbreviaturaONombreResponse" />
+  <xs:element name="obtenerGradoAcademicoPorId" type="tns:obtenerGradoAcademicoPorId" />
+  <xs:element name="obtenerGradoAcademicoPorIdResponse" type="tns:obtenerGradoAcademicoPorIdResponse" />
+  <xs:complexType name="listarAulasPorGradoAcademico">
+    <xs:sequence>
+      <xs:element name="idGradoAcademico" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarAulasPorGradoAcademicoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:aula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarGradosAcademicosTodos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarGradosAcademicosTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:gradoAcademico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerGradoAcademicoPorId">
+    <xs:sequence>
+      <xs:element name="idGradoAcademico" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerGradoAcademicoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:gradoAcademico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarGradoAcademico">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="tipoDeuda" type="ns1:gradoAcademico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarGradoAcademicoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerGradoAcademicoPorAbreviaturaONombre">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="abreviatura" type="xs:string" />
+      <xs:element minOccurs="0" name="nombre" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerGradoAcademicoPorAbreviaturaONombreResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:gradoAcademico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarGradoAcademico">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="gradoAcademico" type="ns1:gradoAcademico" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarGradoAcademicoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarGradoAcademicoPorId">
+    <xs:sequence>
+      <xs:element name="idGradoAcademico" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarGradoAcademicoPorIdResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

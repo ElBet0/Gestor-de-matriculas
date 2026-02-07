@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://matricula.services.sis.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="MatriculaWS" targetNamespace="http://matricula.services.sis.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/MatriculaWS?xsd=1" namespace="http://sisprog.com/model" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/MatriculaWS?xsd=2" namespace="http://matricula.services.sis.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="eliminarMatriculaPorId">
+    <part name="parameters" element="tns:eliminarMatriculaPorId" />
+  </message>
+  <message name="eliminarMatriculaPorIdResponse">
+    <part name="parameters" element="tns:eliminarMatriculaPorIdResponse" />
+  </message>
+  <message name="obtenerMatriculaPorId">
+    <part name="parameters" element="tns:obtenerMatriculaPorId" />
+  </message>
+  <message name="obtenerMatriculaPorIdResponse">
+    <part name="parameters" element="tns:obtenerMatriculaPorIdResponse" />
+  </message>
+  <message name="modificarMatricula">
+    <part name="parameters" element="tns:modificarMatricula" />
+  </message>
+  <message name="modificarMatriculaResponse">
+    <part name="parameters" element="tns:modificarMatriculaResponse" />
+  </message>
+  <message name="listarMatriculasTodas">
+    <part name="parameters" element="tns:listarMatriculasTodas" />
+  </message>
+  <message name="listarMatriculasTodasResponse">
+    <part name="parameters" element="tns:listarMatriculasTodasResponse" />
+  </message>
+  <message name="insertarMatricula">
+    <part name="parameters" element="tns:insertarMatricula" />
+  </message>
+  <message name="insertarMatriculaResponse">
+    <part name="parameters" element="tns:insertarMatriculaResponse" />
+  </message>
+  <message name="listarPeriodoXAulasParaAsignarMatriculas">
+    <part name="parameters" element="tns:listarPeriodoXAulasParaAsignarMatriculas" />
+  </message>
+  <message name="listarPeriodoXAulasParaAsignarMatriculasResponse">
+    <part name="parameters" element="tns:listarPeriodoXAulasParaAsignarMatriculasResponse" />
+  </message>
+  <message name="registrarMatriculaConVacantes">
+    <part name="parameters" element="tns:registrarMatriculaConVacantes" />
+  </message>
+  <message name="registrarMatriculaConVacantesResponse">
+    <part name="parameters" element="tns:registrarMatriculaConVacantesResponse" />
+  </message>
+  <message name="listarMatriculasPorFamiliaIdPaternoMaternoNombre">
+    <part name="parameters" element="tns:listarMatriculasPorFamiliaIdPaternoMaternoNombre" />
+  </message>
+  <message name="listarMatriculasPorFamiliaIdPaternoMaternoNombreResponse">
+    <part name="parameters" element="tns:listarMatriculasPorFamiliaIdPaternoMaternoNombreResponse" />
+  </message>
+  <portType name="MatriculaWS">
+    <operation name="eliminarMatriculaPorId">
+      <input wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/eliminarMatriculaPorIdRequest" message="tns:eliminarMatriculaPorId" />
+      <output wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/eliminarMatriculaPorIdResponse" message="tns:eliminarMatriculaPorIdResponse" />
+    </operation>
+    <operation name="obtenerMatriculaPorId">
+      <input wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/obtenerMatriculaPorIdRequest" message="tns:obtenerMatriculaPorId" />
+      <output wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/obtenerMatriculaPorIdResponse" message="tns:obtenerMatriculaPorIdResponse" />
+    </operation>
+    <operation name="modificarMatricula">
+      <input wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/modificarMatriculaRequest" message="tns:modificarMatricula" />
+      <output wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/modificarMatriculaResponse" message="tns:modificarMatriculaResponse" />
+    </operation>
+    <operation name="listarMatriculasTodas">
+      <input wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/listarMatriculasTodasRequest" message="tns:listarMatriculasTodas" />
+      <output wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/listarMatriculasTodasResponse" message="tns:listarMatriculasTodasResponse" />
+    </operation>
+    <operation name="insertarMatricula">
+      <input wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/insertarMatriculaRequest" message="tns:insertarMatricula" />
+      <output wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/insertarMatriculaResponse" message="tns:insertarMatriculaResponse" />
+    </operation>
+    <operation name="listarPeriodoXAulasParaAsignarMatriculas">
+      <input wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/listarPeriodoXAulasParaAsignarMatriculasRequest" message="tns:listarPeriodoXAulasParaAsignarMatriculas" />
+      <output wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/listarPeriodoXAulasParaAsignarMatriculasResponse" message="tns:listarPeriodoXAulasParaAsignarMatriculasResponse" />
+    </operation>
+    <operation name="registrarMatriculaConVacantes">
+      <input wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/registrarMatriculaConVacantesRequest" message="tns:registrarMatriculaConVacantes" />
+      <output wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/registrarMatriculaConVacantesResponse" message="tns:registrarMatriculaConVacantesResponse" />
+    </operation>
+    <operation name="listarMatriculasPorFamiliaIdPaternoMaternoNombre">
+      <input wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/listarMatriculasPorFamiliaIdPaternoMaternoNombreRequest" message="tns:listarMatriculasPorFamiliaIdPaternoMaternoNombre" />
+      <output wsam:Action="http://matricula.services.sis.edu.pe/MatriculaWS/listarMatriculasPorFamiliaIdPaternoMaternoNombreResponse" message="tns:listarMatriculasPorFamiliaIdPaternoMaternoNombreResponse" />
+    </operation>
+  </portType>
+  <binding name="MatriculaWSPortBinding" type="tns:MatriculaWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="eliminarMatriculaPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerMatriculaPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarMatricula">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarMatriculasTodas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarMatricula">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPeriodoXAulasParaAsignarMatriculas">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="registrarMatriculaConVacantes">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarMatriculasPorFamiliaIdPaternoMaternoNombre">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="MatriculaWS">
+    <port name="MatriculaWSPort" binding="tns:MatriculaWSPortBinding">
+      <soap:address location="http://localhost:8080/SisProgWS/MatriculaWS" />
+    </port>
+  </service>
+</definitions>

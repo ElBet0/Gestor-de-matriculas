@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://usuario.services.sis.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="PersonalWS" targetNamespace="http://usuario.services.sis.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/PersonalWS?xsd=1" namespace="http://usuario.services.sis.edu.pe/" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/PersonalWS?xsd=2" namespace="http://sisprog.com/model" />
+    </xsd:schema>
+  </types>
+  <message name="modificarPersonal">
+    <part name="parameters" element="tns:modificarPersonal" />
+  </message>
+  <message name="modificarPersonalResponse">
+    <part name="parameters" element="tns:modificarPersonalResponse" />
+  </message>
+  <message name="obtenerPersonalPorId">
+    <part name="parameters" element="tns:obtenerPersonalPorId" />
+  </message>
+  <message name="obtenerPersonalPorIdResponse">
+    <part name="parameters" element="tns:obtenerPersonalPorIdResponse" />
+  </message>
+  <message name="eliminarPersonalPorId">
+    <part name="parameters" element="tns:eliminarPersonalPorId" />
+  </message>
+  <message name="eliminarPersonalPorIdResponse">
+    <part name="parameters" element="tns:eliminarPersonalPorIdResponse" />
+  </message>
+  <message name="listarPersonalTodos">
+    <part name="parameters" element="tns:listarPersonalTodos" />
+  </message>
+  <message name="listarPersonalTodosResponse">
+    <part name="parameters" element="tns:listarPersonalTodosResponse" />
+  </message>
+  <message name="insertarPersonal">
+    <part name="parameters" element="tns:insertarPersonal" />
+  </message>
+  <message name="insertarPersonalResponse">
+    <part name="parameters" element="tns:insertarPersonalResponse" />
+  </message>
+  <message name="listarPersonalPorDniONombreApellidos">
+    <part name="parameters" element="tns:listarPersonalPorDniONombreApellidos" />
+  </message>
+  <message name="listarPersonalPorDniONombreApellidosResponse">
+    <part name="parameters" element="tns:listarPersonalPorDniONombreApellidosResponse" />
+  </message>
+  <portType name="PersonalWS">
+    <operation name="modificarPersonal">
+      <input wsam:Action="http://usuario.services.sis.edu.pe/PersonalWS/modificarPersonalRequest" message="tns:modificarPersonal" />
+      <output wsam:Action="http://usuario.services.sis.edu.pe/PersonalWS/modificarPersonalResponse" message="tns:modificarPersonalResponse" />
+    </operation>
+    <operation name="obtenerPersonalPorId">
+      <input wsam:Action="http://usuario.services.sis.edu.pe/PersonalWS/obtenerPersonalPorIdRequest" message="tns:obtenerPersonalPorId" />
+      <output wsam:Action="http://usuario.services.sis.edu.pe/PersonalWS/obtenerPersonalPorIdResponse" message="tns:obtenerPersonalPorIdResponse" />
+    </operation>
+    <operation name="eliminarPersonalPorId">
+      <input wsam:Action="http://usuario.services.sis.edu.pe/PersonalWS/eliminarPersonalPorIdRequest" message="tns:eliminarPersonalPorId" />
+      <output wsam:Action="http://usuario.services.sis.edu.pe/PersonalWS/eliminarPersonalPorIdResponse" message="tns:eliminarPersonalPorIdResponse" />
+    </operation>
+    <operation name="listarPersonalTodos">
+      <input wsam:Action="http://usuario.services.sis.edu.pe/PersonalWS/listarPersonalTodosRequest" message="tns:listarPersonalTodos" />
+      <output wsam:Action="http://usuario.services.sis.edu.pe/PersonalWS/listarPersonalTodosResponse" message="tns:listarPersonalTodosResponse" />
+    </operation>
+    <operation name="insertarPersonal">
+      <input wsam:Action="http://usuario.services.sis.edu.pe/PersonalWS/insertarPersonalRequest" message="tns:insertarPersonal" />
+      <output wsam:Action="http://usuario.services.sis.edu.pe/PersonalWS/insertarPersonalResponse" message="tns:insertarPersonalResponse" />
+    </operation>
+    <operation name="listarPersonalPorDniONombreApellidos">
+      <input wsam:Action="http://usuario.services.sis.edu.pe/PersonalWS/listarPersonalPorDniONombreApellidosRequest" message="tns:listarPersonalPorDniONombreApellidos" />
+      <output wsam:Action="http://usuario.services.sis.edu.pe/PersonalWS/listarPersonalPorDniONombreApellidosResponse" message="tns:listarPersonalPorDniONombreApellidosResponse" />
+    </operation>
+  </portType>
+  <binding name="PersonalWSPortBinding" type="tns:PersonalWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="modificarPersonal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPersonalPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarPersonalPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPersonalTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarPersonal">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPersonalPorDniONombreApellidos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="PersonalWS">
+    <port name="PersonalWSPort" binding="tns:PersonalWSPortBinding">
+      <soap:address location="http://localhost:8080/SisProgWS/PersonalWS" />
+    </port>
+  </service>
+</definitions>

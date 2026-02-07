@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://deuda.services.sis.edu.pe/" xmlns:ns1="http://sisprog.com/model" targetNamespace="http://deuda.services.sis.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8080/SisProgWS/DeudaWS?xsd=1" namespace="http://sisprog.com/model" />
+  <xs:element name="buscarDeudasAlumno" type="tns:buscarDeudasAlumno" />
+  <xs:element name="buscarDeudasAlumnoResponse" type="tns:buscarDeudasAlumnoResponse" />
+  <xs:element name="consultarDeudaPorId" type="tns:consultarDeudaPorId" />
+  <xs:element name="consultarDeudaPorIdResponse" type="tns:consultarDeudaPorIdResponse" />
+  <xs:element name="eliminarDeudaPorId" type="tns:eliminarDeudaPorId" />
+  <xs:element name="eliminarDeudaPorIdResponse" type="tns:eliminarDeudaPorIdResponse" />
+  <xs:element name="insertarDeuda" type="tns:insertarDeuda" />
+  <xs:element name="insertarDeudaResponse" type="tns:insertarDeudaResponse" />
+  <xs:element name="listarDeudasTodas" type="tns:listarDeudasTodas" />
+  <xs:element name="listarDeudasTodasResponse" type="tns:listarDeudasTodasResponse" />
+  <xs:element name="modificarDeuda" type="tns:modificarDeuda" />
+  <xs:element name="modificarDeudaResponse" type="tns:modificarDeudaResponse" />
+  <xs:element name="obtenerDeudaPorId" type="tns:obtenerDeudaPorId" />
+  <xs:element name="obtenerDeudaPorIdResponse" type="tns:obtenerDeudaPorIdResponse" />
+  <xs:complexType name="buscarDeudasAlumno">
+    <xs:sequence>
+      <xs:element name="idFamilia" type="xs:int" />
+      <xs:element name="idTipoDeuda" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buscarDeudasAlumnoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:deuda" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="consultarDeudaPorId">
+    <xs:sequence>
+      <xs:element name="idDeuda" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="consultarDeudaPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:deuda" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarDeuda">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="deuda" type="ns1:deuda" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarDeudaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarDeudasTodas">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarDeudasTodasResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:deuda" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDeuda">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="deuda" type="ns1:deuda" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarDeudaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerDeudaPorId">
+    <xs:sequence>
+      <xs:element name="idDeuda" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerDeudaPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:deuda" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDeudaPorId">
+    <xs:sequence>
+      <xs:element name="idDeuda" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarDeudaPorIdResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

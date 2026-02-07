@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://deuda.services.sis.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="PagoWS" targetNamespace="http://deuda.services.sis.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/PagoWS?xsd=1" namespace="http://sisprog.com/model" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/PagoWS?xsd=2" namespace="http://deuda.services.sis.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="listarPagosPorDeuda">
+    <part name="parameters" element="tns:listarPagosPorDeuda" />
+  </message>
+  <message name="listarPagosPorDeudaResponse">
+    <part name="parameters" element="tns:listarPagosPorDeudaResponse" />
+  </message>
+  <message name="modificarPago">
+    <part name="parameters" element="tns:modificarPago" />
+  </message>
+  <message name="modificarPagoResponse">
+    <part name="parameters" element="tns:modificarPagoResponse" />
+  </message>
+  <message name="eliminarPagoPorId">
+    <part name="parameters" element="tns:eliminarPagoPorId" />
+  </message>
+  <message name="eliminarPagoPorIdResponse">
+    <part name="parameters" element="tns:eliminarPagoPorIdResponse" />
+  </message>
+  <message name="obtenerPagoPorId">
+    <part name="parameters" element="tns:obtenerPagoPorId" />
+  </message>
+  <message name="obtenerPagoPorIdResponse">
+    <part name="parameters" element="tns:obtenerPagoPorIdResponse" />
+  </message>
+  <message name="listarPagosTodos">
+    <part name="parameters" element="tns:listarPagosTodos" />
+  </message>
+  <message name="listarPagosTodosResponse">
+    <part name="parameters" element="tns:listarPagosTodosResponse" />
+  </message>
+  <message name="insertarPago">
+    <part name="parameters" element="tns:insertarPago" />
+  </message>
+  <message name="insertarPagoResponse">
+    <part name="parameters" element="tns:insertarPagoResponse" />
+  </message>
+  <portType name="PagoWS">
+    <operation name="listarPagosPorDeuda">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/PagoWS/listarPagosPorDeudaRequest" message="tns:listarPagosPorDeuda" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/PagoWS/listarPagosPorDeudaResponse" message="tns:listarPagosPorDeudaResponse" />
+    </operation>
+    <operation name="modificarPago">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/PagoWS/modificarPagoRequest" message="tns:modificarPago" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/PagoWS/modificarPagoResponse" message="tns:modificarPagoResponse" />
+    </operation>
+    <operation name="eliminarPagoPorId">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/PagoWS/eliminarPagoPorIdRequest" message="tns:eliminarPagoPorId" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/PagoWS/eliminarPagoPorIdResponse" message="tns:eliminarPagoPorIdResponse" />
+    </operation>
+    <operation name="obtenerPagoPorId">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/PagoWS/obtenerPagoPorIdRequest" message="tns:obtenerPagoPorId" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/PagoWS/obtenerPagoPorIdResponse" message="tns:obtenerPagoPorIdResponse" />
+    </operation>
+    <operation name="listarPagosTodos">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/PagoWS/listarPagosTodosRequest" message="tns:listarPagosTodos" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/PagoWS/listarPagosTodosResponse" message="tns:listarPagosTodosResponse" />
+    </operation>
+    <operation name="insertarPago">
+      <input wsam:Action="http://deuda.services.sis.edu.pe/PagoWS/insertarPagoRequest" message="tns:insertarPago" />
+      <output wsam:Action="http://deuda.services.sis.edu.pe/PagoWS/insertarPagoResponse" message="tns:insertarPagoResponse" />
+    </operation>
+  </portType>
+  <binding name="PagoWSPortBinding" type="tns:PagoWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="listarPagosPorDeuda">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarPago">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarPagoPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPagoPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPagosTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertarPago">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="PagoWS">
+    <port name="PagoWSPort" binding="tns:PagoWSPortBinding">
+      <soap:address location="http://localhost:8080/SisProgWS/PagoWS" />
+    </port>
+  </service>
+</definitions>

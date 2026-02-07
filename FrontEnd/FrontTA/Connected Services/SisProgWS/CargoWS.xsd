@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://usuario.services.sis.edu.pe/" xmlns:ns1="http://sisprog.com/model" targetNamespace="http://usuario.services.sis.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8080/SisProgWS/CargoWS?xsd=2" namespace="http://sisprog.com/model" />
+  <xs:element name="eliminarCargoPorId" type="tns:eliminarCargoPorId" />
+  <xs:element name="eliminarCargoPorIdResponse" type="tns:eliminarCargoPorIdResponse" />
+  <xs:element name="insertarCargo" type="tns:insertarCargo" />
+  <xs:element name="insertarCargoResponse" type="tns:insertarCargoResponse" />
+  <xs:element name="listarCargosTodos" type="tns:listarCargosTodos" />
+  <xs:element name="listarCargosTodosResponse" type="tns:listarCargosTodosResponse" />
+  <xs:element name="modificarCargo" type="tns:modificarCargo" />
+  <xs:element name="modificarCargoResponse" type="tns:modificarCargoResponse" />
+  <xs:element name="obtenerCargoPorId" type="tns:obtenerCargoPorId" />
+  <xs:element name="obtenerCargoPorIdResponse" type="tns:obtenerCargoPorIdResponse" />
+  <xs:complexType name="eliminarCargoPorId">
+    <xs:sequence>
+      <xs:element name="idCargo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarCargoPorIdResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerCargoPorId">
+    <xs:sequence>
+      <xs:element name="idCargo" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerCargoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:cargo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarCargosTodos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarCargosTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:cargo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarCargo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cargo" type="ns1:cargo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarCargoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarCargo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cargo" type="ns1:cargo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarCargoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

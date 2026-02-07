@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://matricula.services.sis.edu.pe/" xmlns:ns1="http://sisprog.com/model" targetNamespace="http://matricula.services.sis.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8080/SisProgWS/PeriodoXAulaWS?xsd=1" namespace="http://sisprog.com/model" />
+  <xs:element name="eliminarPeriodoXAulaPorId" type="tns:eliminarPeriodoXAulaPorId" />
+  <xs:element name="eliminarPeriodoXAulaPorIdResponse" type="tns:eliminarPeriodoXAulaPorIdResponse" />
+  <xs:element name="insertarPeriodoXAula" type="tns:insertarPeriodoXAula" />
+  <xs:element name="insertarPeriodoXAulaResponse" type="tns:insertarPeriodoXAulaResponse" />
+  <xs:element name="listarPeriodosXAulasTodos" type="tns:listarPeriodosXAulasTodos" />
+  <xs:element name="listarPeriodosXAulasTodosResponse" type="tns:listarPeriodosXAulasTodosResponse" />
+  <xs:element name="modificarPeriodoXAula" type="tns:modificarPeriodoXAula" />
+  <xs:element name="modificarPeriodoXAulaResponse" type="tns:modificarPeriodoXAulaResponse" />
+  <xs:element name="obtenerPeriodoXAulaPorId" type="tns:obtenerPeriodoXAulaPorId" />
+  <xs:element name="obtenerPeriodoXAulaPorIdResponse" type="tns:obtenerPeriodoXAulaPorIdResponse" />
+  <xs:complexType name="listarPeriodosXAulasTodos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPeriodosXAulasTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:periodoXAula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPeriodoXAulaPorId">
+    <xs:sequence>
+      <xs:element name="idPeriodoXAula" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPeriodoXAulaPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:periodoXAula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPeriodoXAulaPorId">
+    <xs:sequence>
+      <xs:element name="idPeriodoXAula" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPeriodoXAulaPorIdResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPeriodoXAula">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="periodoXAula" type="ns1:periodoXAula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPeriodoXAulaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPeriodoXAula">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="periodoXAula" type="ns1:periodoXAula" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPeriodoXAulaResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

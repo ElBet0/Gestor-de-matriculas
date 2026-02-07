@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://deuda.services.sis.edu.pe/" xmlns:ns1="http://sisprog.com/model" targetNamespace="http://deuda.services.sis.edu.pe/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:8080/SisProgWS/PagoWS?xsd=1" namespace="http://sisprog.com/model" />
+  <xs:element name="eliminarPagoPorId" type="tns:eliminarPagoPorId" />
+  <xs:element name="eliminarPagoPorIdResponse" type="tns:eliminarPagoPorIdResponse" />
+  <xs:element name="insertarPago" type="tns:insertarPago" />
+  <xs:element name="insertarPagoResponse" type="tns:insertarPagoResponse" />
+  <xs:element name="listarPagosPorDeuda" type="tns:listarPagosPorDeuda" />
+  <xs:element name="listarPagosPorDeudaResponse" type="tns:listarPagosPorDeudaResponse" />
+  <xs:element name="listarPagosTodos" type="tns:listarPagosTodos" />
+  <xs:element name="listarPagosTodosResponse" type="tns:listarPagosTodosResponse" />
+  <xs:element name="modificarPago" type="tns:modificarPago" />
+  <xs:element name="modificarPagoResponse" type="tns:modificarPagoResponse" />
+  <xs:element name="obtenerPagoPorId" type="tns:obtenerPagoPorId" />
+  <xs:element name="obtenerPagoPorIdResponse" type="tns:obtenerPagoPorIdResponse" />
+  <xs:complexType name="listarPagosTodos">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="listarPagosTodosResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:pago" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pago" type="ns1:pago" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertarPagoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPagoPorId">
+    <xs:sequence>
+      <xs:element name="idPago" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="obtenerPagoPorIdResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="ns1:pago" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagosPorDeuda">
+    <xs:sequence>
+      <xs:element name="deudaId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="listarPagosPorDeudaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="return" type="ns1:pago" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPagoPorId">
+    <xs:sequence>
+      <xs:element name="idPago" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="eliminarPagoPorIdResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPago">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="pago" type="ns1:pago" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificarPagoResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

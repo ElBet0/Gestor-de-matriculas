@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="c2776155-c490-478b-a99d-8b9084ce7a90" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/SisProgWS/referencias.disco" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="DeudaWS.wsdl" MetadataType="Wsdl" ID="3be3ba64-7685-4d9a-aab1-32feaf7810a5" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/DeudaWS?WSDL" />
+    <MetadataFile FileName="TipoDeudaWS.xsd" MetadataType="Schema" ID="a3d5b361-e654-43ca-abc4-93f317e710f6" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/TipoDeudaWS?xsd=1" />
+    <MetadataFile FileName="CargoWS.xsd" MetadataType="Schema" ID="e98e5624-207b-4e50-9955-2b231b5bb049" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/CargoWS?xsd=1" />
+    <MetadataFile FileName="CargoWS1.xsd" MetadataType="Schema" ID="83619a4d-8362-42f0-9412-5b4352a75c88" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/CargoWS?xsd=2" />
+    <MetadataFile FileName="CursoWS.xsd" MetadataType="Schema" ID="d6f24a1f-482e-4604-b679-c3652fccd800" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/CursoWS?xsd=2" />
+    <MetadataFile FileName="CursoWS1.xsd" MetadataType="Schema" ID="22cc302a-0e9b-4a10-8e04-7f54c52b4db5" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/CursoWS?xsd=1" />
+    <MetadataFile FileName="PeriodoWS.xsd" MetadataType="Schema" ID="345cdac9-e170-4acd-8204-2a57fd5002ce" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/PeriodoWS?xsd=1" />
+    <MetadataFile FileName="GradoAcademicoWS.wsdl" MetadataType="Wsdl" ID="f6af0c90-910b-4732-9fd5-c49f7a0d1b45" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/GradoAcademicoWS?WSDL" />
+    <MetadataFile FileName="AlumnoWS.wsdl" MetadataType="Wsdl" ID="37f9b6d9-b3d2-42d4-9160-9c746f15cd5a" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/AlumnoWS?WSDL" />
+    <MetadataFile FileName="PeriodoXAulaWS.wsdl" MetadataType="Wsdl" ID="17b96ac3-9174-47fd-8b07-ddc54d6e4b19" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/PeriodoXAulaWS?WSDL" />
+    <MetadataFile FileName="MatriculaWS.wsdl" MetadataType="Wsdl" ID="9291209d-b11a-48dd-a57c-859dfb6db935" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/MatriculaWS?WSDL" />
+    <MetadataFile FileName="GradoAcademicoWS.xsd" MetadataType="Schema" ID="887a6b75-b2bd-4f9c-9481-c0a1e857ab52" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/GradoAcademicoWS?xsd=1" />
+    <MetadataFile FileName="FamiliaWS.xsd" MetadataType="Schema" ID="e23eda7d-e348-44f6-9a5d-ab969ae03858" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/FamiliaWS?xsd=2" />
+    <MetadataFile FileName="AulaWS.xsd" MetadataType="Schema" ID="7d880baf-a030-4778-8fed-74861235f56e" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/AulaWS?xsd=2" />
+    <MetadataFile FileName="FamiliaWS.wsdl" MetadataType="Wsdl" ID="8fa480aa-57cf-4704-8f5f-3123535fca50" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/FamiliaWS?WSDL" />
+    <MetadataFile FileName="CargoWS.wsdl" MetadataType="Wsdl" ID="2d4d7c0e-3afe-41f8-859d-340dfbe6da6e" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/CargoWS?WSDL" />
+    <MetadataFile FileName="CursoWS.wsdl" MetadataType="Wsdl" ID="e2fadfbe-b359-4cf6-b241-1d45c6005c0f" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/CursoWS?WSDL" />
+    <MetadataFile FileName="PeriodoXAulaWS.xsd" MetadataType="Schema" ID="55532942-e720-4fb5-8082-4c08b79ff144" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/PeriodoXAulaWS?xsd=2" />
+    <MetadataFile FileName="PeriodoXAulaWS1.xsd" MetadataType="Schema" ID="b0c367c6-f26d-41d0-a59f-e1feb7b9f96c" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/PeriodoXAulaWS?xsd=1" />
+    <MetadataFile FileName="MatriculaWS.xsd" MetadataType="Schema" ID="33d70e88-3a92-4c63-b0f6-93039df91ee5" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/MatriculaWS?xsd=2" />
+    <MetadataFile FileName="GradoAcademicoWS1.xsd" MetadataType="Schema" ID="e87ef856-cf56-445f-8a7b-7b566b58a761" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/GradoAcademicoWS?xsd=2" />
+    <MetadataFile FileName="FamiliaWS1.xsd" MetadataType="Schema" ID="ac240b93-917d-450d-8dde-98be0d1b507a" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/FamiliaWS?xsd=1" />
+    <MetadataFile FileName="ReportesWS.wsdl" MetadataType="Wsdl" ID="2df7a186-c63a-41e0-a90d-f0b7aec5c81a" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/ReportesWS?WSDL" />
+    <MetadataFile FileName="PagoWS.wsdl" MetadataType="Wsdl" ID="53a9d8c4-7341-4cc6-a8ce-5c3a2f277cc5" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/PagoWS?WSDL" />
+    <MetadataFile FileName="TipoDeudaWS1.xsd" MetadataType="Schema" ID="4c1e2ec4-eed2-4809-a40a-f2b7fc63eb3d" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/TipoDeudaWS?xsd=2" />
+    <MetadataFile FileName="PeriodoWS1.xsd" MetadataType="Schema" ID="f8f35593-9076-4c35-aa39-807621b8e6de" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/PeriodoWS?xsd=2" />
+    <MetadataFile FileName="referencias.disco" MetadataType="Disco" ID="b8ba86b6-0437-48fa-bd2b-d11a8da54021" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/referencias.disco" />
+    <MetadataFile FileName="DeudaWS.xsd" MetadataType="Schema" ID="4662afdf-42ef-4e03-a808-5c68f5fdb34d" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/DeudaWS?xsd=2" />
+    <MetadataFile FileName="AulaWS.wsdl" MetadataType="Wsdl" ID="116d65b1-94e5-4660-8297-17cc63033464" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/AulaWS?WSDL" />
+    <MetadataFile FileName="MatriculaWS1.xsd" MetadataType="Schema" ID="5bd8965f-c93d-4217-897a-42c78f0734b4" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/MatriculaWS?xsd=1" />
+    <MetadataFile FileName="PagoWS.xsd" MetadataType="Schema" ID="0152c4f1-89a5-4cdf-9362-70020329bbd3" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/PagoWS?xsd=1" />
+    <MetadataFile FileName="AlumnoWS.xsd" MetadataType="Schema" ID="f5f0ff2f-e6c1-4bdc-86f4-65f9d0270af0" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/AlumnoWS?xsd=2" />
+    <MetadataFile FileName="PersonalWS.xsd" MetadataType="Schema" ID="3def4769-776e-4eb8-861c-897763568944" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/PersonalWS?xsd=1" />
+    <MetadataFile FileName="PagoWS1.xsd" MetadataType="Schema" ID="7a8d7943-894e-48f6-950f-38d9e4722bd7" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/PagoWS?xsd=2" />
+    <MetadataFile FileName="TipoDeudaWS.wsdl" MetadataType="Wsdl" ID="362927b6-cb78-40bc-870c-2780a6a4f7f0" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/TipoDeudaWS?WSDL" />
+    <MetadataFile FileName="ReportesWS.xsd" MetadataType="Schema" ID="f65da343-be0f-4328-baf8-732d7808755c" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/ReportesWS?xsd=1" />
+    <MetadataFile FileName="AulaWS1.xsd" MetadataType="Schema" ID="bfaee25a-3052-4722-9a94-4a5a9bd5fe9b" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/AulaWS?xsd=1" />
+    <MetadataFile FileName="PersonalWS.wsdl" MetadataType="Wsdl" ID="9504891d-fcfe-4c8e-a081-0e1aa8e6229e" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/PersonalWS?WSDL" />
+    <MetadataFile FileName="AlumnoWS1.xsd" MetadataType="Schema" ID="4b30a5d4-93df-4eaf-9b98-2255423eee3e" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/AlumnoWS?xsd=1" />
+    <MetadataFile FileName="PeriodoWS.wsdl" MetadataType="Wsdl" ID="eb7c22f3-6388-4731-b326-2bf8c1552e37" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/PeriodoWS?WSDL" />
+    <MetadataFile FileName="UsuarioWS.wsdl" MetadataType="Wsdl" ID="6496551a-abc9-4393-90cb-ae7d513de751" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/UsuarioWS?WSDL" />
+    <MetadataFile FileName="DeudaWS1.xsd" MetadataType="Schema" ID="511a6fec-8493-4437-bc3f-d18fd32084f2" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/DeudaWS?xsd=1" />
+    <MetadataFile FileName="PersonalWS1.xsd" MetadataType="Schema" ID="6c409db8-a7fb-4ef5-85ed-f05e9b01f05e" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/PersonalWS?xsd=2" />
+    <MetadataFile FileName="UsuarioWS.xsd" MetadataType="Schema" ID="a585ecdf-6622-4dcd-a188-7e8cd5198509" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/UsuarioWS?xsd=1" />
+    <MetadataFile FileName="UsuarioWS1.xsd" MetadataType="Schema" ID="83ccdfb0-c8d9-42b2-a5c2-fa5619add4bb" SourceId="1" SourceUrl="http://localhost:8080/SisProgWS/UsuarioWS?xsd=2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

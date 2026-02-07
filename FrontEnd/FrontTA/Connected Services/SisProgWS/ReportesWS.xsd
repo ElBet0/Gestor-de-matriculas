@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="pe.edu.sis.services" targetNamespace="pe.edu.sis.services" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="generarReporteDeudasFamilia" type="tns:generarReporteDeudasFamilia" />
+  <xs:element name="generarReporteDeudasFamiliaResponse" type="tns:generarReporteDeudasFamiliaResponse" />
+  <xs:element name="generarReporteMatriculasPeriodo" type="tns:generarReporteMatriculasPeriodo" />
+  <xs:element name="generarReporteMatriculasPeriodoResponse" type="tns:generarReporteMatriculasPeriodoResponse" />
+  <xs:complexType name="generarReporteMatriculasPeriodo">
+    <xs:sequence>
+      <xs:element name="idPeriodo" type="xs:int" />
+      <xs:element minOccurs="0" name="nombrePeriodo" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="generarReporteMatriculasPeriodoResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="generarReporteDeudasFamilia">
+    <xs:sequence>
+      <xs:element name="idFamilia" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="generarReporteDeudasFamiliaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

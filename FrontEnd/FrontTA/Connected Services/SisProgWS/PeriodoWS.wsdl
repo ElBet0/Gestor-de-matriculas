@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://matricula.services.sis.edu.pe/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" name="PeriodoWS" targetNamespace="http://matricula.services.sis.edu.pe/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/PeriodoWS?xsd=1" namespace="http://sisprog.com/model" />
+    </xsd:schema>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/SisProgWS/PeriodoWS?xsd=2" namespace="http://matricula.services.sis.edu.pe/" />
+    </xsd:schema>
+  </types>
+  <message name="insertarPeriodo">
+    <part name="parameters" element="tns:insertarPeriodo" />
+  </message>
+  <message name="insertarPeriodoResponse">
+    <part name="parameters" element="tns:insertarPeriodoResponse" />
+  </message>
+  <message name="modificarPeriodo">
+    <part name="parameters" element="tns:modificarPeriodo" />
+  </message>
+  <message name="modificarPeriodoResponse">
+    <part name="parameters" element="tns:modificarPeriodoResponse" />
+  </message>
+  <message name="obtenerPeriodoPorId">
+    <part name="parameters" element="tns:obtenerPeriodoPorId" />
+  </message>
+  <message name="obtenerPeriodoPorIdResponse">
+    <part name="parameters" element="tns:obtenerPeriodoPorIdResponse" />
+  </message>
+  <message name="listarPeriodosTodos">
+    <part name="parameters" element="tns:listarPeriodosTodos" />
+  </message>
+  <message name="listarPeriodosTodosResponse">
+    <part name="parameters" element="tns:listarPeriodosTodosResponse" />
+  </message>
+  <message name="eliminarPeriodoPorId">
+    <part name="parameters" element="tns:eliminarPeriodoPorId" />
+  </message>
+  <message name="eliminarPeriodoPorIdResponse">
+    <part name="parameters" element="tns:eliminarPeriodoPorIdResponse" />
+  </message>
+  <portType name="PeriodoWS">
+    <operation name="insertarPeriodo">
+      <input wsam:Action="http://matricula.services.sis.edu.pe/PeriodoWS/insertarPeriodoRequest" message="tns:insertarPeriodo" />
+      <output wsam:Action="http://matricula.services.sis.edu.pe/PeriodoWS/insertarPeriodoResponse" message="tns:insertarPeriodoResponse" />
+    </operation>
+    <operation name="modificarPeriodo">
+      <input wsam:Action="http://matricula.services.sis.edu.pe/PeriodoWS/modificarPeriodoRequest" message="tns:modificarPeriodo" />
+      <output wsam:Action="http://matricula.services.sis.edu.pe/PeriodoWS/modificarPeriodoResponse" message="tns:modificarPeriodoResponse" />
+    </operation>
+    <operation name="obtenerPeriodoPorId">
+      <input wsam:Action="http://matricula.services.sis.edu.pe/PeriodoWS/obtenerPeriodoPorIdRequest" message="tns:obtenerPeriodoPorId" />
+      <output wsam:Action="http://matricula.services.sis.edu.pe/PeriodoWS/obtenerPeriodoPorIdResponse" message="tns:obtenerPeriodoPorIdResponse" />
+    </operation>
+    <operation name="listarPeriodosTodos">
+      <input wsam:Action="http://matricula.services.sis.edu.pe/PeriodoWS/listarPeriodosTodosRequest" message="tns:listarPeriodosTodos" />
+      <output wsam:Action="http://matricula.services.sis.edu.pe/PeriodoWS/listarPeriodosTodosResponse" message="tns:listarPeriodosTodosResponse" />
+    </operation>
+    <operation name="eliminarPeriodoPorId">
+      <input wsam:Action="http://matricula.services.sis.edu.pe/PeriodoWS/eliminarPeriodoPorIdRequest" message="tns:eliminarPeriodoPorId" />
+      <output wsam:Action="http://matricula.services.sis.edu.pe/PeriodoWS/eliminarPeriodoPorIdResponse" message="tns:eliminarPeriodoPorIdResponse" />
+    </operation>
+  </portType>
+  <binding name="PeriodoWSPortBinding" type="tns:PeriodoWS">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="insertarPeriodo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="modificarPeriodo">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="obtenerPeriodoPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="listarPeriodosTodos">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="eliminarPeriodoPorId">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="PeriodoWS">
+    <port name="PeriodoWSPort" binding="tns:PeriodoWSPortBinding">
+      <soap:address location="http://localhost:8080/SisProgWS/PeriodoWS" />
+    </port>
+  </service>
+</definitions>
